@@ -64,7 +64,6 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.계정코드 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.계정명 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -87,6 +86,7 @@
             this.storagenameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.inventorystocknumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.workernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_outProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -464,10 +464,6 @@
             this.label14.Text = "검색";
             this.label14.UseMnemonic = false;
             // 
-            // productsBindingSource
-            // 
-            this.productsBindingSource.DataSource = typeof(WindowsFormsApp1.Products);
-            // 
             // 계정코드
             // 
             this.계정코드.DataPropertyName = "product_code_number";
@@ -612,6 +608,10 @@
             this.workernameDataGridViewTextBoxColumn.Name = "workernameDataGridViewTextBoxColumn";
             this.workernameDataGridViewTextBoxColumn.Visible = false;
             // 
+            // productsBindingSource
+            // 
+            this.productsBindingSource.DataSource = typeof(WindowsFormsApp1.Products);
+            // 
             // Form2_Receiving_screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -653,6 +653,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form2_Receiving_screen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "창고관리프로그램";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_outProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();

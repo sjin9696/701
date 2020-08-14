@@ -73,7 +73,6 @@
             this.typenameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.barcodenumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.salesnumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.costnumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.deliverydayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.storagenameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -385,7 +384,6 @@
             this.typenameDataGridViewTextBoxColumn,
             this.barcodenumberDataGridViewTextBoxColumn,
             this.salesnumberDataGridViewTextBoxColumn,
-            this.costnumberDataGridViewTextBoxColumn,
             this.deliverydayDataGridViewTextBoxColumn,
             this.customernameDataGridViewTextBoxColumn,
             this.storagenameDataGridViewTextBoxColumn,
@@ -488,13 +486,6 @@
             this.salesnumberDataGridViewTextBoxColumn.HeaderText = "sales_number";
             this.salesnumberDataGridViewTextBoxColumn.Name = "salesnumberDataGridViewTextBoxColumn";
             this.salesnumberDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // costnumberDataGridViewTextBoxColumn
-            // 
-            this.costnumberDataGridViewTextBoxColumn.DataPropertyName = "cost_number";
-            this.costnumberDataGridViewTextBoxColumn.HeaderText = "cost_number";
-            this.costnumberDataGridViewTextBoxColumn.Name = "costnumberDataGridViewTextBoxColumn";
-            this.costnumberDataGridViewTextBoxColumn.Visible = false;
             // 
             // deliverydayDataGridViewTextBoxColumn
             // 
@@ -637,7 +628,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.HelpButton = true;
             this.Name = "Form1_Factory_screen";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "창고관리프로그램";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_outProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
