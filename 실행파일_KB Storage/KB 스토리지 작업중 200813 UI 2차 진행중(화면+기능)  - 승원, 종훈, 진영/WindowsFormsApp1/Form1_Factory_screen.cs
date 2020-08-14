@@ -51,7 +51,7 @@ namespace WindowsFormsApp1
         {
             IScustomData();
         }
-        private void IScustomData()
+        public void IScustomData()
         {
             Products product = new Products();
             List<Products> productsList = new List<Products>();
@@ -67,6 +67,11 @@ namespace WindowsFormsApp1
             product.sales_number = textBox9_sales_number.Text;
             product.money_number = textBox10_money_number.Text;
             product.inventory_stock_number = textBox11_inventory_stock_number.Text;
+            productsList.Add(product);
+            Console.WriteLine(product.product_name + " product.name");
+
+            dataGridView_outProduct.DataSource = null;
+            dataGridView_outProduct.DataSource = productsList;
 
         }
     }

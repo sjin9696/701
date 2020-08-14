@@ -56,7 +56,7 @@
             this.button2_data_input = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridView_outProduct = new System.Windows.Forms.DataGridView();
             this.계정코드 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.계정명 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -85,7 +85,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label1_login_worker_name = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_outProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -364,11 +364,11 @@
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
-            // dataGridView2
+            // dataGridView_outProduct
             // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridView_outProduct.AutoGenerateColumns = false;
+            this.dataGridView_outProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_outProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.계정코드,
             this.계정명,
             this.Column1,
@@ -390,12 +390,12 @@
             this.customernameDataGridViewTextBoxColumn,
             this.storagenameDataGridViewTextBoxColumn,
             this.workernameDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.productsBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(71, 516);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 23;
-            this.dataGridView2.Size = new System.Drawing.Size(930, 316);
-            this.dataGridView2.TabIndex = 6;
+            this.dataGridView_outProduct.DataSource = this.productsBindingSource;
+            this.dataGridView_outProduct.Location = new System.Drawing.Point(71, 516);
+            this.dataGridView_outProduct.Name = "dataGridView_outProduct";
+            this.dataGridView_outProduct.RowTemplate.Height = 23;
+            this.dataGridView_outProduct.Size = new System.Drawing.Size(930, 316);
+            this.dataGridView_outProduct.TabIndex = 6;
             // 
             // 계정코드
             // 
@@ -604,7 +604,7 @@
             this.ClientSize = new System.Drawing.Size(1053, 930);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.button1_search);
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dataGridView_outProduct);
             this.Controls.Add(this.label1_login_worker_name);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.button2_data_input);
@@ -639,7 +639,7 @@
             this.Name = "Form1_Factory_screen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "창고관리프로그램";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_outProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -674,7 +674,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label12;
         public System.Windows.Forms.TextBox textBox1_product_code_number;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridView_outProduct;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button button1_search;
         private System.Windows.Forms.TextBox textBox11_inventory_stock_number;
