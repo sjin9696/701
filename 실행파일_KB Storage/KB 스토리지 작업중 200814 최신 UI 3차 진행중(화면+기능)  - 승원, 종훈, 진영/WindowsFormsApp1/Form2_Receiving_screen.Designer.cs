@@ -42,6 +42,19 @@
             this.입고일 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.납품처 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.보관위치 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productcodenumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categorizenameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typenameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.barcodenumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salesnumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.moneynumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deliverydayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.storagenameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.inventorystocknumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.workernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label12 = new System.Windows.Forms.Label();
             this.button_input = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -75,19 +88,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.productcodenumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categorizenameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.typenameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.barcodenumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.salesnumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.moneynumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deliverydayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.customernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.storagenameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.inventorystocknumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.workernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_outProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
@@ -200,6 +200,94 @@
             this.보관위치.HeaderText = "보관위치";
             this.보관위치.Name = "보관위치";
             // 
+            // productcodenumberDataGridViewTextBoxColumn
+            // 
+            this.productcodenumberDataGridViewTextBoxColumn.DataPropertyName = "product_code_number";
+            this.productcodenumberDataGridViewTextBoxColumn.HeaderText = "product_code_number";
+            this.productcodenumberDataGridViewTextBoxColumn.Name = "productcodenumberDataGridViewTextBoxColumn";
+            this.productcodenumberDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // productnameDataGridViewTextBoxColumn
+            // 
+            this.productnameDataGridViewTextBoxColumn.DataPropertyName = "product_name";
+            this.productnameDataGridViewTextBoxColumn.HeaderText = "product_name";
+            this.productnameDataGridViewTextBoxColumn.Name = "productnameDataGridViewTextBoxColumn";
+            this.productnameDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // categorizenameDataGridViewTextBoxColumn
+            // 
+            this.categorizenameDataGridViewTextBoxColumn.DataPropertyName = "categorize_name";
+            this.categorizenameDataGridViewTextBoxColumn.HeaderText = "categorize_name";
+            this.categorizenameDataGridViewTextBoxColumn.Name = "categorizenameDataGridViewTextBoxColumn";
+            this.categorizenameDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // typenameDataGridViewTextBoxColumn
+            // 
+            this.typenameDataGridViewTextBoxColumn.DataPropertyName = "type_name";
+            this.typenameDataGridViewTextBoxColumn.HeaderText = "type_name";
+            this.typenameDataGridViewTextBoxColumn.Name = "typenameDataGridViewTextBoxColumn";
+            this.typenameDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // barcodenumberDataGridViewTextBoxColumn
+            // 
+            this.barcodenumberDataGridViewTextBoxColumn.DataPropertyName = "barcode_number";
+            this.barcodenumberDataGridViewTextBoxColumn.HeaderText = "barcode_number";
+            this.barcodenumberDataGridViewTextBoxColumn.Name = "barcodenumberDataGridViewTextBoxColumn";
+            this.barcodenumberDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // salesnumberDataGridViewTextBoxColumn
+            // 
+            this.salesnumberDataGridViewTextBoxColumn.DataPropertyName = "sales_number";
+            this.salesnumberDataGridViewTextBoxColumn.HeaderText = "sales_number";
+            this.salesnumberDataGridViewTextBoxColumn.Name = "salesnumberDataGridViewTextBoxColumn";
+            this.salesnumberDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // moneynumberDataGridViewTextBoxColumn
+            // 
+            this.moneynumberDataGridViewTextBoxColumn.DataPropertyName = "money_number";
+            this.moneynumberDataGridViewTextBoxColumn.HeaderText = "money_number";
+            this.moneynumberDataGridViewTextBoxColumn.Name = "moneynumberDataGridViewTextBoxColumn";
+            this.moneynumberDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // deliverydayDataGridViewTextBoxColumn
+            // 
+            this.deliverydayDataGridViewTextBoxColumn.DataPropertyName = "delivery_day";
+            this.deliverydayDataGridViewTextBoxColumn.HeaderText = "delivery_day";
+            this.deliverydayDataGridViewTextBoxColumn.Name = "deliverydayDataGridViewTextBoxColumn";
+            this.deliverydayDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // customernameDataGridViewTextBoxColumn
+            // 
+            this.customernameDataGridViewTextBoxColumn.DataPropertyName = "customer_name";
+            this.customernameDataGridViewTextBoxColumn.HeaderText = "customer_name";
+            this.customernameDataGridViewTextBoxColumn.Name = "customernameDataGridViewTextBoxColumn";
+            this.customernameDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // storagenameDataGridViewTextBoxColumn
+            // 
+            this.storagenameDataGridViewTextBoxColumn.DataPropertyName = "storage_name";
+            this.storagenameDataGridViewTextBoxColumn.HeaderText = "storage_name";
+            this.storagenameDataGridViewTextBoxColumn.Name = "storagenameDataGridViewTextBoxColumn";
+            this.storagenameDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // inventorystocknumberDataGridViewTextBoxColumn
+            // 
+            this.inventorystocknumberDataGridViewTextBoxColumn.DataPropertyName = "inventory_stock_number";
+            this.inventorystocknumberDataGridViewTextBoxColumn.HeaderText = "inventory_stock_number";
+            this.inventorystocknumberDataGridViewTextBoxColumn.Name = "inventorystocknumberDataGridViewTextBoxColumn";
+            this.inventorystocknumberDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // workernameDataGridViewTextBoxColumn
+            // 
+            this.workernameDataGridViewTextBoxColumn.DataPropertyName = "worker_name";
+            this.workernameDataGridViewTextBoxColumn.HeaderText = "worker_name";
+            this.workernameDataGridViewTextBoxColumn.Name = "workernameDataGridViewTextBoxColumn";
+            this.workernameDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // productsBindingSource
+            // 
+            this.productsBindingSource.DataSource = typeof(WindowsFormsApp1.Products);
+            // 
             // label12
             // 
             this.label12.AllowDrop = true;
@@ -209,7 +297,6 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(80, 29);
             this.label12.TabIndex = 46;
-            this.label12.Text = "현재날짜";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button_input
@@ -539,94 +626,6 @@
             this.button1.Size = new System.Drawing.Size(414, 239);
             this.button1.TabIndex = 52;
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // productcodenumberDataGridViewTextBoxColumn
-            // 
-            this.productcodenumberDataGridViewTextBoxColumn.DataPropertyName = "product_code_number";
-            this.productcodenumberDataGridViewTextBoxColumn.HeaderText = "product_code_number";
-            this.productcodenumberDataGridViewTextBoxColumn.Name = "productcodenumberDataGridViewTextBoxColumn";
-            this.productcodenumberDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // productnameDataGridViewTextBoxColumn
-            // 
-            this.productnameDataGridViewTextBoxColumn.DataPropertyName = "product_name";
-            this.productnameDataGridViewTextBoxColumn.HeaderText = "product_name";
-            this.productnameDataGridViewTextBoxColumn.Name = "productnameDataGridViewTextBoxColumn";
-            this.productnameDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // categorizenameDataGridViewTextBoxColumn
-            // 
-            this.categorizenameDataGridViewTextBoxColumn.DataPropertyName = "categorize_name";
-            this.categorizenameDataGridViewTextBoxColumn.HeaderText = "categorize_name";
-            this.categorizenameDataGridViewTextBoxColumn.Name = "categorizenameDataGridViewTextBoxColumn";
-            this.categorizenameDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // typenameDataGridViewTextBoxColumn
-            // 
-            this.typenameDataGridViewTextBoxColumn.DataPropertyName = "type_name";
-            this.typenameDataGridViewTextBoxColumn.HeaderText = "type_name";
-            this.typenameDataGridViewTextBoxColumn.Name = "typenameDataGridViewTextBoxColumn";
-            this.typenameDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // barcodenumberDataGridViewTextBoxColumn
-            // 
-            this.barcodenumberDataGridViewTextBoxColumn.DataPropertyName = "barcode_number";
-            this.barcodenumberDataGridViewTextBoxColumn.HeaderText = "barcode_number";
-            this.barcodenumberDataGridViewTextBoxColumn.Name = "barcodenumberDataGridViewTextBoxColumn";
-            this.barcodenumberDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // salesnumberDataGridViewTextBoxColumn
-            // 
-            this.salesnumberDataGridViewTextBoxColumn.DataPropertyName = "sales_number";
-            this.salesnumberDataGridViewTextBoxColumn.HeaderText = "sales_number";
-            this.salesnumberDataGridViewTextBoxColumn.Name = "salesnumberDataGridViewTextBoxColumn";
-            this.salesnumberDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // moneynumberDataGridViewTextBoxColumn
-            // 
-            this.moneynumberDataGridViewTextBoxColumn.DataPropertyName = "money_number";
-            this.moneynumberDataGridViewTextBoxColumn.HeaderText = "money_number";
-            this.moneynumberDataGridViewTextBoxColumn.Name = "moneynumberDataGridViewTextBoxColumn";
-            this.moneynumberDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // deliverydayDataGridViewTextBoxColumn
-            // 
-            this.deliverydayDataGridViewTextBoxColumn.DataPropertyName = "delivery_day";
-            this.deliverydayDataGridViewTextBoxColumn.HeaderText = "delivery_day";
-            this.deliverydayDataGridViewTextBoxColumn.Name = "deliverydayDataGridViewTextBoxColumn";
-            this.deliverydayDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // customernameDataGridViewTextBoxColumn
-            // 
-            this.customernameDataGridViewTextBoxColumn.DataPropertyName = "customer_name";
-            this.customernameDataGridViewTextBoxColumn.HeaderText = "customer_name";
-            this.customernameDataGridViewTextBoxColumn.Name = "customernameDataGridViewTextBoxColumn";
-            this.customernameDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // storagenameDataGridViewTextBoxColumn
-            // 
-            this.storagenameDataGridViewTextBoxColumn.DataPropertyName = "storage_name";
-            this.storagenameDataGridViewTextBoxColumn.HeaderText = "storage_name";
-            this.storagenameDataGridViewTextBoxColumn.Name = "storagenameDataGridViewTextBoxColumn";
-            this.storagenameDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // inventorystocknumberDataGridViewTextBoxColumn
-            // 
-            this.inventorystocknumberDataGridViewTextBoxColumn.DataPropertyName = "inventory_stock_number";
-            this.inventorystocknumberDataGridViewTextBoxColumn.HeaderText = "inventory_stock_number";
-            this.inventorystocknumberDataGridViewTextBoxColumn.Name = "inventorystocknumberDataGridViewTextBoxColumn";
-            this.inventorystocknumberDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // workernameDataGridViewTextBoxColumn
-            // 
-            this.workernameDataGridViewTextBoxColumn.DataPropertyName = "worker_name";
-            this.workernameDataGridViewTextBoxColumn.HeaderText = "worker_name";
-            this.workernameDataGridViewTextBoxColumn.Name = "workernameDataGridViewTextBoxColumn";
-            this.workernameDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // productsBindingSource
-            // 
-            this.productsBindingSource.DataSource = typeof(WindowsFormsApp1.Products);
             // 
             // timer1
             // 
