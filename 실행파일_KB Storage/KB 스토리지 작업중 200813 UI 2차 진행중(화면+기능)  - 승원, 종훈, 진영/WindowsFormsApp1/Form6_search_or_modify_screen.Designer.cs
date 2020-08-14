@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6_search_or_modify_screen));
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label11 = new System.Windows.Forms.Label();
             this.계정코드 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.계정명 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,6 +40,7 @@
             this.입고일 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.납품처 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.보관위치 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label11 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -71,17 +71,6 @@
             this.dataGridView2.RowTemplate.Height = 23;
             this.dataGridView2.Size = new System.Drawing.Size(1045, 490);
             this.dataGridView2.TabIndex = 50;
-            // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.Color.DarkKhaki;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(49, 19);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(957, 44);
-            this.label11.TabIndex = 49;
-            this.label11.Text = "검  색";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // 계정코드
             // 
@@ -133,10 +122,20 @@
             this.보관위치.HeaderText = "보관위치";
             this.보관위치.Name = "보관위치";
             // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.DarkKhaki;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(49, 19);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(957, 44);
+            this.label11.TabIndex = 49;
+            this.label11.Text = "검  색";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // textBox1
             // 
             this.textBox1.AllowDrop = true;
-            this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(124, 134);
             this.textBox1.Multiline = true;
@@ -157,7 +156,6 @@
             // textBox2
             // 
             this.textBox2.AllowDrop = true;
-            this.textBox2.Enabled = false;
             this.textBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(381, 129);
             this.textBox2.Multiline = true;
@@ -178,7 +176,6 @@
             // textBox6
             // 
             this.textBox6.AllowDrop = true;
-            this.textBox6.Enabled = false;
             this.textBox6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.Location = new System.Drawing.Point(662, 130);
             this.textBox6.Multiline = true;
@@ -219,7 +216,7 @@
             this.button2.Text = "수정";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // Form6
+            // Form6_search_or_modify_screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -235,7 +232,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label11);
-            this.Name = "Form6";
+            this.Name = "Form6_search_or_modify_screen";
             this.Text = "창고관리프로그램";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
