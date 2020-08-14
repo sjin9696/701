@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace xmlDataManager
 {
     partial class Form2_Receiving_screen
     {
@@ -286,7 +286,7 @@
             // 
             // productsBindingSource
             // 
-            this.productsBindingSource.DataSource = typeof(WindowsFormsApp1.Products);
+            this.productsBindingSource.DataSource = typeof(xmlDataManager);
             // 
             // label12
             // 

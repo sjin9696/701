@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace xmlDataManager
 {
     partial class Form6_search_or_modify_screen
     {

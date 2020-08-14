@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KB_Storagy_Project_WindowsFormsApp
+namespace xmlDataManager
 {
-    class Products
+    class Product
     {
         //코드
         public string product_code_number { get; set; }

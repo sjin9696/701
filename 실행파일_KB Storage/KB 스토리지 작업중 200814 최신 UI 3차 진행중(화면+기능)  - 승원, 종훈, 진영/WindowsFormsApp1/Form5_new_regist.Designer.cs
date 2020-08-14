@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace xmlDataManager
 {
     partial class Form5_new_regist
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace xmlDataManager
 {
     public partial class Form1_Factory_screen : Form
     {
@@ -38,8 +38,8 @@ namespace WindowsFormsApp1
         }
         public void IScustomData()
         {
-            Products product = new Products();
-            List<Products> productsList = new List<Products>();
+            Product product = new Product();
+            List<Product> productsList = new List<Product>();
 
             product.product_code_number = textBox1_product_code_number.Text;
             product.product_name = textBox2_product_name.Text;
@@ -57,6 +57,8 @@ namespace WindowsFormsApp1
 
             dataGridView_outProduct.DataSource = null;
             dataGridView_outProduct.DataSource = productsList;
+           
+            xmlDataManager.Save_File(productsList.ToString());
 
         }
 

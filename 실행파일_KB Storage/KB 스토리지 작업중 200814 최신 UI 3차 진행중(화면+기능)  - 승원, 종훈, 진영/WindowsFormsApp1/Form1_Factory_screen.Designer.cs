@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace xmlDataManager
 {
     partial class Form1_Factory_screen
     {
@@ -546,7 +546,7 @@
             // 
             // productsBindingSource
             // 
-            this.productsBindingSource.DataSource = typeof(WindowsFormsApp1.Products);
+            this.productsBindingSource.DataSource = typeof(xmlDataManager);
             // 
             // imageList1
             // 

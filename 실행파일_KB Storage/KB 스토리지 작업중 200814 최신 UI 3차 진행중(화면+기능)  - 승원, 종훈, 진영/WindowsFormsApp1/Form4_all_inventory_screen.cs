@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace xmlDataManager
 {
     public partial class Form4_all_inventory_screen : Form
     {

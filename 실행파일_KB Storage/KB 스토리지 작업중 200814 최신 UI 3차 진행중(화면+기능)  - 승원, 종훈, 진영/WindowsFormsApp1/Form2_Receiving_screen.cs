@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using xmlDataManager;
 
-namespace WindowsFormsApp1
+namespace xmlDataManager
 {
     public partial class Form2_Receiving_screen : Form
     {
@@ -38,8 +39,9 @@ namespace WindowsFormsApp1
             private void IScustomData() //그리드뷰 데이터 입력표시 함수
             {
                 Console.WriteLine(textBox2_product_name.Text + " textBox2_product_name.Text");
-                Products product = new Products();
-                List<Products> productsList = new List<Products>();
+                Product product = new Product();
+                List<Product> productsList = new List<Product>();
+
                 product.product_code_number = textBox1_product_code_number.Text;
                 product.product_name = textBox2_product_name.Text;
                 product.categorize_name = textBox3_categorize_name.Text;

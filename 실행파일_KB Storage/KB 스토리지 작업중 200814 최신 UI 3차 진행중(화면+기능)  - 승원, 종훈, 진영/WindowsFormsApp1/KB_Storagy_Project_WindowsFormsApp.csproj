@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{347B864B-C9D4-412C-8D21-8F04CFD55A93}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>KB_Storagy_Project_WindowsFormsApp</RootNamespace>
-    <AssemblyName>KB_Storagy_Project_WindowsFormsApp</AssemblyName>
+    <RootNamespace>xmlDataManager</RootNamespace>
+    <AssemblyName>xmlDataManager</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -36,7 +36,7 @@
     <StartupObject />
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>KB_Storagy_logo_20200814.ico</ApplicationIcon>
+    <ApplicationIcon>resouce\KB_Storagy_logo_20200814.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -91,6 +91,8 @@
     <Compile Include="Products.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserInfo.cs" />
+    <Compile Include="xmlDataManager.cs" />
     <EmbeddedResource Include="Form1_Factory_screen.resx">
       <DependentUpon>Form1_Factory_screen.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,8 +136,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="20200814_151857.ico" />
-    <Content Include="KB_Storagy_logo_20200814.ico" />
+    <Content Include="resouce\KB_Storagy_logo_20200814.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
