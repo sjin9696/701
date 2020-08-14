@@ -1,0 +1,32 @@
+C:\Users\User\Documents\GitHub\desktop-tutorial\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\User\Documents\GitHub\desktop-tutorial\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\User\Documents\GitHub\desktop-tutorial\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\User\Documents\GitHub\desktop-tutorial\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\desktop-tutorial\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\User\Documents\GitHub\desktop-tutorial\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\User\Documents\GitHub\desktop-tutorial\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\User\Documents\GitHub\desktop-tutorial\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\desktop-tutorial\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\User\Documents\GitHub\desktop-tutorial\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\User\Documents\GitHub\smartfacotry\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\User\Documents\GitHub\smartfacotry\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\User\Documents\GitHub\smartfacotry\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\User\Documents\GitHub\smartfacotry\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\smartfacotry\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\User\Documents\GitHub\smartfacotry\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\User\Documents\GitHub\smartfacotry\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\User\Documents\GitHub\smartfacotry\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\smartfacotry\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\User\Documents\GitHub\smartfacotry\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\c_sharp_work\KB 스토리지 작업중 200812 UI 1차 완성\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\c_sharp_work\KB 스토리지 작업중 200812 UI 1차 완성\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\c_sharp_work\KB 스토리지 작업중 200812 UI 1차 완성\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\c_sharp_work\KB 스토리지 작업중 200812 UI 1차 완성\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\c_sharp_work\KB 스토리지 작업중 200812 UI 1차 완성\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\c_sharp_work\KB 스토리지 작업중 200812 UI 1차 완성\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\c_sharp_work\KB 스토리지 작업중 200812 UI 1차 완성\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\c_sharp_work\KB 스토리지 작업중 200812 UI 1차 완성\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\c_sharp_work\KB 스토리지 작업중 200812 UI 1차 완성\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\c_sharp_work\KB 스토리지 작업중 200812 UI 1차 완성\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\c_sharp_work\KB 스토리지 작업중 200812 UI 1차 완성\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\c_sharp_work\KB 스토리지 작업중 200812 UI 1차 완성\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.login.resources
