@@ -41,16 +41,16 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox1_product_code_number = new System.Windows.Forms.TextBox();
+            this.textBox2_product_name = new System.Windows.Forms.TextBox();
+            this.textBox3_categorize_name = new System.Windows.Forms.TextBox();
+            this.textBox4_type_name = new System.Windows.Forms.TextBox();
+            this.textBox5_storage_name = new System.Windows.Forms.TextBox();
+            this.textBox6_customer_name = new System.Windows.Forms.TextBox();
+            this.textBox7_barcode_number = new System.Windows.Forms.TextBox();
+            this.textBox8_delivery_day = new System.Windows.Forms.TextBox();
+            this.textBox9_sales_number = new System.Windows.Forms.TextBox();
+            this.textBox10_cost_number = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -59,11 +59,10 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.button7 = new System.Windows.Forms.Button();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox11_inventory_stock_number = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.label1_login_worker_name = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.계정코드 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.계정명 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -85,6 +84,7 @@
             this.customernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.storagenameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.workernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -200,114 +200,114 @@
             this.label11.Text = "출고 화면";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // textBox1_product_code_number
             // 
-            this.textBox1.AllowDrop = true;
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(155, 132);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(122, 29);
-            this.textBox1.TabIndex = 1;
+            this.textBox1_product_code_number.AllowDrop = true;
+            this.textBox1_product_code_number.Enabled = false;
+            this.textBox1_product_code_number.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1_product_code_number.Location = new System.Drawing.Point(155, 132);
+            this.textBox1_product_code_number.Multiline = true;
+            this.textBox1_product_code_number.Name = "textBox1_product_code_number";
+            this.textBox1_product_code_number.Size = new System.Drawing.Size(122, 29);
+            this.textBox1_product_code_number.TabIndex = 1;
             // 
-            // textBox2
+            // textBox2_product_name
             // 
-            this.textBox2.AllowDrop = true;
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(155, 167);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(122, 29);
-            this.textBox2.TabIndex = 1;
+            this.textBox2_product_name.AllowDrop = true;
+            this.textBox2_product_name.Enabled = false;
+            this.textBox2_product_name.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2_product_name.Location = new System.Drawing.Point(155, 167);
+            this.textBox2_product_name.Multiline = true;
+            this.textBox2_product_name.Name = "textBox2_product_name";
+            this.textBox2_product_name.Size = new System.Drawing.Size(122, 29);
+            this.textBox2_product_name.TabIndex = 1;
             // 
-            // textBox3
+            // textBox3_categorize_name
             // 
-            this.textBox3.AllowDrop = true;
-            this.textBox3.Enabled = false;
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(155, 202);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(122, 29);
-            this.textBox3.TabIndex = 1;
+            this.textBox3_categorize_name.AllowDrop = true;
+            this.textBox3_categorize_name.Enabled = false;
+            this.textBox3_categorize_name.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3_categorize_name.Location = new System.Drawing.Point(155, 202);
+            this.textBox3_categorize_name.Multiline = true;
+            this.textBox3_categorize_name.Name = "textBox3_categorize_name";
+            this.textBox3_categorize_name.Size = new System.Drawing.Size(122, 29);
+            this.textBox3_categorize_name.TabIndex = 1;
             // 
-            // textBox4
+            // textBox4_type_name
             // 
-            this.textBox4.AllowDrop = true;
-            this.textBox4.Enabled = false;
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(156, 233);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(122, 29);
-            this.textBox4.TabIndex = 1;
+            this.textBox4_type_name.AllowDrop = true;
+            this.textBox4_type_name.Enabled = false;
+            this.textBox4_type_name.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4_type_name.Location = new System.Drawing.Point(156, 233);
+            this.textBox4_type_name.Multiline = true;
+            this.textBox4_type_name.Name = "textBox4_type_name";
+            this.textBox4_type_name.Size = new System.Drawing.Size(122, 29);
+            this.textBox4_type_name.TabIndex = 1;
             // 
-            // textBox5
+            // textBox5_storage_name
             // 
-            this.textBox5.AllowDrop = true;
-            this.textBox5.Enabled = false;
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(156, 268);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(122, 29);
-            this.textBox5.TabIndex = 1;
+            this.textBox5_storage_name.AllowDrop = true;
+            this.textBox5_storage_name.Enabled = false;
+            this.textBox5_storage_name.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5_storage_name.Location = new System.Drawing.Point(156, 268);
+            this.textBox5_storage_name.Multiline = true;
+            this.textBox5_storage_name.Name = "textBox5_storage_name";
+            this.textBox5_storage_name.Size = new System.Drawing.Size(122, 29);
+            this.textBox5_storage_name.TabIndex = 1;
             // 
-            // textBox6
+            // textBox6_customer_name
             // 
-            this.textBox6.AllowDrop = true;
-            this.textBox6.Enabled = false;
-            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(156, 303);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(122, 29);
-            this.textBox6.TabIndex = 1;
+            this.textBox6_customer_name.AllowDrop = true;
+            this.textBox6_customer_name.Enabled = false;
+            this.textBox6_customer_name.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6_customer_name.Location = new System.Drawing.Point(156, 303);
+            this.textBox6_customer_name.Multiline = true;
+            this.textBox6_customer_name.Name = "textBox6_customer_name";
+            this.textBox6_customer_name.Size = new System.Drawing.Size(122, 29);
+            this.textBox6_customer_name.TabIndex = 1;
             // 
-            // textBox7
+            // textBox7_barcode_number
             // 
-            this.textBox7.AllowDrop = true;
-            this.textBox7.Enabled = false;
-            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(156, 338);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(122, 29);
-            this.textBox7.TabIndex = 1;
+            this.textBox7_barcode_number.AllowDrop = true;
+            this.textBox7_barcode_number.Enabled = false;
+            this.textBox7_barcode_number.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7_barcode_number.Location = new System.Drawing.Point(156, 338);
+            this.textBox7_barcode_number.Multiline = true;
+            this.textBox7_barcode_number.Name = "textBox7_barcode_number";
+            this.textBox7_barcode_number.Size = new System.Drawing.Size(122, 29);
+            this.textBox7_barcode_number.TabIndex = 1;
             // 
-            // textBox8
+            // textBox8_delivery_day
             // 
-            this.textBox8.AllowDrop = true;
-            this.textBox8.Enabled = false;
-            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(156, 371);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(122, 29);
-            this.textBox8.TabIndex = 1;
+            this.textBox8_delivery_day.AllowDrop = true;
+            this.textBox8_delivery_day.Enabled = false;
+            this.textBox8_delivery_day.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8_delivery_day.Location = new System.Drawing.Point(156, 371);
+            this.textBox8_delivery_day.Multiline = true;
+            this.textBox8_delivery_day.Name = "textBox8_delivery_day";
+            this.textBox8_delivery_day.Size = new System.Drawing.Size(122, 29);
+            this.textBox8_delivery_day.TabIndex = 1;
             // 
-            // textBox9
+            // textBox9_sales_number
             // 
-            this.textBox9.AllowDrop = true;
-            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(156, 406);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(122, 29);
-            this.textBox9.TabIndex = 1;
-            this.textBox9.Text = "값을입력하시오";
+            this.textBox9_sales_number.AllowDrop = true;
+            this.textBox9_sales_number.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9_sales_number.Location = new System.Drawing.Point(156, 406);
+            this.textBox9_sales_number.Multiline = true;
+            this.textBox9_sales_number.Name = "textBox9_sales_number";
+            this.textBox9_sales_number.Size = new System.Drawing.Size(122, 29);
+            this.textBox9_sales_number.TabIndex = 1;
+            this.textBox9_sales_number.Text = "값을입력하시오";
             // 
-            // textBox10
+            // textBox10_cost_number
             // 
-            this.textBox10.AllowDrop = true;
-            this.textBox10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(156, 441);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(122, 29);
-            this.textBox10.TabIndex = 1;
+            this.textBox10_cost_number.AllowDrop = true;
+            this.textBox10_cost_number.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10_cost_number.Location = new System.Drawing.Point(156, 441);
+            this.textBox10_cost_number.Multiline = true;
+            this.textBox10_cost_number.Name = "textBox10_cost_number";
+            this.textBox10_cost_number.Size = new System.Drawing.Size(122, 29);
+            this.textBox10_cost_number.TabIndex = 1;
             // 
             // button2
             // 
@@ -418,16 +418,16 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // textBox15
+            // textBox11_inventory_stock_number
             // 
-            this.textBox15.AllowDrop = true;
-            this.textBox15.Enabled = false;
-            this.textBox15.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(381, 406);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(122, 29);
-            this.textBox15.TabIndex = 1;
+            this.textBox11_inventory_stock_number.AllowDrop = true;
+            this.textBox11_inventory_stock_number.Enabled = false;
+            this.textBox11_inventory_stock_number.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11_inventory_stock_number.Location = new System.Drawing.Point(381, 406);
+            this.textBox11_inventory_stock_number.Multiline = true;
+            this.textBox11_inventory_stock_number.Name = "textBox11_inventory_stock_number";
+            this.textBox11_inventory_stock_number.Size = new System.Drawing.Size(122, 29);
+            this.textBox11_inventory_stock_number.TabIndex = 1;
             // 
             // label18
             // 
@@ -439,18 +439,18 @@
             this.label18.TabIndex = 0;
             this.label18.Text = "재고수량";
             // 
-            // label15
+            // label1_login_worker_name
             // 
-            this.label15.AllowDrop = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label15.Location = new System.Drawing.Point(791, 74);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(174, 36);
-            this.label15.TabIndex = 4;
-            this.label15.Text = "님이 로그인 되었습니다.";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label15.Click += new System.EventHandler(this.label12_Click);
+            this.label1_login_worker_name.AllowDrop = true;
+            this.label1_login_worker_name.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1_login_worker_name.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label1_login_worker_name.Location = new System.Drawing.Point(791, 74);
+            this.label1_login_worker_name.Name = "label1_login_worker_name";
+            this.label1_login_worker_name.Size = new System.Drawing.Size(174, 36);
+            this.label1_login_worker_name.TabIndex = 4;
+            this.label1_login_worker_name.Text = "님이 로그인 되었습니다.";
+            this.label1_login_worker_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1_login_worker_name.Click += new System.EventHandler(this.label12_Click);
             // 
             // label14
             // 
@@ -461,10 +461,6 @@
             this.label14.Size = new System.Drawing.Size(50, 27);
             this.label14.TabIndex = 20;
             this.label14.Text = "검색";
-            // 
-            // productsBindingSource
-            // 
-            this.productsBindingSource.DataSource = typeof(WindowsFormsApp1.Products);
             // 
             // 계정코드
             // 
@@ -593,6 +589,10 @@
             this.workernameDataGridViewTextBoxColumn.Name = "workernameDataGridViewTextBoxColumn";
             this.workernameDataGridViewTextBoxColumn.Visible = false;
             // 
+            // productsBindingSource
+            // 
+            this.productsBindingSource.DataSource = typeof(WindowsFormsApp1.Products);
+            // 
             // Form1_Factory_screen
             // 
             this.AllowDrop = true;
@@ -604,23 +604,23 @@
             this.Controls.Add(this.label14);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label1_login_worker_name);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox10_cost_number);
+            this.Controls.Add(this.textBox11_inventory_stock_number);
+            this.Controls.Add(this.textBox9_sales_number);
+            this.Controls.Add(this.textBox8_delivery_day);
+            this.Controls.Add(this.textBox7_barcode_number);
+            this.Controls.Add(this.textBox6_customer_name);
+            this.Controls.Add(this.textBox5_storage_name);
+            this.Controls.Add(this.textBox4_type_name);
+            this.Controls.Add(this.textBox3_categorize_name);
+            this.Controls.Add(this.textBox2_product_name);
+            this.Controls.Add(this.textBox1_product_code_number);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label18);
@@ -658,27 +658,27 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBox2_product_name;
+        private System.Windows.Forms.TextBox textBox3_categorize_name;
+        private System.Windows.Forms.TextBox textBox4_type_name;
+        private System.Windows.Forms.TextBox textBox5_storage_name;
+        private System.Windows.Forms.TextBox textBox6_customer_name;
+        private System.Windows.Forms.TextBox textBox7_barcode_number;
+        private System.Windows.Forms.TextBox textBox8_delivery_day;
+        private System.Windows.Forms.TextBox textBox9_sales_number;
+        private System.Windows.Forms.TextBox textBox10_cost_number;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label12;
-        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox textBox1_product_code_number;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox11_inventory_stock_number;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label1_login_worker_name;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.BindingSource productsBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn 계정코드;
