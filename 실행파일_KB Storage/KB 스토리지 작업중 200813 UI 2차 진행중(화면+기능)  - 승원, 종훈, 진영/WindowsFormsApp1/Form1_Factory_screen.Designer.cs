@@ -50,19 +50,13 @@
             this.textBox7_barcode_number = new System.Windows.Forms.TextBox();
             this.textBox8_delivery_day = new System.Windows.Forms.TextBox();
             this.textBox9_sales_number = new System.Windows.Forms.TextBox();
-            this.textBox10_cost_number = new System.Windows.Forms.TextBox();
+            this.textBox10_money_number = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.button2_data_input = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.button7 = new System.Windows.Forms.Button();
-            this.textBox11_inventory_stock_number = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label1_login_worker_name = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.계정코드 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.계정명 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -85,6 +79,12 @@
             this.storagenameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.workernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.button1_search = new System.Windows.Forms.Button();
+            this.textBox11_inventory_stock_number = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label1_login_worker_name = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -299,15 +299,15 @@
             this.textBox9_sales_number.TabIndex = 1;
             this.textBox9_sales_number.Text = "값을입력하시오";
             // 
-            // textBox10_cost_number
+            // textBox10_money_number
             // 
-            this.textBox10_cost_number.AllowDrop = true;
-            this.textBox10_cost_number.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10_cost_number.Location = new System.Drawing.Point(156, 441);
-            this.textBox10_cost_number.Multiline = true;
-            this.textBox10_cost_number.Name = "textBox10_cost_number";
-            this.textBox10_cost_number.Size = new System.Drawing.Size(122, 29);
-            this.textBox10_cost_number.TabIndex = 1;
+            this.textBox10_money_number.AllowDrop = true;
+            this.textBox10_money_number.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10_money_number.Location = new System.Drawing.Point(156, 441);
+            this.textBox10_money_number.Multiline = true;
+            this.textBox10_money_number.Name = "textBox10_money_number";
+            this.textBox10_money_number.Size = new System.Drawing.Size(122, 29);
+            this.textBox10_money_number.TabIndex = 1;
             // 
             // button2
             // 
@@ -331,15 +331,16 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // button2_data_input
             // 
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(381, 463);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(83, 42);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "입력";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button2_data_input.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2_data_input.Location = new System.Drawing.Point(381, 463);
+            this.button2_data_input.Name = "button2_data_input";
+            this.button2_data_input.Size = new System.Drawing.Size(83, 42);
+            this.button2_data_input.TabIndex = 3;
+            this.button2_data_input.Text = "입력";
+            this.button2_data_input.UseVisualStyleBackColor = true;
+            this.button2_data_input.Click += new System.EventHandler(this.button_data_input_Click);
             // 
             // button6
             // 
@@ -395,72 +396,6 @@
             this.dataGridView2.RowTemplate.Height = 23;
             this.dataGridView2.Size = new System.Drawing.Size(930, 316);
             this.dataGridView2.TabIndex = 6;
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "KB Storage_brand_usage_#1_created_by_logaster (5).png");
-            this.imageList1.Images.SetKeyName(1, "search_32px.png");
-            this.imageList1.Images.SetKeyName(2, "로고.png");
-            // 
-            // button7
-            // 
-            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button7.Location = new System.Drawing.Point(192, 81);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(47, 45);
-            this.button7.TabIndex = 7;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // textBox11_inventory_stock_number
-            // 
-            this.textBox11_inventory_stock_number.AllowDrop = true;
-            this.textBox11_inventory_stock_number.Enabled = false;
-            this.textBox11_inventory_stock_number.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11_inventory_stock_number.Location = new System.Drawing.Point(381, 406);
-            this.textBox11_inventory_stock_number.Multiline = true;
-            this.textBox11_inventory_stock_number.Name = "textBox11_inventory_stock_number";
-            this.textBox11_inventory_stock_number.Size = new System.Drawing.Size(122, 29);
-            this.textBox11_inventory_stock_number.TabIndex = 1;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(301, 407);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(74, 22);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "재고수량";
-            // 
-            // label1_login_worker_name
-            // 
-            this.label1_login_worker_name.AllowDrop = true;
-            this.label1_login_worker_name.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1_login_worker_name.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label1_login_worker_name.Location = new System.Drawing.Point(791, 74);
-            this.label1_login_worker_name.Name = "label1_login_worker_name";
-            this.label1_login_worker_name.Size = new System.Drawing.Size(174, 36);
-            this.label1_login_worker_name.TabIndex = 4;
-            this.label1_login_worker_name.Text = "님이 로그인 되었습니다.";
-            this.label1_login_worker_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1_login_worker_name.Click += new System.EventHandler(this.label12_Click);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(130, 88);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(50, 27);
-            this.label14.TabIndex = 20;
-            this.label14.Text = "검색";
             // 
             // 계정코드
             // 
@@ -593,6 +528,72 @@
             // 
             this.productsBindingSource.DataSource = typeof(WindowsFormsApp1.Products);
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "KB Storage_brand_usage_#1_created_by_logaster (5).png");
+            this.imageList1.Images.SetKeyName(1, "search_32px.png");
+            this.imageList1.Images.SetKeyName(2, "로고.png");
+            // 
+            // button1_search
+            // 
+            this.button1_search.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1_search.BackgroundImage")));
+            this.button1_search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1_search.FlatAppearance.BorderSize = 0;
+            this.button1_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1_search.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button1_search.Location = new System.Drawing.Point(192, 81);
+            this.button1_search.Name = "button1_search";
+            this.button1_search.Size = new System.Drawing.Size(47, 45);
+            this.button1_search.TabIndex = 7;
+            this.button1_search.UseVisualStyleBackColor = true;
+            this.button1_search.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // textBox11_inventory_stock_number
+            // 
+            this.textBox11_inventory_stock_number.AllowDrop = true;
+            this.textBox11_inventory_stock_number.Enabled = false;
+            this.textBox11_inventory_stock_number.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11_inventory_stock_number.Location = new System.Drawing.Point(381, 406);
+            this.textBox11_inventory_stock_number.Multiline = true;
+            this.textBox11_inventory_stock_number.Name = "textBox11_inventory_stock_number";
+            this.textBox11_inventory_stock_number.Size = new System.Drawing.Size(122, 29);
+            this.textBox11_inventory_stock_number.TabIndex = 1;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(301, 407);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(74, 22);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "재고수량";
+            // 
+            // label1_login_worker_name
+            // 
+            this.label1_login_worker_name.AllowDrop = true;
+            this.label1_login_worker_name.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1_login_worker_name.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label1_login_worker_name.Location = new System.Drawing.Point(791, 74);
+            this.label1_login_worker_name.Name = "label1_login_worker_name";
+            this.label1_login_worker_name.Size = new System.Drawing.Size(174, 36);
+            this.label1_login_worker_name.TabIndex = 4;
+            this.label1_login_worker_name.Text = "님이 로그인 되었습니다.";
+            this.label1_login_worker_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1_login_worker_name.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(130, 88);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(50, 27);
+            this.label14.TabIndex = 20;
+            this.label14.Text = "검색";
+            // 
             // Form1_Factory_screen
             // 
             this.AllowDrop = true;
@@ -602,15 +603,15 @@
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(1053, 930);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button1_search);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label1_login_worker_name);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button2_data_input);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox10_cost_number);
+            this.Controls.Add(this.textBox10_money_number);
             this.Controls.Add(this.textBox11_inventory_stock_number);
             this.Controls.Add(this.textBox9_sales_number);
             this.Controls.Add(this.textBox8_delivery_day);
@@ -666,16 +667,16 @@
         private System.Windows.Forms.TextBox textBox7_barcode_number;
         private System.Windows.Forms.TextBox textBox8_delivery_day;
         private System.Windows.Forms.TextBox textBox9_sales_number;
-        private System.Windows.Forms.TextBox textBox10_cost_number;
+        private System.Windows.Forms.TextBox textBox10_money_number;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button2_data_input;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label12;
         public System.Windows.Forms.TextBox textBox1_product_code_number;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button1_search;
         private System.Windows.Forms.TextBox textBox11_inventory_stock_number;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label1_login_worker_name;

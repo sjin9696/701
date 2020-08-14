@@ -16,7 +16,7 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             ViewCustomTime();//시간표시 - 작업자 : 승원형 작업일시 : 200811
-            
+
         }
 
         private void label12_Click(object sender, EventArgs e)//라벨 클릭할때마다 
@@ -43,8 +43,8 @@ namespace WindowsFormsApp1
             product.storage_location = textBox10_storage_location.Text;
             product.worker = textBox11_worker.Text;
             productsList.Add(product);
-            Console.WriteLine(product.name+ " product.name");
-            
+            Console.WriteLine(product.name + " product.name");
+
             productsList.Add(product);
             dataGridView_st.DataSource = null;
             dataGridView_st.DataSource = productsList;
@@ -52,48 +52,8 @@ namespace WindowsFormsApp1
         private void ViewCustomTime()
         {
             System.DateTime.Now.ToString("yyyy");
-           // Console.WriteLine(DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss"));
+            // Console.WriteLine(DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss"));
             label12.Text = DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
         }
-        private void ViewCustomTime2()
-        {
-
-
-namespace WindowsFormsApp1
-    {
-        class Products
-        {
-            //코드
-            public string product_code_number { get; set; }
-            //품명
-            public string product_name { get; set; }
-            //분류
-            public string categorize_name { get; set; }
-            //규격
-            public string type_name { get; set; }
-            //보관위치
-            public string storage_name { get; set; }
-            //납품처
-            public string customer_name { get; set; }
-            //바코드
-            public string barcode_number { get; set; }
-            //입고일
-            public string delivery_day { get; set; }
-            //판매수량
-            public string sales_number { get; set; }
-            //금액
-            public string cost_number { get; set; }
-            //재고수량
-            public string inven_stock_number { get; set; }
-
-
-
-            //작업자
-            public string worker_name { get; set; }
-        }
-    }
-
-
-}
     }
 }

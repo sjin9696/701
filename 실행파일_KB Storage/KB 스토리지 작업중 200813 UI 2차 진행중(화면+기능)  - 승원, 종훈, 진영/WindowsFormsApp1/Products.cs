@@ -21,13 +21,15 @@ namespace WindowsFormsApp1
         //판매수량
         public string sales_number { get; set; }
         //금액
-        public string cost_number { get; set; }
+        public string money_number { get; set; }
         //입고일
         public string delivery_day { get; set; }
         //납품처
         public string customer_name { get; set; }
         //보관위치
         public string storage_name { get; set; }
+        //재고수량
+        public string inventory_stock_number { get; set; }
         //작업자
         public string worker_name { get; set; }
     }
