@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,5 +18,6 @@ namespace xmlDataManager
             //string fileName = @".ProductsList.xml";
             File.WriteAllText(@"./ProductsList.xml", contents);
         }
+
     }
 }
