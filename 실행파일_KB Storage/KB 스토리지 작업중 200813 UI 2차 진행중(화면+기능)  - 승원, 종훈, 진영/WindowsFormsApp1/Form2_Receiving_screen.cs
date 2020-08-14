@@ -15,7 +15,9 @@ namespace WindowsFormsApp1
         public Form2_Receiving_screen()
         {
             InitializeComponent();
-            label12.Text = DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
+            label12.AutoSize = true;
+            /* ViewCustomTime();//시간표시 - 작업자 : 승원형 작업일시 : 200811
+             * 내용 : 이동, 작업자 : 송진영, 작업일시 : 20200814 timer1_Tick함수로 이동함.*/
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -46,9 +48,8 @@ namespace WindowsFormsApp1
         {
             IScustomData();
         }
-        private void IScustomData()
+        private void IScustomData() //그리드뷰 데이터 입력표시 함수
         {
-
             Console.WriteLine(textBox2_product_name.Text + " textBox2_product_name.Text");
             Products product = new Products();
             List<Products> productsList = new List<Products>();
@@ -70,6 +71,14 @@ namespace WindowsFormsApp1
             dataGridView_outProduct.DataSource = productsList;
         }
 
-       
+        private void ViewCustomTime()//시간표시 - 작업자 : 승원형 작업일시 : 200811
+        {
+            label12.Text = DateTime.Now.ToString("yyyy년 MM월 dd일 HH:mm:ss");
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            ViewCustomTime();//시간표시 - 작업자 : 승원형 작업일시 : 200811
+        }
     }
 }

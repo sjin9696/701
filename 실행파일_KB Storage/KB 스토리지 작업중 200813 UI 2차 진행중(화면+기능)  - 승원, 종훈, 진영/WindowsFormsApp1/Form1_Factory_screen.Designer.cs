@@ -84,6 +84,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label1_login_worker_name = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_outProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -585,6 +586,10 @@
             this.label14.TabIndex = 20;
             this.label14.Text = "검색";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1_Factory_screen
             // 
             this.AllowDrop = true;
@@ -694,6 +699,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn customernameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn storagenameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn workernameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

@@ -74,5 +74,10 @@ namespace WindowsFormsApp1
             dataGridView_outProduct.DataSource = productsList;
 
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
