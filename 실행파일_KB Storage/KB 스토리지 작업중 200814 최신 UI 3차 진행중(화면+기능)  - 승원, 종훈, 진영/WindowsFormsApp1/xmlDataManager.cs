@@ -34,27 +34,33 @@ namespace xmlDataManager
         }
         public static string Read_Products()
         {
+            Save_File("");//파일 초기화.
+            Console.WriteLine("public static string Read_Products()>>>>");
             string productOutput = "";
-            
-            productOutput = XML("product", productOutput);
             
             foreach (var item in Products)
             {
-                productOutput += XML("code",item.product_code_number);
-                productOutput += XML("name",item.product_name);
-                productOutput += XML("categorize",item.categorize_name);
-                productOutput += XML("type",item.type_name);
-                productOutput += XML("barcode",item.barcode_number);
-                productOutput += XML("sales",item.sales_number);
-                productOutput += XML("money",item.money_number);
-                productOutput += XML("delivery",item.delivery_day);
-                productOutput += XML("customer",item.customer_name);
-                productOutput += XML("storage",item.storage_name);
-                productOutput += XML("inventory_stock",item.inventory_stock_number);
-                productOutput += XML("worker",item.worker_name);
+                productOutput += "<item>";
+                
+                productOutput += XML("code", item.product_code_number);
+                productOutput += XML("name", item.product_name);
+                productOutput += XML("categorize", item.categorize_name);
+                productOutput += XML("type", item.type_name);
+                productOutput += XML("barcode", item.barcode_number);
+                productOutput += XML("sales", item.sales_number);
+                productOutput += XML("money", item.money_number);
+                productOutput += XML("delivery", item.delivery_day);
+                productOutput += XML("customer", item.customer_name);
+                productOutput += XML("storage", item.storage_name);
+                productOutput += XML("inventory_stock", item.inventory_stock_number);
+                productOutput += XML("worker", item.worker_name);
 
-                productOutput = XML("item", productOutput);
+                productOutput += "</item>";
             }
+            //productOutput = XML("item", productOutput);
+            
+
+            productOutput = XML("product", productOutput);
             
             Console.WriteLine("public static string Read_Products()" + productOutput);
             Console.WriteLine("Products.Count" + Products.Count);
