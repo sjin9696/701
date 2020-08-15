@@ -6,12 +6,13 @@ using System.Reflection.Emit;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace xmlDataManager
 {
     static class tag
     {
-        public const string HEAD = "<HEAD>";
+        public const string XML_TOP = "product";
     }
    
     class xmlDataManager
@@ -21,6 +22,15 @@ namespace xmlDataManager
         public static List<Product> Products = new List<Product>();
         public static List<UserInfo> userInfos = new List<UserInfo>();
 
+        public static void Load_File()
+        {
+            string file_name = "./ProductsList.xml";
+            string xml_datas = File.ReadAllText(file_name);
+            XElement xElement = XElement.Parse(xml_datas);
+
+            foreach (var item in xElement.Descendants("")) ;
+
+        }
         public static void Save_File(string contents)
         {
             //string fileName = @".ProductsList.xml";
@@ -65,6 +75,8 @@ namespace xmlDataManager
             Console.WriteLine("Products.Count" + Products.Count);
             return productOutput;
         }
+
+        
     }
 
     
