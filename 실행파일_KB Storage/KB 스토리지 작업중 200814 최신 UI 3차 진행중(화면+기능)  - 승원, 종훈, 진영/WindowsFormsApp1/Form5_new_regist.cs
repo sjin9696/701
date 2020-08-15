@@ -24,7 +24,8 @@ namespace xmlDataManager
         public void IScustomData()
         {
             Product product = new Product();
-            List<Product> productsList = new List<Product>();
+
+            //List<Product> productsList = new List<Product>();
 
             product.product_code_number = textBox1_product_code_number.Text;
             product.product_name = textBox2_product_name.Text;
@@ -37,13 +38,17 @@ namespace xmlDataManager
             product.sales_number = textBox9_sales_number.Text;
             product.money_number = textBox10_money_number.Text;
             product.inventory_stock_number = textBox11_inventory_stock_number.Text;
-            productsList.Add(product);
+            //productsList.Add(product);
+            xmlDataManager.Products.Add(product);
+
             Console.WriteLine(product.product_name + " product.name");
 
             dataGridView_outProduct.DataSource = null;
-            dataGridView_outProduct.DataSource = productsList;
+            dataGridView_outProduct.DataSource = xmlDataManager.Products;
 
-            xmlDataManager.Save_File(productsList.ToString());
+            //xmlDataManager.Save_File(productsList.ToString());
+            xmlDataManager.Save_File(xmlDataManager.Read_Products());
+            Console.WriteLine("Products.Count " + xmlDataManager.Products.Count);
 
         }
 
