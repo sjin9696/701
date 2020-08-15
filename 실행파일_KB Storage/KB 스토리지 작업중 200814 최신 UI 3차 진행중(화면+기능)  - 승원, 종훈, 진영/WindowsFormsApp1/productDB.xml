@@ -2,7 +2,7 @@
   <item>
     <code>123</code>
     <name>123</name>
-    <categorize></categorize>
+    <categorize>123</categorize>
     <type></type>
     <barcode></barcode>
     <sales></sales>
@@ -14,9 +14,9 @@
     <worker></worker>
   </item>
   <item>
-    <code>222</code>
-    <name>222</name>
-    <categorize></categorize>
+    <code>22222</code>
+    <name>22222</name>
+    <categorize>123</categorize>
     <type></type>
     <barcode></barcode>
     <sales></sales>
@@ -28,9 +28,37 @@
     <worker></worker>
   </item>
   <item>
-    <code>333</code>
-    <name>333</name>
-    <categorize></categorize>
+    <code>3333333</code>
+    <name>22222</name>
+    <categorize>123</categorize>
+    <type></type>
+    <barcode></barcode>
+    <sales></sales>
+    <money></money>
+    <delivery></delivery>
+    <customer></customer>
+    <storage></storage>
+    <inventory_stock></inventory_stock>
+    <worker></worker>
+  </item>
+  <item>
+    <code>444444</code>
+    <name>22222</name>
+    <categorize>123</categorize>
+    <type></type>
+    <barcode></barcode>
+    <sales></sales>
+    <money></money>
+    <delivery></delivery>
+    <customer></customer>
+    <storage></storage>
+    <inventory_stock></inventory_stock>
+    <worker></worker>
+  </item>
+  <item>
+    <code>555555555</code>
+    <name>22222</name>
+    <categorize>123</categorize>
     <type></type>
     <barcode></barcode>
     <sales></sales>
