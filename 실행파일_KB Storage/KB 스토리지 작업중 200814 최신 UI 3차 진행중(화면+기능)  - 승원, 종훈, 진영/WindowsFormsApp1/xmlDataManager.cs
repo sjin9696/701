@@ -34,6 +34,8 @@ namespace xmlDataManager
         }
         public static string Read_Products()
         {
+            //Read_Products() 호출될때 마다. 파일을 완전 덮어씌워서 작성함...
+            //추가가 아님. 나중에 방안을 찾아보자.
             Save_File("");//파일 초기화.
             Console.WriteLine("public static string Read_Products()>>>>");
             string productOutput = "";
@@ -57,7 +59,7 @@ namespace xmlDataManager
                 productOutput += XML("item", element);
             }
             
-            productOutput = XML("product", productOutput);
+            productOutput = XML("product", productOutput); //마지막으로 닫기 위해서.
             
             Console.WriteLine("public static string Read_Products()" + productOutput);
             Console.WriteLine("Products.Count" + Products.Count);
