@@ -1,0 +1,17 @@
+﻿<product>
+  <!--1개 아이탬 구성 기준-->
+  <item>
+    <code> </code>
+    <name> </name>
+    <categorize> </categorize>
+    <type> </type>
+    <barcode> </barcode>
+    <sales> </sales>
+    <money> </money>
+    <delivery> </delivery>
+    <customer> </customer>
+    <storage> </storage>
+    <inventory_stock> </inventory_stock>
+    <worker> </worker>
+  </item>
+</product>
