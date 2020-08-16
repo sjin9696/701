@@ -15,6 +15,8 @@ namespace xmlDataManager
         public Form5_new_regist()
         {
             InitializeComponent();
+            dataGridView_outProduct.DataSource = null;
+            dataGridView_outProduct.DataSource = xmlDataManager.Products; //grid에 추가.
         }
 
         private void button_input_Click(object sender, EventArgs e)

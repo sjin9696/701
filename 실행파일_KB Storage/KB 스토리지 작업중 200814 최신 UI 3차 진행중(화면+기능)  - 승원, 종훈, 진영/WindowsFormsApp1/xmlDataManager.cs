@@ -10,26 +10,39 @@ using System.Xml.Linq;
 
 namespace xmlDataManager
 {
-    static class tag
-    {
-        public const string XML_TOP = "product";
-    }
-   
     class xmlDataManager
     {
-        
-
         public static List<Product> Products = new List<Product>();
         public static List<UserInfo> userInfos = new List<UserInfo>();
 
         public static void Load_File()
         {
-            string file_name = "./ProductsList.xml";
+            string file_name = "./ProductsList.xml"; //파일 경로.
             string xml_datas = File.ReadAllText(file_name);
             XElement xElement = XElement.Parse(xml_datas);
-
-            foreach (var item in xElement.Descendants("")) ;
-
+            
+            foreach (var item in xElement.Descendants("item"))
+            {
+                Product product = new Product()
+                {
+                    product_code_number = item.Element("code").Value,
+                    product_name = item.Element("name").Value,
+                    categorize_name = item.Element("categorize").Value,
+                    type_name = item.Element("type").Value,
+                    barcode_number = item.Element("barcode").Value,
+                    sales_number = item.Element("sales").Value,
+                    money_number = item.Element("money").Value,
+                    delivery_day = item.Element("delivery").Value,
+                    customer_name = item.Element("customer").Value,
+                    storage_name = item.Element("storage").Value,
+                    inventory_stock_number = item.Element("inventory_stock").Value,
+                    worker_name = item.Element("worker").Value
+                };
+                
+                Products.Add(product);
+                Console.WriteLine("foreach Products.Count" + Products.Count);
+            }
+            Console.WriteLine("TOTAL_ Products.Count" + Products.Count);
         }
         public static void Save_File(string contents)
         {
@@ -68,16 +81,11 @@ namespace xmlDataManager
 
                 productOutput += XML("item", element);
             }
-            
             productOutput = XML("product", productOutput); //마지막으로 닫기 위해서.
             
             Console.WriteLine("public static string Read_Products()" + productOutput);
             Console.WriteLine("Products.Count" + Products.Count);
             return productOutput;
         }
-
-        
     }
-
-    
 }
