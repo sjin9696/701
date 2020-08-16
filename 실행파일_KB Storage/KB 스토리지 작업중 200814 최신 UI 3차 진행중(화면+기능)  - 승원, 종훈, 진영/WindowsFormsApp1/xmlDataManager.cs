@@ -20,7 +20,7 @@ namespace xmlDataManager
             string file_name = "./ProductsList.xml"; //파일 경로.
             string xml_datas = File.ReadAllText(file_name);
             XElement xElement = XElement.Parse(xml_datas);
-            
+            Products.Clear();
             foreach (var item in xElement.Descendants("item"))
             {
                 Product product = new Product()

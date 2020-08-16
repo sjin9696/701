@@ -32,29 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2_Receiving_screen));
             this.button7 = new System.Windows.Forms.Button();
             this.dataGridView_outProduct = new System.Windows.Forms.DataGridView();
-            this.계정코드 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.계정명 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.관리번호 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.금액 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.입고일 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.납품처 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.보관위치 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productcodenumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categorizenameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.typenameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.barcodenumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.salesnumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.moneynumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deliverydayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.customernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.storagenameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.inventorystocknumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.workernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label12 = new System.Windows.Forms.Label();
             this.button_input = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -89,6 +66,17 @@
             this.label14 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.계정코드 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.계정명 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.관리번호 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.금액 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.입고일 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.납품처 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.보관위치 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_outProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -120,173 +108,14 @@
             this.금액,
             this.입고일,
             this.납품처,
-            this.보관위치,
-            this.productcodenumberDataGridViewTextBoxColumn,
-            this.productnameDataGridViewTextBoxColumn,
-            this.categorizenameDataGridViewTextBoxColumn,
-            this.typenameDataGridViewTextBoxColumn,
-            this.barcodenumberDataGridViewTextBoxColumn,
-            this.salesnumberDataGridViewTextBoxColumn,
-            this.moneynumberDataGridViewTextBoxColumn,
-            this.deliverydayDataGridViewTextBoxColumn,
-            this.customernameDataGridViewTextBoxColumn,
-            this.storagenameDataGridViewTextBoxColumn,
-            this.inventorystocknumberDataGridViewTextBoxColumn,
-            this.workernameDataGridViewTextBoxColumn});
+            this.보관위치});
             this.dataGridView_outProduct.DataSource = this.productsBindingSource;
             this.dataGridView_outProduct.Location = new System.Drawing.Point(76, 529);
             this.dataGridView_outProduct.Name = "dataGridView_outProduct";
+            this.dataGridView_outProduct.RowHeadersWidth = 30;
             this.dataGridView_outProduct.RowTemplate.Height = 23;
             this.dataGridView_outProduct.Size = new System.Drawing.Size(915, 304);
             this.dataGridView_outProduct.TabIndex = 47;
-            // 
-            // 계정코드
-            // 
-            this.계정코드.DataPropertyName = "product_code_number";
-            this.계정코드.HeaderText = "코드";
-            this.계정코드.Name = "계정코드";
-            // 
-            // 계정명
-            // 
-            this.계정명.DataPropertyName = "product_name";
-            this.계정명.HeaderText = "품명";
-            this.계정명.Name = "계정명";
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "categorize_name";
-            this.Column1.HeaderText = "규격";
-            this.Column1.Name = "Column1";
-            // 
-            // 관리번호
-            // 
-            this.관리번호.DataPropertyName = "type_name";
-            this.관리번호.HeaderText = "분류";
-            this.관리번호.Name = "관리번호";
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "barcode_number";
-            this.Column2.HeaderText = "바코드";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "sales_number";
-            this.Column3.HeaderText = "판매수량";
-            this.Column3.Name = "Column3";
-            // 
-            // 금액
-            // 
-            this.금액.DataPropertyName = "money_number";
-            this.금액.HeaderText = "금액";
-            this.금액.Name = "금액";
-            // 
-            // 입고일
-            // 
-            this.입고일.DataPropertyName = "delivery_day";
-            this.입고일.HeaderText = "입고일";
-            this.입고일.Name = "입고일";
-            // 
-            // 납품처
-            // 
-            this.납품처.DataPropertyName = "customer_name";
-            this.납품처.HeaderText = "납품처";
-            this.납품처.Name = "납품처";
-            // 
-            // 보관위치
-            // 
-            this.보관위치.DataPropertyName = "storage_name";
-            this.보관위치.HeaderText = "보관위치";
-            this.보관위치.Name = "보관위치";
-            // 
-            // productcodenumberDataGridViewTextBoxColumn
-            // 
-            this.productcodenumberDataGridViewTextBoxColumn.DataPropertyName = "product_code_number";
-            this.productcodenumberDataGridViewTextBoxColumn.HeaderText = "product_code_number";
-            this.productcodenumberDataGridViewTextBoxColumn.Name = "productcodenumberDataGridViewTextBoxColumn";
-            this.productcodenumberDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // productnameDataGridViewTextBoxColumn
-            // 
-            this.productnameDataGridViewTextBoxColumn.DataPropertyName = "product_name";
-            this.productnameDataGridViewTextBoxColumn.HeaderText = "product_name";
-            this.productnameDataGridViewTextBoxColumn.Name = "productnameDataGridViewTextBoxColumn";
-            this.productnameDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // categorizenameDataGridViewTextBoxColumn
-            // 
-            this.categorizenameDataGridViewTextBoxColumn.DataPropertyName = "categorize_name";
-            this.categorizenameDataGridViewTextBoxColumn.HeaderText = "categorize_name";
-            this.categorizenameDataGridViewTextBoxColumn.Name = "categorizenameDataGridViewTextBoxColumn";
-            this.categorizenameDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // typenameDataGridViewTextBoxColumn
-            // 
-            this.typenameDataGridViewTextBoxColumn.DataPropertyName = "type_name";
-            this.typenameDataGridViewTextBoxColumn.HeaderText = "type_name";
-            this.typenameDataGridViewTextBoxColumn.Name = "typenameDataGridViewTextBoxColumn";
-            this.typenameDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // barcodenumberDataGridViewTextBoxColumn
-            // 
-            this.barcodenumberDataGridViewTextBoxColumn.DataPropertyName = "barcode_number";
-            this.barcodenumberDataGridViewTextBoxColumn.HeaderText = "barcode_number";
-            this.barcodenumberDataGridViewTextBoxColumn.Name = "barcodenumberDataGridViewTextBoxColumn";
-            this.barcodenumberDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // salesnumberDataGridViewTextBoxColumn
-            // 
-            this.salesnumberDataGridViewTextBoxColumn.DataPropertyName = "sales_number";
-            this.salesnumberDataGridViewTextBoxColumn.HeaderText = "sales_number";
-            this.salesnumberDataGridViewTextBoxColumn.Name = "salesnumberDataGridViewTextBoxColumn";
-            this.salesnumberDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // moneynumberDataGridViewTextBoxColumn
-            // 
-            this.moneynumberDataGridViewTextBoxColumn.DataPropertyName = "money_number";
-            this.moneynumberDataGridViewTextBoxColumn.HeaderText = "money_number";
-            this.moneynumberDataGridViewTextBoxColumn.Name = "moneynumberDataGridViewTextBoxColumn";
-            this.moneynumberDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // deliverydayDataGridViewTextBoxColumn
-            // 
-            this.deliverydayDataGridViewTextBoxColumn.DataPropertyName = "delivery_day";
-            this.deliverydayDataGridViewTextBoxColumn.HeaderText = "delivery_day";
-            this.deliverydayDataGridViewTextBoxColumn.Name = "deliverydayDataGridViewTextBoxColumn";
-            this.deliverydayDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // customernameDataGridViewTextBoxColumn
-            // 
-            this.customernameDataGridViewTextBoxColumn.DataPropertyName = "customer_name";
-            this.customernameDataGridViewTextBoxColumn.HeaderText = "customer_name";
-            this.customernameDataGridViewTextBoxColumn.Name = "customernameDataGridViewTextBoxColumn";
-            this.customernameDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // storagenameDataGridViewTextBoxColumn
-            // 
-            this.storagenameDataGridViewTextBoxColumn.DataPropertyName = "storage_name";
-            this.storagenameDataGridViewTextBoxColumn.HeaderText = "storage_name";
-            this.storagenameDataGridViewTextBoxColumn.Name = "storagenameDataGridViewTextBoxColumn";
-            this.storagenameDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // inventorystocknumberDataGridViewTextBoxColumn
-            // 
-            this.inventorystocknumberDataGridViewTextBoxColumn.DataPropertyName = "inventory_stock_number";
-            this.inventorystocknumberDataGridViewTextBoxColumn.HeaderText = "inventory_stock_number";
-            this.inventorystocknumberDataGridViewTextBoxColumn.Name = "inventorystocknumberDataGridViewTextBoxColumn";
-            this.inventorystocknumberDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // workernameDataGridViewTextBoxColumn
-            // 
-            this.workernameDataGridViewTextBoxColumn.DataPropertyName = "worker_name";
-            this.workernameDataGridViewTextBoxColumn.HeaderText = "worker_name";
-            this.workernameDataGridViewTextBoxColumn.Name = "workernameDataGridViewTextBoxColumn";
-            this.workernameDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // productsBindingSource
-            // 
-            this.productsBindingSource.DataSource = typeof(xmlDataManager);
             // 
             // label12
             // 
@@ -633,6 +462,71 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // productsBindingSource
+            // 
+            this.productsBindingSource.DataSource = typeof(xmlDataManager);
+            // 
+            // 계정코드
+            // 
+            this.계정코드.DataPropertyName = "product_code_number";
+            this.계정코드.HeaderText = "코드";
+            this.계정코드.Name = "계정코드";
+            this.계정코드.Width = 70;
+            // 
+            // 계정명
+            // 
+            this.계정명.DataPropertyName = "product_name";
+            this.계정명.HeaderText = "품명";
+            this.계정명.Name = "계정명";
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "categorize_name";
+            this.Column1.HeaderText = "규격";
+            this.Column1.Name = "Column1";
+            // 
+            // 관리번호
+            // 
+            this.관리번호.DataPropertyName = "type_name";
+            this.관리번호.HeaderText = "분류";
+            this.관리번호.Name = "관리번호";
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "barcode_number";
+            this.Column2.HeaderText = "바코드";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "sales_number";
+            this.Column3.HeaderText = "판매수량";
+            this.Column3.Name = "Column3";
+            // 
+            // 금액
+            // 
+            this.금액.DataPropertyName = "money_number";
+            this.금액.HeaderText = "금액";
+            this.금액.Name = "금액";
+            // 
+            // 입고일
+            // 
+            this.입고일.DataPropertyName = "delivery_day";
+            this.입고일.HeaderText = "입고일";
+            this.입고일.Name = "입고일";
+            // 
+            // 납품처
+            // 
+            this.납품처.DataPropertyName = "customer_name";
+            this.납품처.HeaderText = "납품처";
+            this.납품처.Name = "납품처";
+            // 
+            // 보관위치
+            // 
+            this.보관위치.DataPropertyName = "storage_name";
+            this.보관위치.HeaderText = "보관위치";
+            this.보관위치.Name = "보관위치";
+            // 
             // Form2_Receiving_screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -721,16 +615,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 계정코드;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 계정명;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 관리번호;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 금액;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 입고일;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 납품처;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 보관위치;
         private System.Windows.Forms.DataGridViewTextBoxColumn productcodenumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn categorizenameDataGridViewTextBoxColumn;
@@ -745,5 +629,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn workernameDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource productsBindingSource;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 계정코드;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 계정명;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 관리번호;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 금액;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 입고일;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 납품처;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 보관위치;
     }
 }

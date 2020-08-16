@@ -79,6 +79,9 @@
             this.dataGridView_all_incentory.RowTemplate.Height = 23;
             this.dataGridView_all_incentory.Size = new System.Drawing.Size(951, 584);
             this.dataGridView_all_incentory.TabIndex = 48;
+            this.dataGridView_all_incentory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_all_incentory_CellContentClick);
+            this.dataGridView_all_incentory.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView_all_incentory_ColumnHeaderMouseClick);
+            this.dataGridView_all_incentory.ColumnSortModeChanged += new System.Windows.Forms.DataGridViewColumnEventHandler(this.dataGridView_all_incentory_ColumnSortModeChanged);
             // 
             // 계정코드
             // 
