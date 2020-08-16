@@ -142,5 +142,8 @@
     <Content Include="productsDB.xml" />
     <Content Include="resouce\KB_Storagy_logo_20200814.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

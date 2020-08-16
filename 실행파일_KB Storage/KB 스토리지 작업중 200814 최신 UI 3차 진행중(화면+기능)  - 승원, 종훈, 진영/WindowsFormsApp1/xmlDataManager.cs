@@ -84,5 +84,9 @@ namespace xmlDataManager
             Console.WriteLine("Products.Count" + Products.Count);
             return productOutput;
         }
+        public static void select()
+        {
+            //Products.Find(x => x.product_code_number.Contains("001"));
+        }
     }
 }

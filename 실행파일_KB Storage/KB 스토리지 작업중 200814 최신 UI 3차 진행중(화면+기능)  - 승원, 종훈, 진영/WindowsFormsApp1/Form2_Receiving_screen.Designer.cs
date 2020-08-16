@@ -196,7 +196,7 @@
             // button_input
             // 
             this.button_input.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_input.Location = new System.Drawing.Point(364, 485);
+            this.button_input.Location = new System.Drawing.Point(332, 477);
             this.button_input.Name = "button_input";
             this.button_input.Size = new System.Drawing.Size(83, 42);
             this.button_input.TabIndex = 45;
