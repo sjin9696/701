@@ -15,7 +15,7 @@ namespace xmlDataManager
         public Form6_search_or_modify_screen()
         {
             InitializeComponent();
-            dataGridView_outProduct.DataSource = xmlDataManager.Products;
+            dataGridView_all_incentory.DataSource = xmlDataManager.Products;
         }
     }
 }
