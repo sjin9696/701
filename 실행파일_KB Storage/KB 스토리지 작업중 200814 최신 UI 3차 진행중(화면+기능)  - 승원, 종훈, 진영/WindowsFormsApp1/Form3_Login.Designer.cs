@@ -30,59 +30,62 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3_Login));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.textBox_login_id = new System.Windows.Forms.TextBox();
+            this.button_login = new System.Windows.Forms.Button();
+            this.textBox_login_pw = new System.Windows.Forms.TextBox();
+            this.button_admin_login = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBox_login_id
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(86, 220);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(308, 33);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "아이디";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_login_id.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_login_id.Location = new System.Drawing.Point(86, 220);
+            this.textBox_login_id.Multiline = true;
+            this.textBox_login_id.Name = "textBox_login_id";
+            this.textBox_login_id.Size = new System.Drawing.Size(308, 33);
+            this.textBox_login_id.TabIndex = 1;
+            this.textBox_login_id.Text = "아이디";
+            this.textBox_login_id.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_login_id.Click += new System.EventHandler(this.textBox_login_id_Click);
+            this.textBox_login_id.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // button1
+            // button_login
             // 
-            this.button1.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.Location = new System.Drawing.Point(68, 325);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(339, 44);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "로그인하기";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button_login.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button_login.Location = new System.Drawing.Point(68, 325);
+            this.button_login.Name = "button_login";
+            this.button_login.Size = new System.Drawing.Size(339, 44);
+            this.button_login.TabIndex = 2;
+            this.button_login.Text = "로그인하기";
+            this.button_login.UseVisualStyleBackColor = true;
+            this.button_login.Click += new System.EventHandler(this.button_login_Click);
             // 
-            // textBox2
+            // textBox_login_pw
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(86, 272);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(308, 30);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "비밀번호";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_login_pw.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_login_pw.Location = new System.Drawing.Point(86, 272);
+            this.textBox_login_pw.Multiline = true;
+            this.textBox_login_pw.Name = "textBox_login_pw";
+            this.textBox_login_pw.PasswordChar = '*';
+            this.textBox_login_pw.Size = new System.Drawing.Size(308, 30);
+            this.textBox_login_pw.TabIndex = 1;
+            this.textBox_login_pw.Text = "비밀번호";
+            this.textBox_login_pw.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_login_pw.Click += new System.EventHandler(this.textBox_login_pw_Click);
             // 
-            // button2
+            // button_admin_login
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(436, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(57, 57);
-            this.button2.TabIndex = 3;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button_admin_login.FlatAppearance.BorderSize = 0;
+            this.button_admin_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_admin_login.Image = ((System.Drawing.Image)(resources.GetObject("button_admin_login.Image")));
+            this.button_admin_login.Location = new System.Drawing.Point(436, 12);
+            this.button_admin_login.Name = "button_admin_login";
+            this.button_admin_login.Size = new System.Drawing.Size(57, 57);
+            this.button_admin_login.TabIndex = 3;
+            this.button_admin_login.UseVisualStyleBackColor = true;
+            this.button_admin_login.Click += new System.EventHandler(this.button_admin_login_Click);
             // 
             // button3
             // 
@@ -110,10 +113,10 @@
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(505, 443);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button_admin_login);
+            this.Controls.Add(this.button_login);
+            this.Controls.Add(this.textBox_login_pw);
+            this.Controls.Add(this.textBox_login_id);
             this.Name = "Form3_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "창고관리프로그램";
@@ -124,10 +127,10 @@
 
         #endregion
 
-        public System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        public System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button2;
+        public System.Windows.Forms.TextBox textBox_login_id;
+        private System.Windows.Forms.Button button_login;
+        public System.Windows.Forms.TextBox textBox_login_pw;
+        private System.Windows.Forms.Button button_admin_login;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ImageList imageList1;
     }
