@@ -18,6 +18,7 @@ namespace xmlDataManager
             System.DateTime.Now.ToString("yyyy");
             Console.WriteLine(DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss"));
             label12.Text = DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
+            dataGridView_outProduct.DataSource = xmlDataManager.Products;
 
         }
 

@@ -29,8 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6_search_or_modify_screen));
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label11 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.dataGridView_outProduct = new System.Windows.Forms.DataGridView();
             this.계정코드 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.계정명 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,36 +49,8 @@
             this.입고일 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.납품처 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.보관위치 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_outProduct)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.계정코드,
-            this.계정명,
-            this.Column1,
-            this.관리번호,
-            this.Column2,
-            this.Column3,
-            this.금액,
-            this.입고일,
-            this.납품처,
-            this.보관위치});
-            this.dataGridView2.Location = new System.Drawing.Point(12, 195);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 23;
-            this.dataGridView2.Size = new System.Drawing.Size(1045, 490);
-            this.dataGridView2.TabIndex = 50;
             // 
             // label11
             // 
@@ -82,56 +62,6 @@
             this.label11.TabIndex = 49;
             this.label11.Text = "검  색";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // 계정코드
-            // 
-            this.계정코드.HeaderText = "코드";
-            this.계정코드.Name = "계정코드";
-            // 
-            // 계정명
-            // 
-            this.계정명.HeaderText = "품명";
-            this.계정명.Name = "계정명";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "규격";
-            this.Column1.Name = "Column1";
-            // 
-            // 관리번호
-            // 
-            this.관리번호.HeaderText = "분류";
-            this.관리번호.Name = "관리번호";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "바코드";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "판매수량";
-            this.Column3.Name = "Column3";
-            // 
-            // 금액
-            // 
-            this.금액.HeaderText = "금액";
-            this.금액.Name = "금액";
-            // 
-            // 입고일
-            // 
-            this.입고일.HeaderText = "입고일";
-            this.입고일.Name = "입고일";
-            // 
-            // 납품처
-            // 
-            this.납품처.HeaderText = "납품처";
-            this.납품처.Name = "납품처";
-            // 
-            // 보관위치
-            // 
-            this.보관위치.HeaderText = "보관위치";
-            this.보관위치.Name = "보관위치";
             // 
             // textBox1
             // 
@@ -219,12 +149,93 @@
             this.button2.Text = "수정";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // Form6
+            // dataGridView_outProduct
+            // 
+            this.dataGridView_outProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_outProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.계정코드,
+            this.계정명,
+            this.Column1,
+            this.관리번호,
+            this.Column2,
+            this.Column3,
+            this.금액,
+            this.입고일,
+            this.납품처,
+            this.보관위치});
+            this.dataGridView_outProduct.Location = new System.Drawing.Point(55, 181);
+            this.dataGridView_outProduct.Name = "dataGridView_outProduct";
+            this.dataGridView_outProduct.RowTemplate.Height = 23;
+            this.dataGridView_outProduct.Size = new System.Drawing.Size(951, 491);
+            this.dataGridView_outProduct.TabIndex = 84;
+            // 
+            // 계정코드
+            // 
+            this.계정코드.DataPropertyName = "product_code_number";
+            this.계정코드.HeaderText = "코드";
+            this.계정코드.Name = "계정코드";
+            // 
+            // 계정명
+            // 
+            this.계정명.DataPropertyName = "product_name";
+            this.계정명.HeaderText = "품명";
+            this.계정명.Name = "계정명";
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "categorize_name";
+            this.Column1.HeaderText = "규격";
+            this.Column1.Name = "Column1";
+            // 
+            // 관리번호
+            // 
+            this.관리번호.DataPropertyName = "type_name";
+            this.관리번호.HeaderText = "분류";
+            this.관리번호.Name = "관리번호";
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "barcode_number";
+            this.Column2.HeaderText = "바코드";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "sales_number";
+            this.Column3.HeaderText = "판매수량";
+            this.Column3.Name = "Column3";
+            // 
+            // 금액
+            // 
+            this.금액.DataPropertyName = "money_number";
+            this.금액.HeaderText = "금액";
+            this.금액.Name = "금액";
+            // 
+            // 입고일
+            // 
+            this.입고일.DataPropertyName = "delivery_day";
+            this.입고일.HeaderText = "입고일";
+            this.입고일.Name = "입고일";
+            // 
+            // 납품처
+            // 
+            this.납품처.DataPropertyName = "customer_name";
+            this.납품처.HeaderText = "납품처";
+            this.납품처.Name = "납품처";
+            // 
+            // 보관위치
+            // 
+            this.보관위치.DataPropertyName = "storage_name";
+            this.보관위치.HeaderText = "보관위치";
+            this.보관위치.Name = "보관위치";
+            // 
+            // Form6_search_or_modify_screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(1066, 770);
+            this.Controls.Add(this.dataGridView_outProduct);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.textBox6);
@@ -233,20 +244,26 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label11);
-            this.Name = "Form6";
+            this.Name = "Form6_search_or_modify_screen";
             this.Text = "창고관리프로그램";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_outProduct)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label11;
+        public System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridView dataGridView_outProduct;
         private System.Windows.Forms.DataGridViewTextBoxColumn 계정코드;
         private System.Windows.Forms.DataGridViewTextBoxColumn 계정명;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
@@ -257,13 +274,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn 입고일;
         private System.Windows.Forms.DataGridViewTextBoxColumn 납품처;
         private System.Windows.Forms.DataGridViewTextBoxColumn 보관위치;
-        public System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button2;
     }
 }
