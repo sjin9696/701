@@ -20,14 +20,23 @@ namespace xmlDataManager
         private void button_login_Click(object sender, EventArgs e)
         {
             xmlDataManager.Load_File();
-            Form2_Receiving_screen form2 = new Form2_Receiving_screen();
+            Form1_Factory_screen Factory_screen = new Form1_Factory_screen();
+            Form2_Receiving_screen Receiving_screen = new Form2_Receiving_screen();
 
-            bool check = userDataManager.Login_Check(textBox_login_id.Text, textBox_login_pw.Text);
+            string check = userDataManager.Login_Check(textBox_login_id.Text, textBox_login_pw.Text);
             Console.WriteLine("check : "+check);
-            if(check)
+            switch(check)
             {
-                Console.WriteLine(">>>>>>>>check : " + check);
-                form2.ShowDialog();
+                case "관리자":
+                    Factory_screen.ShowDialog();
+                    break;
+                case "입고담당자":
+                    Receiving_screen.ShowDialog();
+                    break;
+                default:
+                    MessageBox.Show("아이디 비밀번호를 확인하세요!");
+                    Console.WriteLine(">>>>>>>>check : " + check);
+                    break;
             }
         }
 
