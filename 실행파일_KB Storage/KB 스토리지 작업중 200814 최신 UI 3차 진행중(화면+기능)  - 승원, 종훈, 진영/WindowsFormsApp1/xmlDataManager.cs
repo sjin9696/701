@@ -13,7 +13,6 @@ namespace xmlDataManager
     class xmlDataManager
     {
         public static List<Product> Products = new List<Product>();
-        public static List<UserInfo> userInfos = new List<UserInfo>();
 
         public static void Load_File()
         {
@@ -49,8 +48,6 @@ namespace xmlDataManager
             //string fileName = @".ProductsList.xml";
             File.WriteAllText(@"./ProductsList.xml", contents);
         }
-        //기능 만들기
-        //XML로 출력하기.
         public static string XML(string contents, string value)
         {
             return "<" + contents + ">" + value + "</" + contents + ">" + Environment.NewLine;

@@ -91,6 +91,7 @@
     <Compile Include="Products.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="userDataManager.cs" />
     <Compile Include="UserInfo.cs" />
     <Compile Include="xmlDataManager.cs" />
     <EmbeddedResource Include="Form1_Factory_screen.resx">

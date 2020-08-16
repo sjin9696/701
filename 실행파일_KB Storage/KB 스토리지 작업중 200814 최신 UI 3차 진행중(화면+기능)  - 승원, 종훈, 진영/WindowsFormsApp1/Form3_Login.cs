@@ -19,16 +19,24 @@ namespace xmlDataManager
 
         private void button_login_Click(object sender, EventArgs e)
         {
-            Form2_Receiving_screen form2 = new Form2_Receiving_screen();
-            form2.ShowDialog();
             xmlDataManager.Load_File();
+            Form2_Receiving_screen form2 = new Form2_Receiving_screen();
+
+            bool check = userDataManager.Login_Check(textBox_login_id.Text, textBox_login_pw.Text);
+            Console.WriteLine("check : "+check);
+            if(check)
+            {
+                Console.WriteLine(">>>>>>>>check : " + check);
+                form2.ShowDialog();
+            }
         }
 
         private void button_admin_login_Click(object sender, EventArgs e)
         {
+            xmlDataManager.Load_File();
+            userDataManager.Load_User_Data();
             Form1_Factory_screen form1 = new Form1_Factory_screen();
             form1.ShowDialog();
-            xmlDataManager.Load_File();
         }
 
         private void textBox_login_id_Click(object sender, EventArgs e)

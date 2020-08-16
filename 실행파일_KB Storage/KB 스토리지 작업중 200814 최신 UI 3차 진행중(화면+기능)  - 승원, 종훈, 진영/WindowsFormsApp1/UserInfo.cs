@@ -8,8 +8,8 @@ namespace xmlDataManager
 {
     class UserInfo
     {
-        private string ID { get; set; }
-        private string PW { get; set; }
-        private bool Admin { get; set; }
+        public string ID { get; set; }
+        public string PW { get; set; }
+        public string Admin { get; set; }
     }
 }

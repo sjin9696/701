@@ -49,7 +49,6 @@
             this.textBox_login_id.Text = "아이디";
             this.textBox_login_id.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox_login_id.Click += new System.EventHandler(this.textBox_login_id_Click);
-            this.textBox_login_id.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button_login
             // 
