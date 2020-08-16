@@ -50,7 +50,6 @@ namespace xmlDataManager
         public static bool Login_Check(string textbox_id, string textbox_pw)
         {
             Load_User_Data();
-            bool flag = false;
             foreach(var item in UserInfos)
             {
                 if(item.ID != textbox_id && item.PW != textbox_pw)
@@ -59,11 +58,11 @@ namespace xmlDataManager
                 }
                 else if(item.ID == textbox_id && item.PW == textbox_pw)
                 {
-                    flag = true;
                     Console.WriteLine("아이디 비밀번호가 맞습니다." + item.ID);
+                    return true;
                 }
             }
-            return flag;
+            return false;
         }
     }
 }
