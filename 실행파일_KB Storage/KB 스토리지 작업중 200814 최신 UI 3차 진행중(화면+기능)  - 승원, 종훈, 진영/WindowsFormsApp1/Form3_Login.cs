@@ -15,7 +15,6 @@ namespace xmlDataManager
         public Form3_Login()
         {
             InitializeComponent();
-            xmlDataManager.Load_File();
         }
 
         private void button_login_Click(object sender, EventArgs e)
@@ -41,5 +40,7 @@ namespace xmlDataManager
         {
             textBox_login_pw.Text = "";
         }
+
+
     }
 }
