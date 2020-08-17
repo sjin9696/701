@@ -138,8 +138,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="productDB.xml" />
-    <Content Include="productsDB.xml" />
     <Content Include="resouce\KB_Storagy_logo_20200814.ico" />
   </ItemGroup>
   <ItemGroup>

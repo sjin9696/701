@@ -16,8 +16,8 @@ namespace xmlDataManager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form3_Login());
-            Application.Run(new Form6_search_or_modify_screen());
+            Application.Run(new Form3_Login());
+            //Application.Run(new Form6_search_or_modify_screen());
         }
     }
 }

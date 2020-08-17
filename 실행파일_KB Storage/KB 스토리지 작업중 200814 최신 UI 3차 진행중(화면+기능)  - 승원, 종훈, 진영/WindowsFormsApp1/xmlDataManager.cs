@@ -16,7 +16,7 @@ namespace xmlDataManager
 
         public static void Load_File()
         {
-            string file_name = "./ProductsList.xml"; //파일 경로.
+            string file_name = "../../resouce/ProductsList.xml"; //파일 경로.
             string xml_datas = File.ReadAllText(file_name);
             XElement xElement = XElement.Parse(xml_datas);
             Products.Clear();
