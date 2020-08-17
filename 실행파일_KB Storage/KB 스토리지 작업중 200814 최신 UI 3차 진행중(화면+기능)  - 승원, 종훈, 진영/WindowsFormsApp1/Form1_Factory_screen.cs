@@ -15,8 +15,10 @@ namespace xmlDataManager
         public Form1_Factory_screen()//첫실행 한번만
         {
             InitializeComponent();
+            label_who_login.Text = userDataManager.UserInfos[0].ID + label_who_login.Text;
+            label_who_login.AutoSize = true;
+
             System.DateTime.Now.ToString("yyyy");
-            Console.WriteLine(DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss"));
             label12.Text = DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
             dataGridView_outProduct.DataSource = xmlDataManager.Products;
 

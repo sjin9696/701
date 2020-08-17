@@ -72,7 +72,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.textBox11_inventory_stock_number = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.label_who_login = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_outProduct)).BeginInit();
@@ -483,18 +483,18 @@
             this.label18.TabIndex = 0;
             this.label18.Text = "재고수량";
             // 
-            // label15
+            // label_who_login
             // 
-            this.label15.AllowDrop = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label15.Location = new System.Drawing.Point(791, 74);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(174, 36);
-            this.label15.TabIndex = 4;
-            this.label15.Text = "님이 로그인 되었습니다.";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label15.Click += new System.EventHandler(this.label12_Click);
+            this.label_who_login.AllowDrop = true;
+            this.label_who_login.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_who_login.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label_who_login.Location = new System.Drawing.Point(791, 74);
+            this.label_who_login.Name = "label_who_login";
+            this.label_who_login.Size = new System.Drawing.Size(174, 36);
+            this.label_who_login.TabIndex = 4;
+            this.label_who_login.Text = "님이 로그인 되었습니다.";
+            this.label_who_login.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_who_login.Click += new System.EventHandler(this.label12_Click);
             // 
             // label14
             // 
@@ -531,7 +531,7 @@
             this.Controls.Add(this.label14);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.dataGridView_outProduct);
-            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label_who_login);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button6);
@@ -605,7 +605,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.TextBox textBox11_inventory_stock_number;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label_who_login;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridViewTextBoxColumn 계정코드;
