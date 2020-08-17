@@ -43,7 +43,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button_all_inventory = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView_outProduct = new System.Windows.Forms.DataGridView();
             this.계정코드 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,6 +68,7 @@
             this.textBox3_categorize_name = new System.Windows.Forms.TextBox();
             this.textBox2_product_name = new System.Windows.Forms.TextBox();
             this.textBox1_product_code_number = new System.Windows.Forms.TextBox();
+            this.button_temp_List_add_list = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_outProduct)).BeginInit();
             this.SuspendLayout();
             // 
@@ -215,16 +216,16 @@
             this.label1.TabIndex = 52;
             this.label1.Text = "납품처";
             // 
-            // button4
+            // button_all_inventory
             // 
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(405, 422);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(108, 38);
-            this.button4.TabIndex = 87;
-            this.button4.Text = "전체 재고";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button_all_inventory.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_all_inventory.Location = new System.Drawing.Point(699, 422);
+            this.button_all_inventory.Name = "button_all_inventory";
+            this.button_all_inventory.Size = new System.Drawing.Size(108, 38);
+            this.button_all_inventory.TabIndex = 87;
+            this.button_all_inventory.Text = "전체 재고";
+            this.button_all_inventory.UseVisualStyleBackColor = true;
+            this.button_all_inventory.Click += new System.EventHandler(this.button_all_inventory_Click);
             // 
             // button3
             // 
@@ -440,12 +441,23 @@
             this.textBox1_product_code_number.Size = new System.Drawing.Size(122, 29);
             this.textBox1_product_code_number.TabIndex = 90;
             // 
+            // button_temp_List_add_list
+            // 
+            this.button_temp_List_add_list.Location = new System.Drawing.Point(495, 421);
+            this.button_temp_List_add_list.Name = "button_temp_List_add_list";
+            this.button_temp_List_add_list.Size = new System.Drawing.Size(108, 38);
+            this.button_temp_List_add_list.TabIndex = 102;
+            this.button_temp_List_add_list.Text = "저장하기";
+            this.button_temp_List_add_list.UseVisualStyleBackColor = true;
+            this.button_temp_List_add_list.Click += new System.EventHandler(this.button_temp_List_add_list_Click);
+            // 
             // Form5_new_regist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(1085, 816);
+            this.Controls.Add(this.button_temp_List_add_list);
             this.Controls.Add(this.dataGridView_outProduct);
             this.Controls.Add(this.button_input);
             this.Controls.Add(this.textBox10_money_number);
@@ -460,7 +472,7 @@
             this.Controls.Add(this.textBox2_product_name);
             this.Controls.Add(this.textBox1_product_code_number);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button_all_inventory);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.button6);
@@ -499,7 +511,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button_all_inventory;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridView dataGridView_outProduct;
         private System.Windows.Forms.DataGridViewTextBoxColumn 계정코드;
@@ -524,5 +536,6 @@
         private System.Windows.Forms.TextBox textBox3_categorize_name;
         private System.Windows.Forms.TextBox textBox2_product_name;
         public System.Windows.Forms.TextBox textBox1_product_code_number;
+        private System.Windows.Forms.Button button_temp_List_add_list;
     }
 }

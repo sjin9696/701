@@ -22,16 +22,19 @@ namespace xmlDataManager
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             Console.WriteLine("textBox1_TextChanged");
-            
         }
 
         private void button_serch_Click(object sender, EventArgs e)
         {
-            dataGridView_all_incentory.DataSource =
-                xmlDataManager.Products.FindAll(item => 
-                (item.product_code_number == textBox1.Text)||
-                (item.product_name == textBox2.Text)||
+            xmlDataManager.Load_File();
+            List<Product> products_list = new List<Product>();
+            products_list = xmlDataManager.Products.FindAll(item =>
+                (item.product_code_number == textBox1.Text) ||
+                (item.product_name == textBox2.Text) ||
                 (item.customer_name == textBox3.Text));
+
+            dataGridView_all_incentory.DataSource = products_list;
+
         }
     }
 }

@@ -33,16 +33,16 @@ namespace xmlDataManager
         private void login_check()
         {
             xmlDataManager.Load_File();
-            Form1_Factory_screen Factory_screen = new Form1_Factory_screen();
-            Form2_Receiving_screen Receiving_screen = new Form2_Receiving_screen();
             string check = userDataManager.Login_Check(textBox_login_id.Text, textBox_login_pw.Text);
             Console.WriteLine("check : " + check);
             switch (check)
             {
                 case "관리자":
+                    Form1_Factory_screen Factory_screen = new Form1_Factory_screen();
                     Factory_screen.ShowDialog();
                     break;
                 case "입고담당자":
+                    Form2_Receiving_screen Receiving_screen = new Form2_Receiving_screen();
                     Receiving_screen.ShowDialog();
                     break;
                 default:

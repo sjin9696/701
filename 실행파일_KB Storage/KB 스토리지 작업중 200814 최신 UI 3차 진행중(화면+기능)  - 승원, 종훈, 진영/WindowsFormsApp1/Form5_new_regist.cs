@@ -15,16 +15,36 @@ namespace xmlDataManager
         public Form5_new_regist()
         {
             InitializeComponent();
-            dataGridView_outProduct.DataSource = null;
-            dataGridView_outProduct.DataSource = xmlDataManager.Products; //grid에 추가.
+            xmlDataManager.Load_File();
+            //dataGridView_outProduct.DataSource = null;
+            //dataGridView_outProduct.DataSource = xmlDataManager.Products; //grid에 추가.
         }
 
         private void button_input_Click(object sender, EventArgs e)
         {
-            IScustomData();
+            Console.WriteLine("button_input_Click");
+            IS_Add_Grid();
         }
-        public void IScustomData()
+       
+
+        private void button_all_inventory_Click(object sender, EventArgs e)
         {
+            Console.WriteLine("button_all_inventory_Click");
+            Form4_all_inventory_screen form4 = new Form4_all_inventory_screen();
+            form4.ShowDialog();
+        }
+
+        private void button_temp_List_add_list_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("button_temp_List_add_list_Click");
+            ISaddProductList();
+
+        }
+        
+        List<Product> productslist = new List<Product>();
+        private void IS_Add_Grid()
+        {
+            Console.WriteLine("IS_Add_Grid");
             Product product = new Product();
 
             product.product_code_number = textBox1_product_code_number.Text;
@@ -38,21 +58,32 @@ namespace xmlDataManager
             product.sales_number = textBox9_sales_number.Text;
             product.money_number = textBox10_money_number.Text;
             product.inventory_stock_number = textBox11_inventory_stock_number.Text;
-            
-            xmlDataManager.Products.Add(product); //리스트 추가
+
+            productslist.Add(product);
 
             dataGridView_outProduct.DataSource = null;
-            dataGridView_outProduct.DataSource = xmlDataManager.Products; //grid에 추가.
+            dataGridView_outProduct.DataSource = productslist;
+        }
+
+        public void ISaddProductList()
+        {
+            Console.WriteLine("ISaddProductList");
+           
+            //기존에 있는 리스트 뒤에 추가는 아니다.
+           // xmlDataManager.Products.Add(product); //리스트 추가
+
+            //임시 리스트에 넣은 후 기존 큰 리스트에 입력을 한다.
+            xmlDataManager.Products.AddRange(productslist);
+
+            //입력 창이니 만큼 새로운 리스트를 추가해서 보여주도록 하자.
+            dataGridView_outProduct.DataSource = null;
+
+            //dataGridView_outProduct.DataSource = null;
+            //dataGridView_outProduct.DataSource = xmlDataManager.Products; //grid에 표시
 
             xmlDataManager.Save_File(xmlDataManager.Read_Products()); //파일로 내보내기.
             //Console.WriteLine("Products.Count " + xmlDataManager.Products.Count);
 
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Form4_all_inventory_screen form4 = new Form4_all_inventory_screen();
-            form4.ShowDialog();
         }
     }
 }

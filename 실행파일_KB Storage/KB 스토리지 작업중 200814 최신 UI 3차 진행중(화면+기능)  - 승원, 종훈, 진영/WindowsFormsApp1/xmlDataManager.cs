@@ -17,36 +17,41 @@ namespace xmlDataManager
         public static void Load_File()
         {
             string file_name = "../../resouce/ProductsList.xml"; //파일 경로.
-            string xml_datas = File.ReadAllText(file_name);
-            XElement xElement = XElement.Parse(xml_datas);
-            Products.Clear();
-            foreach (var item in xElement.Descendants("item"))
+            try
             {
-                Product product = new Product()
+                string xml_datas = File.ReadAllText(file_name);
+                XElement xElement = XElement.Parse(xml_datas);
+                Products.Clear();
+                foreach (var item in xElement.Descendants("item"))
                 {
-                    product_code_number = item.Element("code").Value,
-                    product_name = item.Element("name").Value,
-                    categorize_name = item.Element("categorize").Value,
-                    type_name = item.Element("type").Value,
-                    barcode_number = item.Element("barcode").Value,
-                    sales_number = item.Element("sales").Value,
-                    money_number = item.Element("money").Value,
-                    delivery_day = item.Element("delivery").Value,
-                    customer_name = item.Element("customer").Value,
-                    storage_name = item.Element("storage").Value,
-                    inventory_stock_number = item.Element("inventory_stock").Value,
-                    worker_name = item.Element("worker").Value
-                };
-                
-                Products.Add(product);
-                Console.WriteLine("foreach Products.Count" + Products.Count);
+                    Product product = new Product()
+                    {
+                        product_code_number = item.Element("code").Value,
+                        product_name = item.Element("name").Value,
+                        categorize_name = item.Element("categorize").Value,
+                        type_name = item.Element("type").Value,
+                        barcode_number = item.Element("barcode").Value,
+                        sales_number = item.Element("sales").Value,
+                        money_number = item.Element("money").Value,
+                        delivery_day = item.Element("delivery").Value,
+                        customer_name = item.Element("customer").Value,
+                        storage_name = item.Element("storage").Value,
+                        inventory_stock_number = item.Element("inventory_stock").Value,
+                        worker_name = item.Element("worker").Value
+                    };
+                    Products.Add(product);
+                }
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception.Message);
             }
             Console.WriteLine("TOTAL_ Products.Count" + Products.Count);
         }
         public static void Save_File(string contents)
         {
             //string fileName = @".ProductsList.xml";
-            File.WriteAllText(@"./ProductsList.xml", contents);
+            File.WriteAllText(@"../../resouce/ProductsList.xml", contents);
         }
         public static string XML(string contents, string value)
         {
