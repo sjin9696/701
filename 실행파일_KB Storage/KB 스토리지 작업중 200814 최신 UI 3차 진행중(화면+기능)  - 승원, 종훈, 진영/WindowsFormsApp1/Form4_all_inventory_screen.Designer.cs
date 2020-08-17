@@ -29,19 +29,20 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4_all_inventory_screen));
             this.label11 = new System.Windows.Forms.Label();
             this.dataGridView_all_incentory = new System.Windows.Forms.DataGridView();
             this.계정코드 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.계정명 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.관리번호 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.금액 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.입고일 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.납품처 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.보관위치 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_all_incentory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -67,17 +68,16 @@
             this.계정명,
             this.Column1,
             this.관리번호,
-            this.Column2,
             this.Column3,
             this.금액,
             this.입고일,
             this.납품처,
             this.보관위치});
             this.dataGridView_all_incentory.DataSource = this.productBindingSource;
-            this.dataGridView_all_incentory.Location = new System.Drawing.Point(62, 106);
+            this.dataGridView_all_incentory.Location = new System.Drawing.Point(62, 122);
             this.dataGridView_all_incentory.Name = "dataGridView_all_incentory";
             this.dataGridView_all_incentory.RowTemplate.Height = 23;
-            this.dataGridView_all_incentory.Size = new System.Drawing.Size(951, 584);
+            this.dataGridView_all_incentory.Size = new System.Drawing.Size(951, 568);
             this.dataGridView_all_incentory.TabIndex = 48;
             this.dataGridView_all_incentory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_all_incentory_CellContentClick);
             this.dataGridView_all_incentory.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView_all_incentory_ColumnHeaderMouseClick);
@@ -106,12 +106,6 @@
             this.관리번호.DataPropertyName = "type_name";
             this.관리번호.HeaderText = "분류";
             this.관리번호.Name = "관리번호";
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "barcode_number";
-            this.Column2.HeaderText = "바코드";
-            this.Column2.Name = "Column2";
             // 
             // Column3
             // 
@@ -143,9 +137,14 @@
             this.보관위치.HeaderText = "보관위치";
             this.보관위치.Name = "보관위치";
             // 
-            // productBindingSource
+            // button6
             // 
-            this.productBindingSource.DataSource = typeof(xmlDataManager);
+            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
+            this.button6.Location = new System.Drawing.Point(964, 69);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(49, 47);
+            this.button6.TabIndex = 79;
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // Form4_all_inventory_screen
             // 
@@ -153,6 +152,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(1081, 745);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.dataGridView_all_incentory);
             this.Controls.Add(this.label11);
             this.Name = "Form4_all_inventory_screen";
@@ -167,16 +167,6 @@
 
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DataGridView dataGridView_all_incentory;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 계정코드;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 계정명;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 관리번호;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 금액;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 입고일;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 납품처;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 보관위치;
         private System.Windows.Forms.DataGridViewTextBoxColumn productcodenumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn categorizenameDataGridViewTextBoxColumn;
@@ -190,5 +180,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn inventorystocknumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn workernameDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource productBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 계정코드;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 계정명;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 관리번호;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 금액;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 입고일;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 납품처;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 보관위치;
+        private System.Windows.Forms.Button button6;
     }
 }

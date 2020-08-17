@@ -34,21 +34,30 @@ namespace xmlDataManager
         {
             xmlDataManager.Load_File();
             string check = userDataManager.Login_Check(textBox_login_id.Text, textBox_login_pw.Text);
+            Form1_Factory_screen Factory_screen = new Form1_Factory_screen();
+            Form2_Receiving_screen Receiving_screen = new Form2_Receiving_screen();
+            Receiving_screen.Enabled = true;
             Console.WriteLine("check : " + check);
-            switch (check)
+            try
             {
-                case "관리자":
-                    Form1_Factory_screen Factory_screen = new Form1_Factory_screen();
-                    Factory_screen.ShowDialog();
-                    break;
-                case "입고담당자":
-                    Form2_Receiving_screen Receiving_screen = new Form2_Receiving_screen();
-                    Receiving_screen.ShowDialog();
-                    break;
-                default:
-                    MessageBox.Show("아이디 비밀번호를 확인하세요!");
-                    Console.WriteLine(">>>>>>>>check : " + check);
-                    break;
+                switch (check)
+                {
+                    case "관리자":
+                        Factory_screen.ShowDialog();
+                        break;
+                    case "입고담당자":
+                        Receiving_screen.ShowDialog();
+                        break;
+                    default:
+                        MessageBox.Show("아이디 비밀번호를 확인하세요!");
+                        Console.WriteLine(">>>>>>>>check : " + check);
+                        break;
+                }
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception.ToString());
+                Console.WriteLine(exception.Message);
             }
         }
     }
