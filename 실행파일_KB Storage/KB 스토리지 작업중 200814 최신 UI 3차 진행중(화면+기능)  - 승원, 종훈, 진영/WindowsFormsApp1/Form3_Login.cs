@@ -17,7 +17,12 @@ namespace xmlDataManager
 
         private void button_admin_login_Click(object sender, EventArgs e)
         {
-            login_check();
+            user_management();
+            Console.WriteLine("button_admin_login_Click : " +((Button)sender).ToString());
+            if((Button)sender == button_admin_login)
+            {
+                Console.WriteLine("");
+            }
         }
 
         private void textBox_login_id_Click(object sender, EventArgs e)
@@ -59,6 +64,12 @@ namespace xmlDataManager
                 Console.WriteLine(exception.ToString());
                 Console.WriteLine(exception.Message);
             }
+        }
+        private void user_management()
+        {
+            Form7_newmember form7_Newmember = new Form7_newmember();
+            form7_Newmember.ShowDialog();
+
         }
     }
 }
