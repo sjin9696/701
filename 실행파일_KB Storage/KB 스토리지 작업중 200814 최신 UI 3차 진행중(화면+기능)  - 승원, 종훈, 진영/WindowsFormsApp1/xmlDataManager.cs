@@ -73,16 +73,14 @@ namespace xmlDataManager
                 element += XML("categorize", item.categorize_name);
                 element += XML("type", item.type_name);
                 element += XML("worker", item.worker_name);
-
                 element += XML("customer", item.customer_name);
                 element += XML("delivery", item.delivery_dates);
                 element += XML("money", item.money_number);
                 element += XML("storage", item.storage_name);
                 element += XML("storage_inventoy", item.storage_inventoy_number);
-
                 element += XML("sales_money", item.sales_money_number);
                 element += XML("sales_dates", item.sales_dates);
-
+                
                 productOutput += XML("item", element);
             }
             productOutput = XML("product", productOutput); //마지막으로 닫기 위해서.
