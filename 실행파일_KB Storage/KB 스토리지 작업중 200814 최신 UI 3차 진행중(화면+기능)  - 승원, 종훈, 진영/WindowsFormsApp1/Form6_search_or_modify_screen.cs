@@ -15,7 +15,7 @@ namespace xmlDataManager
         public Form6_search_or_modify_screen()
         {
             InitializeComponent();
-            dataGridView_all_incentory.DataSource = xmlDataManager.Products;
+            dataGridView_all_incentory.DataSource = xmlDataManager.ProductsList;
             xmlDataManager.Load_File();
         }
 
@@ -28,7 +28,7 @@ namespace xmlDataManager
         {
             xmlDataManager.Load_File();
             List<Product> products_list = new List<Product>();
-            products_list = xmlDataManager.Products.FindAll(item =>
+            products_list = xmlDataManager.ProductsList.FindAll(item =>
                 (item.product_code_number == textBox1.Text) ||
                 (item.product_name == textBox2.Text) ||
                 (item.customer_name == textBox3.Text));

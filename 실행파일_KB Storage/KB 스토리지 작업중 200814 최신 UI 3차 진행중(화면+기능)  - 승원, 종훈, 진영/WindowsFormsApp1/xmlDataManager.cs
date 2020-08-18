@@ -12,7 +12,7 @@ namespace xmlDataManager
 {
     class xmlDataManager
     {
-        public static List<Product> Products = new List<Product>();
+        public static List<Product> ProductsList = new List<Product>();
 
         public static void Load_File()
         {
@@ -20,8 +20,9 @@ namespace xmlDataManager
             try
             {
                 string xml_datas = File.ReadAllText(file_name);
+                Console.WriteLine(xml_datas);
                 XElement xElement = XElement.Parse(xml_datas);
-                Products.Clear();
+                ProductsList.Clear();
                 foreach (var item in xElement.Descendants("item"))
                 {
                     Product product = new Product()
@@ -30,7 +31,7 @@ namespace xmlDataManager
                         product_name = item.Element("name").Value,
                         categorize_name = item.Element("categorize").Value,
                         type_name = item.Element("type").Value,
-                        worker_name = item.Element("worker").Value,
+                       // worker_name = item.Element("worker").Value,
                         customer_name = item.Element("customer").Value,
                         delivery_dates = item.Element("delivery").Value,
                         money_number = item.Element("money").Value,
@@ -39,14 +40,14 @@ namespace xmlDataManager
                         sales_money_number = item.Element("sales_money").Value,
                         sales_dates = item.Element("sales_dates").Value
                     };
-                    Products.Add(product);
+                    ProductsList.Add(product);
                 }
             }
             catch (Exception exception)
             {
-                Console.WriteLine(exception.Message);
+                Console.WriteLine(exception.ToString());
             }
-            Console.WriteLine("TOTAL_ Products.Count" + Products.Count);
+            Console.WriteLine("TOTAL_ Products.Count" + ProductsList.Count);
         }
         public static void Save_File(string contents)
         {
@@ -65,14 +66,14 @@ namespace xmlDataManager
             Console.WriteLine("public static string Read_Products()>>>>");
             string productOutput = "";
             
-            foreach (var item in Products)
+            foreach (var item in ProductsList)
             {
                 string element = "";
                 element += XML("code", item.product_code_number);
                 element += XML("name", item.product_name);
                 element += XML("categorize", item.categorize_name);
                 element += XML("type", item.type_name);
-                element += XML("worker", item.worker_name);
+               // element += XML("worker", item.worker_name);
                 element += XML("customer", item.customer_name);
                 element += XML("delivery", item.delivery_dates);
                 element += XML("money", item.money_number);
@@ -86,7 +87,7 @@ namespace xmlDataManager
             productOutput = XML("product", productOutput); //마지막으로 닫기 위해서.
             
             Console.WriteLine("public static string Read_Products()" + productOutput);
-            Console.WriteLine("Products.Count" + Products.Count);
+            Console.WriteLine("Products.Count" + ProductsList.Count);
             return productOutput;
         }
     }

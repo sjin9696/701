@@ -15,7 +15,7 @@ namespace xmlDataManager
         public Form4_all_inventory_screen()
         {
             InitializeComponent();
-            dataGridView_all_incentory.DataSource = xmlDataManager.Products;
+            dataGridView_all_incentory.DataSource = xmlDataManager.ProductsList;
             //전체재고 기능 완료. 
         }
 

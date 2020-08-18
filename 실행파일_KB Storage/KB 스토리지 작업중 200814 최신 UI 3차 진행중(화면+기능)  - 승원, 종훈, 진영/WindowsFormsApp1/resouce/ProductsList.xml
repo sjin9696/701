@@ -1,11 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<product xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<product>
 	<item>
 		<code>001</code>
 		<name>너트</name>
 		<categorize>볼트/너트</categorize>
 		<type>M6</type>
-		<worker>0</worker>
 		<customer>한세코리아</customer>
 		<delivery>20200816</delivery>
 		<money>50</money>

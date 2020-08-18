@@ -73,7 +73,7 @@ namespace xmlDataManager
            // xmlDataManager.Products.Add(product); //리스트 추가
 
             //임시 리스트에 넣은 후 기존 큰 리스트에 입력을 한다.
-            xmlDataManager.Products.AddRange(productslist);
+            xmlDataManager.ProductsList.AddRange(productslist);
 
             //입력 창이니 만큼 새로운 리스트를 추가해서 보여주도록 하자.
             dataGridView_outProduct.DataSource = null;
