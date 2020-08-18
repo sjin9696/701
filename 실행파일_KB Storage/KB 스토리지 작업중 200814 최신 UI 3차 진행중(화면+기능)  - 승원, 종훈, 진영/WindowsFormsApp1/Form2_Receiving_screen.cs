@@ -24,7 +24,7 @@ namespace xmlDataManager
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Form6_search_or_modify_screen form6_Search_Screen = new Form6_search_or_modify_screen();
+            Form6_search_screen form6_Search_Screen = new Form6_search_screen();
             form6_Search_Screen.ShowDialog();
         }
         private void button3_Click(object sender, EventArgs e)
@@ -49,11 +49,11 @@ namespace xmlDataManager
             product.type_name = textBox4_type_name.Text;
             product.storage_name = textBox5_storage_name.Text;
             product.customer_name = textBox6_customer_name.Text;
-            product.barcode_number = textBox7_barcode_number.Text;
-            product.delivery_day = textBox8_delivery_day.Text;
-            product.sales_number = textBox9_sales_number.Text;
-            product.money_number = textBox10_money_number.Text;
-            product.inventory_stock_number = textBox11_inventory_stock_number.Text;
+         
+            product.delivery_dates = textBox8_delivery_day.Text;
+            product.sales_dates = textBox9_sales_number.Text;
+            product.sales_money_number = textBox10_money_number.Text;
+            product.storage_inventoy_number = textBox11_inventory_stock_number.Text;
             productsList.Add(product);
             Console.WriteLine(product.product_name + " product.name");
 
@@ -71,7 +71,7 @@ namespace xmlDataManager
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form6_search_or_modify_screen form6_Search_Screen = new Form6_search_or_modify_screen();
+            Form6_search_screen form6_Search_Screen = new Form6_search_screen();
             form6_Search_Screen.ShowDialog();
         }
 

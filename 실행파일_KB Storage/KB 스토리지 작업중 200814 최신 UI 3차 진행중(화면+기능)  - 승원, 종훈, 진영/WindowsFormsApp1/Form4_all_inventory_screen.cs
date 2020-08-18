@@ -15,7 +15,7 @@ namespace xmlDataManager
         public Form4_all_inventory_screen()
         {
             InitializeComponent();
-            dataGridView_all_incentory.DataSource = xmlDataManager.Products;
+            dataGridView_all_incentory.DataSource = xmlDataManager.ProductsList;
             //전체재고 기능 완료. 
         }
 
@@ -30,6 +30,11 @@ namespace xmlDataManager
 
         private void dataGridView_all_incentory_ColumnSortModeChanged(object sender, DataGridViewColumnEventArgs e)
         {
+        }
+
+        private void productBindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
