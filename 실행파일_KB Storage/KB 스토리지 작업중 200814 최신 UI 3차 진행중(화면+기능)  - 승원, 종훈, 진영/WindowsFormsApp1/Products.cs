@@ -16,21 +16,21 @@ namespace xmlDataManager
         public string categorize_name { get; set; }
         //규격
         public string type_name { get; set; }
-        //바코드
-        public string barcode_number { get; set; }
-        //판매수량
-        public string sales_number { get; set; }
-        //금액
-        public string money_number { get; set; }
-        //입고일
-        public string delivery_day { get; set; }
+        //작업자
+        public string worker_name { get; set; }
         //납품처
         public string customer_name { get; set; }
+        //납품일자
+        public string delivery_dates { get; set; }
+        //금액
+        public string money_number { get; set; }
         //보관위치
         public string storage_name { get; set; }
         //재고수량
-        public string inventory_stock_number { get; set; }
-        //작업자
-        public string worker_name { get; set; }
+        public string storage_inventoy_number { get; set; }
+        //판매수량
+        public string sales_money_number { get; set; }
+        //판매일자
+        public string sales_dates { get; set; }
     }
 }

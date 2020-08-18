@@ -51,7 +51,8 @@
     <StartupObject />
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>resouce\KB_Storagy_logo_20200814.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -97,11 +98,17 @@
     <Compile Include="Form5_new_regist.Designer.cs">
       <DependentUpon>Form5_new_regist.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form6_search_or_modify_screen.cs">
+    <Compile Include="Form6_search_screen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form6_search_or_modify_screen.Designer.cs">
-      <DependentUpon>Form6_search_or_modify_screen.cs</DependentUpon>
+    <Compile Include="Form6_search_screen.Designer.cs">
+      <DependentUpon>Form6_search_screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7_newmember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7_newmember.Designer.cs">
+      <DependentUpon>Form7_newmember.cs</DependentUpon>
     </Compile>
     <Compile Include="Products.cs" />
     <Compile Include="Program.cs" />
@@ -124,8 +131,11 @@
     <EmbeddedResource Include="Form5_new_regist.resx">
       <DependentUpon>Form5_new_regist.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form6_search_or_modify_screen.resx">
-      <DependentUpon>Form6_search_or_modify_screen.cs</DependentUpon>
+    <EmbeddedResource Include="Form6_search_screen.resx">
+      <DependentUpon>Form6_search_screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7_newmember.resx">
+      <DependentUpon>Form7_newmember.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -154,7 +164,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="resouce\KB_Storagy_logo_20200814.ico" />
+    <Content Include="resouce\ProductsList.xml" />
+    <Content Include="resouce\UserInfoDB.xml" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

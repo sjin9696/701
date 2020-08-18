@@ -53,11 +53,11 @@ namespace xmlDataManager
             product.type_name = textBox4_type_name.Text;
             product.storage_name = textBox5_storage_name.Text;
             product.customer_name = textBox6_customer_name.Text;
-            product.barcode_number = textBox7_barcode_number.Text;
-            product.delivery_day = textBox8_delivery_day.Text;
-            product.sales_number = textBox9_sales_number.Text;
-            product.money_number = textBox10_money_number.Text;
-            product.inventory_stock_number = textBox11_inventory_stock_number.Text;
+            
+            product.delivery_dates = textBox8_delivery_day.Text;
+            product.sales_money_number = textBox9_sales_number.Text;
+      
+           
 
             productslist.Add(product);
 
@@ -73,7 +73,7 @@ namespace xmlDataManager
            // xmlDataManager.Products.Add(product); //리스트 추가
 
             //임시 리스트에 넣은 후 기존 큰 리스트에 입력을 한다.
-            xmlDataManager.Products.AddRange(productslist);
+            xmlDataManager.ProductsList.AddRange(productslist);
 
             //입력 창이니 만큼 새로운 리스트를 추가해서 보여주도록 하자.
             dataGridView_outProduct.DataSource = null;
