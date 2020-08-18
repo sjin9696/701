@@ -1,6 +1,6 @@
 ﻿namespace xmlDataManager
 {
-    partial class Form6_search_or_modify_screen
+    partial class Form6_search_screen
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6_search_or_modify_screen));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6_search_screen));
             this.label11 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,21 +37,25 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button_serch = new System.Windows.Forms.Button();
+            this.button_search = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView_all_incentory = new System.Windows.Forms.DataGridView();
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_all_incentory)).BeginInit();
+            this.dataGridView_all_incentory = new System.Windows.Forms.DataGridView();
+            this.코드 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.품명 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.분류 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.규격 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.납품처 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.납품일자 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.금액 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.보관위치 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.재고수량 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.판매수량 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.판매일자 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_all_incentory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label11
@@ -126,19 +130,19 @@
             this.label1.TabIndex = 72;
             this.label1.Text = "납품처";
             // 
-            // button_serch
+            // button_search
             // 
-            this.button_serch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_serch.BackgroundImage")));
-            this.button_serch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_serch.FlatAppearance.BorderSize = 0;
-            this.button_serch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_serch.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_serch.Location = new System.Drawing.Point(834, 123);
-            this.button_serch.Name = "button_serch";
-            this.button_serch.Size = new System.Drawing.Size(56, 36);
-            this.button_serch.TabIndex = 83;
-            this.button_serch.UseVisualStyleBackColor = true;
-            this.button_serch.Click += new System.EventHandler(this.button_serch_Click);
+            this.button_search.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_search.BackgroundImage")));
+            this.button_search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button_search.FlatAppearance.BorderSize = 0;
+            this.button_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_search.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_search.Location = new System.Drawing.Point(834, 123);
+            this.button_search.Name = "button_search";
+            this.button_search.Size = new System.Drawing.Size(56, 36);
+            this.button_search.TabIndex = 83;
+            this.button_search.UseVisualStyleBackColor = true;
+            this.button_search.Click += new System.EventHandler(this.button_search_Click);
             // 
             // button2
             // 
@@ -156,75 +160,128 @@
             this.dataGridView_all_incentory.AutoGenerateColumns = false;
             this.dataGridView_all_incentory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_all_incentory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10});
-            this.dataGridView_all_incentory.DataSource = this.productBindingSource;
-            this.dataGridView_all_incentory.Location = new System.Drawing.Point(55, 187);
+            this.코드,
+            this.품명,
+            this.분류,
+            this.규격,
+            this.납품처,
+            this.납품일자,
+            this.금액,
+            this.보관위치,
+            this.재고수량,
+            this.판매수량,
+            this.판매일자});
+            this.dataGridView_all_incentory.DataSource = this.productBindingSource1;
+            this.dataGridView_all_incentory.Location = new System.Drawing.Point(55, 171);
             this.dataGridView_all_incentory.Name = "dataGridView_all_incentory";
             this.dataGridView_all_incentory.RowTemplate.Height = 23;
-            this.dataGridView_all_incentory.Size = new System.Drawing.Size(951, 499);
-            this.dataGridView_all_incentory.TabIndex = 85;
+            this.dataGridView_all_incentory.Size = new System.Drawing.Size(951, 524);
+            this.dataGridView_all_incentory.TabIndex = 84;
+            this.dataGridView_all_incentory.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_all_incentory_CellDoubleClick);
             // 
-            // dataGridViewTextBoxColumn1
+            // 코드
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "product_code_number";
-            this.dataGridViewTextBoxColumn1.HeaderText = "코드";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.코드.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.코드.DataPropertyName = "product_code_number";
+            this.코드.HeaderText = "코드";
+            this.코드.Name = "코드";
+            this.코드.ReadOnly = true;
+            this.코드.Width = 54;
             // 
-            // dataGridViewTextBoxColumn2
+            // 품명
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "product_name";
-            this.dataGridViewTextBoxColumn2.HeaderText = "품명";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.품명.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.품명.DataPropertyName = "product_name";
+            this.품명.HeaderText = "품명";
+            this.품명.Name = "품명";
+            this.품명.ReadOnly = true;
+            this.품명.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.품명.Width = 54;
             // 
-            // dataGridViewTextBoxColumn3
+            // 분류
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "categorize_name";
-            this.dataGridViewTextBoxColumn3.HeaderText = "규격";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.분류.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.분류.DataPropertyName = "categorize_name";
+            this.분류.HeaderText = "분류";
+            this.분류.Name = "분류";
+            this.분류.ReadOnly = true;
+            this.분류.Width = 54;
             // 
-            // dataGridViewTextBoxColumn4
+            // 규격
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "type_name";
-            this.dataGridViewTextBoxColumn4.HeaderText = "분류";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.규격.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.규격.DataPropertyName = "type_name";
+            this.규격.HeaderText = "규격";
+            this.규격.Name = "규격";
+            this.규격.ReadOnly = true;
+            this.규격.Width = 54;
             // 
-            // dataGridViewTextBoxColumn6
+            // 납품처
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "sales_number";
-            this.dataGridViewTextBoxColumn6.HeaderText = "판매수량";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.납품처.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.납품처.DataPropertyName = "customer_name";
+            this.납품처.HeaderText = "납품처";
+            this.납품처.Name = "납품처";
+            this.납품처.ReadOnly = true;
+            this.납품처.Width = 66;
             // 
-            // dataGridViewTextBoxColumn7
+            // 납품일자
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "money_number";
-            this.dataGridViewTextBoxColumn7.HeaderText = "금액";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.납품일자.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.납품일자.DataPropertyName = "delivery_dates";
+            this.납품일자.HeaderText = "납품일자";
+            this.납품일자.Name = "납품일자";
+            this.납품일자.ReadOnly = true;
+            this.납품일자.Width = 78;
             // 
-            // dataGridViewTextBoxColumn8
+            // 금액
             // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "delivery_day";
-            this.dataGridViewTextBoxColumn8.HeaderText = "입고일";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.금액.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.금액.DataPropertyName = "money_number";
+            this.금액.HeaderText = "금액";
+            this.금액.Name = "금액";
+            this.금액.ReadOnly = true;
+            this.금액.Width = 54;
             // 
-            // dataGridViewTextBoxColumn9
+            // 보관위치
             // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "customer_name";
-            this.dataGridViewTextBoxColumn9.HeaderText = "납품처";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.보관위치.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.보관위치.DataPropertyName = "storage_name";
+            this.보관위치.HeaderText = "보관위치";
+            this.보관위치.Name = "보관위치";
+            this.보관위치.ReadOnly = true;
+            this.보관위치.Width = 78;
             // 
-            // dataGridViewTextBoxColumn10
+            // 재고수량
             // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "storage_name";
-            this.dataGridViewTextBoxColumn10.HeaderText = "보관위치";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.재고수량.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.재고수량.DataPropertyName = "storage_inventoy_number";
+            this.재고수량.HeaderText = "재고수량";
+            this.재고수량.Name = "재고수량";
+            this.재고수량.ReadOnly = true;
+            this.재고수량.Width = 78;
+            // 
+            // 판매수량
+            // 
+            this.판매수량.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.판매수량.DataPropertyName = "sales_money_number";
+            this.판매수량.HeaderText = "판매수량";
+            this.판매수량.Name = "판매수량";
+            this.판매수량.ReadOnly = true;
+            this.판매수량.Width = 78;
+            // 
+            // 판매일자
+            // 
+            this.판매일자.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.판매일자.DataPropertyName = "sales_dates";
+            this.판매일자.HeaderText = "판매일자";
+            this.판매일자.Name = "판매일자";
+            this.판매일자.ReadOnly = true;
+            this.판매일자.Width = 78;
+            // 
+            // productBindingSource1
+            // 
+            this.productBindingSource1.DataSource = typeof(xmlDataManager);
             // 
             // Form6_search_or_modify_screen
             // 
@@ -234,7 +291,7 @@
             this.ClientSize = new System.Drawing.Size(1066, 770);
             this.Controls.Add(this.dataGridView_all_incentory);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button_serch);
+            this.Controls.Add(this.button_search);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
@@ -244,8 +301,9 @@
             this.Controls.Add(this.label11);
             this.Name = "Form6_search_or_modify_screen";
             this.Text = "창고관리프로그램";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_all_incentory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_all_incentory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,9 +317,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button_serch;
+        private System.Windows.Forms.Button button_search;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView_all_incentory;
         private System.Windows.Forms.DataGridViewTextBoxColumn productcodenumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn categorizenameDataGridViewTextBoxColumn;
@@ -275,14 +332,30 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn inventorystocknumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn workernameDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource productBindingSource;
+        private System.Windows.Forms.DataGridView dataGridView_all_incentory;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 코드;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 품명;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 분류;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 규격;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 납품처;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 납품일자;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 금액;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 보관위치;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 재고수량;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 판매수량;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 판매일자;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn deliverydatesDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn storageinventoynumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn salesmoneynumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn salesdatesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource productBindingSource1;
     }
 }

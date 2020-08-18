@@ -98,11 +98,11 @@
     <Compile Include="Form5_new_regist.Designer.cs">
       <DependentUpon>Form5_new_regist.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form6_search_or_modify_screen.cs">
+    <Compile Include="Form6_search_screen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form6_search_or_modify_screen.Designer.cs">
-      <DependentUpon>Form6_search_or_modify_screen.cs</DependentUpon>
+    <Compile Include="Form6_search_screen.Designer.cs">
+      <DependentUpon>Form6_search_screen.cs</DependentUpon>
     </Compile>
     <Compile Include="Form7_newmember.cs">
       <SubType>Form</SubType>
@@ -131,8 +131,8 @@
     <EmbeddedResource Include="Form5_new_regist.resx">
       <DependentUpon>Form5_new_regist.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form6_search_or_modify_screen.resx">
-      <DependentUpon>Form6_search_or_modify_screen.cs</DependentUpon>
+    <EmbeddedResource Include="Form6_search_screen.resx">
+      <DependentUpon>Form6_search_screen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form7_newmember.resx">
       <DependentUpon>Form7_newmember.cs</DependentUpon>

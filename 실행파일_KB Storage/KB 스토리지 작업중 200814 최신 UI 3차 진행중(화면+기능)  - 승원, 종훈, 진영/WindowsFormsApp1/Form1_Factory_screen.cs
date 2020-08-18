@@ -20,7 +20,7 @@ namespace xmlDataManager
 
             System.DateTime.Now.ToString("yyyy");
             label12.Text = DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
-            dataGridView_outProduct.DataSource = xmlDataManager.ProductsList;
+            //dataGridView_outProduct.DataSource = xmlDataManager.ProductsList;
 
         }
 
@@ -31,7 +31,7 @@ namespace xmlDataManager
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Form6_search_or_modify_screen form6_Search_Screen = new Form6_search_or_modify_screen();
+            Form6_search_screen form6_Search_Screen = new Form6_search_screen();
             form6_Search_Screen.ShowDialog();
         }
 
@@ -39,10 +39,11 @@ namespace xmlDataManager
         {
             IScustomData();
         }
+
+        List<Product> productsList = new List<Product>();
         public void IScustomData()
         {
             Product product = new Product();
-            List<Product> productsList = new List<Product>();
 
             product.product_code_number = textBox1_product_code_number.Text;
             product.product_name = textBox2_product_name.Text;
@@ -59,9 +60,6 @@ namespace xmlDataManager
 
             dataGridView_outProduct.DataSource = null;
             dataGridView_outProduct.DataSource = productsList;
-           
-            xmlDataManager.Save_File(productsList.ToString());
-
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -71,7 +69,7 @@ namespace xmlDataManager
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form6_search_or_modify_screen form6_Search_Screen = new Form6_search_or_modify_screen();
+            Form6_search_screen form6_Search_Screen = new Form6_search_screen();
             form6_Search_Screen.ShowDialog();
         }
 
@@ -79,6 +77,22 @@ namespace xmlDataManager
         {
             Form4_all_inventory_screen form4 = new Form4_all_inventory_screen();
             form4.ShowDialog();
+        }
+        private void Form1_Factory_screen_Activated(object sender, EventArgs e)
+        {
+            Console.WriteLine("Form1_Factory_screen_Activated 활성화 하였습니다.");
+            if(xmlDataManager.temp_Product != null)
+            {
+                textBox1_product_code_number.Text = xmlDataManager.temp_Product.product_code_number;
+                textBox2_product_name.Text = xmlDataManager.temp_Product.product_name;
+                textBox3_categorize_name.Text = xmlDataManager.temp_Product.categorize_name;
+                textBox4_type_name.Text = xmlDataManager.temp_Product.type_name;
+                textBox5_storage_name.Text = xmlDataManager.temp_Product.storage_name;
+                textBox6_customer_name.Text = xmlDataManager.temp_Product.customer_name;
+                textBox11_inventory_stock_number.Text = xmlDataManager.temp_Product.storage_inventoy_number;
+                textBox8_delivery_day.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm");
+            }
+
         }
     }
 }

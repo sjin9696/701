@@ -24,7 +24,7 @@ namespace xmlDataManager
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Form6_search_or_modify_screen form6_Search_Screen = new Form6_search_or_modify_screen();
+            Form6_search_screen form6_Search_Screen = new Form6_search_screen();
             form6_Search_Screen.ShowDialog();
         }
         private void button3_Click(object sender, EventArgs e)
@@ -71,7 +71,7 @@ namespace xmlDataManager
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form6_search_or_modify_screen form6_Search_Screen = new Form6_search_or_modify_screen();
+            Form6_search_screen form6_Search_Screen = new Form6_search_screen();
             form6_Search_Screen.ShowDialog();
         }
 

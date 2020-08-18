@@ -73,5 +73,12 @@ namespace xmlDataManager
             form7_Newmember.ShowDialog();
 
         }
+        private void textBox_login_pw_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                login_check();
+            }
+        }
     }
 }

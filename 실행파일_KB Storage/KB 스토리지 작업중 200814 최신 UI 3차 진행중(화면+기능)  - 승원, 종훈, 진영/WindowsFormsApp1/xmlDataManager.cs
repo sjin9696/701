@@ -13,7 +13,7 @@ namespace xmlDataManager
     class xmlDataManager
     {
         public static List<Product> ProductsList = new List<Product>();
-
+        public static Product temp_Product = new Product();
         public static void Load_File()
         {
             string file_name = "../../resouce/ProductsList.xml"; //파일 경로.

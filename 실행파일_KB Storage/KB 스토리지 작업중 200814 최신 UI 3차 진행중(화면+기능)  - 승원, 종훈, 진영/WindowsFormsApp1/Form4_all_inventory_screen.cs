@@ -31,5 +31,10 @@ namespace xmlDataManager
         private void dataGridView_all_incentory_ColumnSortModeChanged(object sender, DataGridViewColumnEventArgs e)
         {
         }
+
+        private void productBindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
