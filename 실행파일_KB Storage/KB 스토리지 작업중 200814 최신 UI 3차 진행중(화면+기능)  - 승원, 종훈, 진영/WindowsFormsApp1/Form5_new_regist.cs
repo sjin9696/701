@@ -54,8 +54,8 @@ namespace xmlDataManager
             product.storage_name = textBox5_storage_name.Text;
             product.customer_name = textBox6_customer_name.Text;
             
-            product.delivery_day = textBox8_delivery_day.Text;
-            product.sales_number = textBox9_sales_number.Text;
+            product.delivery_dates = textBox8_delivery_day.Text;
+            product.sales_money_number = textBox9_sales_number.Text;
       
            
 

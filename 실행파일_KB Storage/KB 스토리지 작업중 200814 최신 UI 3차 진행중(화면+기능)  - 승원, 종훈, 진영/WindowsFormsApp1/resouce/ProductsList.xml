@@ -10,9 +10,9 @@
 		<delivery>20200816</delivery>
 		<money>50</money>
 		<storage>A01P01B01</storage>
-		<inventory>500</inventory>
+		<storage_inventoy>500</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>002</code>
@@ -23,9 +23,9 @@
 		<delivery>20200816</delivery>
 		<money>70</money>
 		<storage>A01P01B01</storage>
-		<inventory>5000</inventory>
+		<storage_inventoy>5000</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>003</code>
@@ -36,9 +36,9 @@
 		<delivery>20200816</delivery>
 		<money>100</money>
 		<storage>A01P01B01</storage>
-		<inventory>500</inventory>
+		<storage_inventoy>500</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>004</code>
@@ -49,9 +49,9 @@
 		<delivery>20200816</delivery>
 		<money>120</money>
 		<storage>A01P01B01</storage>
-		<inventory>5000</inventory>
+		<storage_inventoy>5000</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>005</code>
@@ -62,9 +62,9 @@
 		<delivery>20200816</delivery>
 		<money>140</money>
 		<storage>A01P01B01</storage>
-		<inventory>500</inventory>
+		<storage_inventoy>500</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>006</code>
@@ -75,9 +75,9 @@
 		<delivery>20200816</delivery>
 		<money>160</money>
 		<storage>A01P01B01</storage>
-		<inventory>5000</inventory>
+		<storage_inventoy>5000</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>007</code>
@@ -88,9 +88,9 @@
 		<delivery>20200816</delivery>
 		<money>180</money>
 		<storage>A01P01B01</storage>
-		<inventory>500</inventory>
+		<storage_inventoy>500</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>008</code>
@@ -101,9 +101,9 @@
 		<delivery>20200816</delivery>
 		<money>200</money>
 		<storage>A01P01B01</storage>
-		<inventory>5000</inventory>
+		<storage_inventoy>5000</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>009</code>
@@ -114,9 +114,9 @@
 		<delivery>20200816</delivery>
 		<money>220</money>
 		<storage>A01P01B01</storage>
-		<inventory>500</inventory>
+		<storage_inventoy>500</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>010</code>
@@ -127,9 +127,9 @@
 		<delivery>20200816</delivery>
 		<money>240</money>
 		<storage>A01P01B01</storage>
-		<inventory>5000</inventory>
+		<storage_inventoy>5000</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>011</code>
@@ -140,9 +140,9 @@
 		<delivery>20200816</delivery>
 		<money>60</money>
 		<storage>A01P01B02</storage>
-		<inventory>500</inventory>
+		<storage_inventoy>500</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>012</code>
@@ -153,9 +153,9 @@
 		<delivery>20200816</delivery>
 		<money>70</money>
 		<storage>A01P01B02</storage>
-		<inventory>5000</inventory>
+		<storage_inventoy>5000</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>013</code>
@@ -166,9 +166,9 @@
 		<delivery>20200816</delivery>
 		<money>80</money>
 		<storage>A01P01B02</storage>
-		<inventory>500</inventory>
+		<storage_inventoy>500</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>014</code>
@@ -179,9 +179,9 @@
 		<delivery>20200816</delivery>
 		<money>90</money>
 		<storage>A01P01B02</storage>
-		<inventory>5000</inventory>
+		<storage_inventoy>5000</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>015</code>
@@ -192,9 +192,9 @@
 		<delivery>20200816</delivery>
 		<money>100</money>
 		<storage>A01P01B02</storage>
-		<inventory>500</inventory>
+		<storage_inventoy>500</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>016</code>
@@ -205,9 +205,9 @@
 		<delivery>20200816</delivery>
 		<money>120</money>
 		<storage>A01P01B02</storage>
-		<inventory>5000</inventory>
+		<storage_inventoy>5000</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>017</code>
@@ -218,9 +218,9 @@
 		<delivery>20200816</delivery>
 		<money>140</money>
 		<storage>A01P01B02</storage>
-		<inventory>500</inventory>
+		<storage_inventoy>500</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>018</code>
@@ -231,9 +231,9 @@
 		<delivery>20200816</delivery>
 		<money>160</money>
 		<storage>A01P01B02</storage>
-		<inventory>5000</inventory>
+		<storage_inventoy>5000</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>019</code>
@@ -244,9 +244,9 @@
 		<delivery>20200816</delivery>
 		<money>180</money>
 		<storage>A01P01B02</storage>
-		<inventory>500</inventory>
+		<storage_inventoy>500</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>020</code>
@@ -257,9 +257,9 @@
 		<delivery>20200816</delivery>
 		<money>200</money>
 		<storage>A01P01B02</storage>
-		<inventory>5000</inventory>
+		<storage_inventoy>5000</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>021</code>
@@ -270,9 +270,9 @@
 		<delivery>20200816</delivery>
 		<money>10</money>
 		<storage>A01P01B03</storage>
-		<inventory>500</inventory>
+		<storage_inventoy>500</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>022</code>
@@ -283,9 +283,9 @@
 		<delivery>20200816</delivery>
 		<money>20</money>
 		<storage>A01P01B03</storage>
-		<inventory>5000</inventory>
+		<storage_inventoy>5000</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>023</code>
@@ -296,9 +296,9 @@
 		<delivery>20200816</delivery>
 		<money>30</money>
 		<storage>A01P01B03</storage>
-		<inventory>500</inventory>
+		<storage_inventoy>500</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>024</code>
@@ -309,9 +309,9 @@
 		<delivery>20200816</delivery>
 		<money>40</money>
 		<storage>A01P01B03</storage>
-		<inventory>5000</inventory>
+		<storage_inventoy>5000</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>025</code>
@@ -322,9 +322,9 @@
 		<delivery>20200816</delivery>
 		<money>50</money>
 		<storage>A01P01B03</storage>
-		<inventory>500</inventory>
+		<storage_inventoy>500</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>026</code>
@@ -335,9 +335,9 @@
 		<delivery>20200816</delivery>
 		<money>60</money>
 		<storage>A01P01B03</storage>
-		<inventory>5000</inventory>
+		<storage_inventoy>5000</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>027</code>
@@ -348,9 +348,9 @@
 		<delivery>20200816</delivery>
 		<money>70</money>
 		<storage>A01P01B03</storage>
-		<inventory>500</inventory>
+		<storage_inventoy>500</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>028</code>
@@ -361,9 +361,9 @@
 		<delivery>20200816</delivery>
 		<money>80</money>
 		<storage>A01P01B03</storage>
-		<inventory>5000</inventory>
+		<storage_inventoy>5000</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>029</code>
@@ -374,9 +374,9 @@
 		<delivery>20200816</delivery>
 		<money>90</money>
 		<storage>A01P01B03</storage>
-		<inventory>500</inventory>
+		<storage_inventoy>500</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>030</code>
@@ -387,9 +387,9 @@
 		<delivery>20200816</delivery>
 		<money>100</money>
 		<storage>A01P01B03</storage>
-		<inventory>5000</inventory>
+		<storage_inventoy>5000</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>031</code>
@@ -400,9 +400,9 @@
 		<delivery>20200816</delivery>
 		<money>110</money>
 		<storage>A01P01B03</storage>
-		<inventory>500</inventory>
+		<storage_inventoy>500</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>032</code>
@@ -413,9 +413,9 @@
 		<delivery>20200816</delivery>
 		<money>120</money>
 		<storage>A01P01B03</storage>
-		<inventory>5000</inventory>
+		<storage_inventoy>5000</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>033</code>
@@ -426,9 +426,9 @@
 		<delivery>20200816</delivery>
 		<money>50</money>
 		<storage>A02P01B01</storage>
-		<inventory>100</inventory>
+		<storage_inventoy>100</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>034</code>
@@ -439,9 +439,9 @@
 		<delivery>20200816</delivery>
 		<money>70</money>
 		<storage>A02P01B01</storage>
-		<inventory>150</inventory>
+		<storage_inventoy>150</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>035</code>
@@ -452,9 +452,9 @@
 		<delivery>20200816</delivery>
 		<money>60</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>036</code>
@@ -465,9 +465,9 @@
 		<delivery>20200816</delivery>
 		<money>80</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>037</code>
@@ -478,9 +478,9 @@
 		<delivery>20200816</delivery>
 		<money>70</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>038</code>
@@ -491,9 +491,9 @@
 		<delivery>20200816</delivery>
 		<money>80</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>039</code>
@@ -504,9 +504,9 @@
 		<delivery>20200816</delivery>
 		<money>80</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>040</code>
@@ -517,9 +517,9 @@
 		<delivery>20200816</delivery>
 		<money>90</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>041</code>
@@ -530,9 +530,9 @@
 		<delivery>20200816</delivery>
 		<money>90</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>042</code>
@@ -543,9 +543,9 @@
 		<delivery>20200816</delivery>
 		<money>100</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>043</code>
@@ -556,9 +556,9 @@
 		<delivery>20200816</delivery>
 		<money>100</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>044</code>
@@ -569,9 +569,9 @@
 		<delivery>20200816</delivery>
 		<money>110</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>045</code>
@@ -582,9 +582,9 @@
 		<delivery>20200816</delivery>
 		<money>120</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>046</code>
@@ -595,9 +595,9 @@
 		<delivery>20200816</delivery>
 		<money>130</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>047</code>
@@ -608,9 +608,9 @@
 		<delivery>20200816</delivery>
 		<money>140</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>048</code>
@@ -621,9 +621,9 @@
 		<delivery>20200816</delivery>
 		<money>150</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>049</code>
@@ -634,9 +634,9 @@
 		<delivery>20200816</delivery>
 		<money>160</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>050</code>
@@ -647,9 +647,9 @@
 		<delivery>20200816</delivery>
 		<money>170</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>051</code>
@@ -660,9 +660,9 @@
 		<delivery>20200816</delivery>
 		<money>180</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>052</code>
@@ -673,9 +673,9 @@
 		<delivery>20200816</delivery>
 		<money>190</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>053</code>
@@ -686,9 +686,9 @@
 		<delivery>20200816</delivery>
 		<money>200</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>054</code>
@@ -699,9 +699,9 @@
 		<delivery>20200816</delivery>
 		<money>210</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>055</code>
@@ -712,9 +712,9 @@
 		<delivery>20200816</delivery>
 		<money>220</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>056</code>
@@ -725,9 +725,9 @@
 		<delivery>20200816</delivery>
 		<money>230</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>057</code>
@@ -738,9 +738,9 @@
 		<delivery>20200816</delivery>
 		<money>240</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>058</code>
@@ -751,9 +751,9 @@
 		<delivery>20200816</delivery>
 		<money>250</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 	<item>
 		<code>059</code>
@@ -764,8 +764,8 @@
 		<delivery>20200816</delivery>
 		<money>260</money>
 		<storage>A02P01B01</storage>
-		<inventory>200</inventory>
+		<storage_inventoy>200</storage_inventoy>
 		<sales_money>0</sales_money>
-		<sales_day>0</sales_day>
+		<sales_dates>0</sales_dates>
 	</item>
 </product>
