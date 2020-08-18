@@ -30,14 +30,14 @@ namespace xmlDataManager
                         product_name = item.Element("name").Value,
                         categorize_name = item.Element("categorize").Value,
                         type_name = item.Element("type").Value,
-                        barcode_number = item.Element("barcode").Value,
-                        sales_number = item.Element("sales").Value,
-                        money_number = item.Element("money").Value,
-                        delivery_day = item.Element("delivery").Value,
+                        worker_name = item.Element("worker").Value,
                         customer_name = item.Element("customer").Value,
+                        delivery_dates = item.Element("delivery").Value,
+                        money_number = item.Element("money").Value,
                         storage_name = item.Element("storage").Value,
-                        inventory_stock_number = item.Element("inventory_stock").Value,
-                        worker_name = item.Element("worker").Value
+                        storage_inventoy_number = item.Element("storage_inventoy").Value,
+                        sales_money_number = item.Element("sales_money").Value,
+                        sales_dates = item.Element("sales_dates").Value
                     };
                     Products.Add(product);
                 }
@@ -72,14 +72,16 @@ namespace xmlDataManager
                 element += XML("name", item.product_name);
                 element += XML("categorize", item.categorize_name);
                 element += XML("type", item.type_name);
-                element += XML("barcode", item.barcode_number);
-                element += XML("sales", item.sales_number);
-                element += XML("money", item.money_number);
-                element += XML("delivery", item.delivery_day);
-                element += XML("customer", item.customer_name);
-                element += XML("storage", item.storage_name);
-                element += XML("inventory_stock", item.inventory_stock_number);
                 element += XML("worker", item.worker_name);
+
+                element += XML("customer", item.customer_name);
+                element += XML("delivery", item.delivery_dates);
+                element += XML("money", item.money_number);
+                element += XML("storage", item.storage_name);
+                element += XML("storage_inventoy", item.storage_inventoy_number);
+
+                element += XML("sales_money", item.sales_money_number);
+                element += XML("sales_dates", item.sales_dates);
 
                 productOutput += XML("item", element);
             }
@@ -88,10 +90,6 @@ namespace xmlDataManager
             Console.WriteLine("public static string Read_Products()" + productOutput);
             Console.WriteLine("Products.Count" + Products.Count);
             return productOutput;
-        }
-        public static void select()
-        {
-            //Products.Find(x => x.product_code_number.Contains("001"));
         }
     }
 }
