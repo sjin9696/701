@@ -281,9 +281,9 @@
             // 
             // productBindingSource1
             // 
-            this.productBindingSource1.DataSource = typeof(xmlDataManager.xmlDataManager);
+            this.productBindingSource1.DataSource = typeof(xmlDataManager);
             // 
-            // Form6_search_screen
+            // Form6_search_or_modify_screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -299,7 +299,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label11);
-            this.Name = "Form6_search_screen";
+            this.Name = "Form6_search_or_modify_screen";
             this.Text = "창고관리프로그램";
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_all_incentory)).EndInit();

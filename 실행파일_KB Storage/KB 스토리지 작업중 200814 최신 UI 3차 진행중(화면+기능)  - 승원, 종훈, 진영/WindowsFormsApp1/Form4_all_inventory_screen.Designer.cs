@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4_all_inventory_screen));
             this.label11 = new System.Windows.Forms.Label();
             this.dataGridView_all_incentory = new System.Windows.Forms.DataGridView();
+            this.productBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.button6 = new System.Windows.Forms.Button();
             this.계정코드 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.계정명 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.관리번호 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,8 +45,6 @@
             this.재고수량 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sales_money_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sales_dates = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button6 = new System.Windows.Forms.Button();
-            this.productBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_all_incentory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -86,6 +86,20 @@
             this.dataGridView_all_incentory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_all_incentory_CellContentClick);
             this.dataGridView_all_incentory.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView_all_incentory_ColumnHeaderMouseClick);
             this.dataGridView_all_incentory.ColumnSortModeChanged += new System.Windows.Forms.DataGridViewColumnEventHandler(this.dataGridView_all_incentory_ColumnSortModeChanged);
+            // 
+            // productBindingSource1
+            // 
+            this.productBindingSource1.DataSource = typeof(xmlDataManager);
+            this.productBindingSource1.CurrentChanged += new System.EventHandler(this.productBindingSource1_CurrentChanged);
+            // 
+            // button6
+            // 
+            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
+            this.button6.Location = new System.Drawing.Point(964, 69);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(49, 47);
+            this.button6.TabIndex = 79;
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // 계정코드
             // 
@@ -186,20 +200,6 @@
             this.sales_dates.Name = "sales_dates";
             this.sales_dates.ReadOnly = true;
             this.sales_dates.Width = 78;
-            // 
-            // button6
-            // 
-            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
-            this.button6.Location = new System.Drawing.Point(964, 69);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(49, 47);
-            this.button6.TabIndex = 79;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // productBindingSource1
-            // 
-            this.productBindingSource1.DataSource = typeof(xmlDataManager.xmlDataManager);
-            this.productBindingSource1.CurrentChanged += new System.EventHandler(this.productBindingSource1_CurrentChanged);
             // 
             // Form4_all_inventory_screen
             // 

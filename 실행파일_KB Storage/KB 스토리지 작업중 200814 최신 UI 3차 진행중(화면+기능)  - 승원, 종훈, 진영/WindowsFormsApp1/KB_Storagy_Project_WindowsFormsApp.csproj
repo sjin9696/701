@@ -110,12 +110,6 @@
     <Compile Include="Form7_newmember.Designer.cs">
       <DependentUpon>Form7_newmember.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form8_Reform.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form8_Reform.Designer.cs">
-      <DependentUpon>Form8_Reform.cs</DependentUpon>
-    </Compile>
     <Compile Include="Products.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -142,9 +136,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form7_newmember.resx">
       <DependentUpon>Form7_newmember.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form8_Reform.resx">
-      <DependentUpon>Form8_Reform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
