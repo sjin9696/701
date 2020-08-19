@@ -281,7 +281,7 @@
             // 
             // productBindingSource1
             // 
-            this.productBindingSource1.DataSource = typeof(xmlDataManager.xmlDataManager);
+            this.productBindingSource1.DataSource = typeof(xmlDataManager);
             // 
             // Form6_search_screen
             // 

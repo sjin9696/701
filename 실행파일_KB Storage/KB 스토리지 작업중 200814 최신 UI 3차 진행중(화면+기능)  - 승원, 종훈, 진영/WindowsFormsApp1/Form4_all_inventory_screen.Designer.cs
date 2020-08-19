@@ -198,7 +198,7 @@
             // 
             // productBindingSource1
             // 
-            this.productBindingSource1.DataSource = typeof(xmlDataManager.xmlDataManager);
+            this.productBindingSource1.DataSource = typeof(xmlDataManager);
             this.productBindingSource1.CurrentChanged += new System.EventHandler(this.productBindingSource1_CurrentChanged);
             // 
             // Form4_all_inventory_screen
