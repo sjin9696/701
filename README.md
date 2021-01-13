@@ -4,7 +4,8 @@
 - [README 작성법 예제 중요한 참고자료](https://hack-jam.tistory.com/26).-https://hack-jam.tistory.com/26
 ## 프로젝트 진행 방향 및 방법
 ###### 추가 개선내용
-- 바코드 출력기 추가
+- 바코드 출력기 추가 (TTP-245)
+![image](https://user-images.githubusercontent.com/59603332/104398211-a7df9a00-5591-11eb-99c4-534479ef219b.png)
 ###### 회의록 및 회의 내용 정리
 - 손글씨 및 양식 없이 간단한 내용으로 기록, (필수 표기 사항- 날짜)
 ###### 프로그램 구현
