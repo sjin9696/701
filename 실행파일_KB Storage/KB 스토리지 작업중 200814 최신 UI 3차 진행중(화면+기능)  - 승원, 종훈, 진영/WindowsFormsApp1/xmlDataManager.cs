@@ -31,7 +31,6 @@ namespace xmlDataManager
                         product_name = item.Element("name").Value,
                         categorize_name = item.Element("categorize").Value,
                         type_name = item.Element("type").Value,
-                       // worker_name = item.Element("worker").Value,
                         customer_name = item.Element("customer").Value,
                         delivery_dates = item.Element("delivery").Value,
                         money_number = item.Element("money").Value,
@@ -73,7 +72,6 @@ namespace xmlDataManager
                 element += XML("name", item.product_name);
                 element += XML("categorize", item.categorize_name);
                 element += XML("type", item.type_name);
-               // element += XML("worker", item.worker_name);
                 element += XML("customer", item.customer_name);
                 element += XML("delivery", item.delivery_dates);
                 element += XML("money", item.money_number);
