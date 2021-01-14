@@ -31,13 +31,14 @@ namespace xmlDataManager
                         product_name = item.Element("name").Value,
                         categorize_name = item.Element("categorize").Value,
                         type_name = item.Element("type").Value,
-                        customer_name = item.Element("customer").Value,
-                        delivery_dates = item.Element("delivery").Value,
-                        money_number = item.Element("money").Value,
-                        storage_name = item.Element("storage").Value,
-                        storage_inventoy_number = item.Element("storage_inventoy").Value,
-                        sales_money_number = item.Element("sales_money").Value,
-                        sales_dates = item.Element("sales_dates").Value
+                        customer_name = item.Element("buy_company").Value,//구매처
+                        delivery_dates = item.Element("buy_date").Value, //구매일자 
+                        money_number = item.Element("buy_money").Value, //구매금액
+                        storage_name = item.Element("storage_location").Value,//위치
+                        storage_inventoy_number = item.Element("storage_quantity").Value,//재고수량
+                        sales_money_number = item.Element("sales_money").Value,//판매금액
+                        sales_dates = item.Element("sales_dates").Value,//판매일자
+                        sales_company = item.Element("sales_company").Value //판매처
                     };
                     ProductsList.Add(product);
                 }

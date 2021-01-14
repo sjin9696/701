@@ -29,6 +29,8 @@ namespace xmlDataManager
         //재고수량
         public string storage_inventoy_number { get; set; }
         //판매수량
+        public string sales_company { get; set; }
+        //판매수량
         public string sales_money_number { get; set; }
         //판매일자
         public string sales_dates { get; set; }

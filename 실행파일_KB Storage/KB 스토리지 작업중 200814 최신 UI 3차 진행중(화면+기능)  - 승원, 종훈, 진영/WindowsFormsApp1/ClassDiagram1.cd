@@ -3,7 +3,7 @@
   <Class Name="xmlDataManager.Form1_Factory_screen" Collapsed="true">
     <Position X="0.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>cQCACBIBCCgAGDQCCASQAAICAMA7IABBAiA/AJYB4BA=</HashCode>
+      <HashCode>cyCACBIBKDgIGTaDCASEIkICAMAzYEBBAiA/IJYBpJQ=</HashCode>
       <FileName>Form1_Factory_screen.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -73,7 +73,7 @@
   <Class Name="xmlDataManager.xmlDataManager">
     <Position X="2.25" Y="3" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAQCAAACAAQAAAAAAAAgAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAIQCAAACAAQAAAAAAAAgAAAAAAAAA=</HashCode>
       <FileName>xmlDataManager.cs</FileName>
     </TypeIdentifier>
   </Class>
