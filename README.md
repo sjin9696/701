@@ -1,5 +1,5 @@
 # 701
-![GitHub followers](https://img.shields.io/github/followers/sjin9696?style=plastic)
+![GitHub watchers](https://img.shields.io/github/watchers/sjin9696/701)
 > C# 수업 프로젝트 협업 리포지토리, 팀명 : 세븐헌드레드원 팀원 : 우종훈, 이승원, 송진영
 ## README 작성 관련 참고자료
 - [README 작성법 예제 중요한 참고자료](https://hack-jam.tistory.com/26).-https://hack-jam.tistory.com/26
