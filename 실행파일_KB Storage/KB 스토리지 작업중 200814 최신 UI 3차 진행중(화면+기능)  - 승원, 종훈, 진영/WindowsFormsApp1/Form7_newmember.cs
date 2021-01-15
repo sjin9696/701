@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace xmlDataManager
 {
@@ -138,9 +139,18 @@ namespace xmlDataManager
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBox1_id.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-            textBox2_pw.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-            textBox3_name.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            try
+            {
+                textBox1_id.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                textBox2_pw.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                textBox3_name.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            }
+            catch(Exception exception)
+            {
+                if (e.RowIndex is -1) return; //컬럼범위를 선택하였을때 처리.
+                Console.WriteLine(exception.Message);
+                System.Console.WriteLine(e.RowIndex);
+            }
         }
     }
 }

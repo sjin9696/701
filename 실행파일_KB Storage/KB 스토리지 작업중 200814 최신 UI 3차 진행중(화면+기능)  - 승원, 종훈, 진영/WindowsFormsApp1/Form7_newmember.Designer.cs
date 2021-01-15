@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox5_phone_number = new System.Windows.Forms.TextBox();
@@ -51,8 +52,13 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button_delete = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox4_group = new System.Windows.Forms.ComboBox();
+            this.userInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pWDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adminDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userInfoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label11
@@ -92,7 +98,7 @@
             this.textBox4_group.Multiline = true;
             this.textBox4_group.Name = "textBox4_group";
             this.textBox4_group.Size = new System.Drawing.Size(122, 29);
-            this.textBox4_group.TabIndex = 4;
+            this.textBox4_group.TabIndex = 999;
             // 
             // textBox3_name
             // 
@@ -196,13 +202,18 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column2,
             this.Column1,
             this.Column3,
             this.Column4,
-            this.Column5});
+            this.Column5,
+            this.iDDataGridViewTextBoxColumn,
+            this.pWDataGridViewTextBoxColumn,
+            this.adminDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.userInfoBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(18, 329);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
@@ -275,18 +286,43 @@
             this.button_delete.UseVisualStyleBackColor = true;
             this.button_delete.Click += new System.EventHandler(this.button_info_delete_Click);
             // 
-            // comboBox1
+            // comboBox4_group
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBox4_group.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.comboBox4_group.FormattingEnabled = true;
+            this.comboBox4_group.Items.AddRange(new object[] {
             "관리자",
             "입고담당자",
             "출고담당자"});
-            this.comboBox1.Location = new System.Drawing.Point(263, 248);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(122, 28);
-            this.comboBox1.TabIndex = 36;
+            this.comboBox4_group.Location = new System.Drawing.Point(263, 248);
+            this.comboBox4_group.Name = "comboBox4_group";
+            this.comboBox4_group.Size = new System.Drawing.Size(121, 28);
+            this.comboBox4_group.TabIndex = 4;
+            // 
+            // userInfoBindingSource
+            // 
+            this.userInfoBindingSource.DataSource = typeof(UserInfo);
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // pWDataGridViewTextBoxColumn
+            // 
+            this.pWDataGridViewTextBoxColumn.DataPropertyName = "PW";
+            this.pWDataGridViewTextBoxColumn.HeaderText = "PW";
+            this.pWDataGridViewTextBoxColumn.Name = "pWDataGridViewTextBoxColumn";
+            this.pWDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // adminDataGridViewTextBoxColumn
+            // 
+            this.adminDataGridViewTextBoxColumn.DataPropertyName = "Admin";
+            this.adminDataGridViewTextBoxColumn.HeaderText = "Admin";
+            this.adminDataGridViewTextBoxColumn.Name = "adminDataGridViewTextBoxColumn";
+            this.adminDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Form7_newmember
             // 
@@ -294,7 +330,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(566, 683);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBox4_group);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button_delete);
             this.Controls.Add(this.button4);
@@ -316,6 +352,7 @@
             this.Name = "Form7_newmember";
             this.Text = "등록회원관리";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userInfoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -346,6 +383,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Button button_delete;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox4_group;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pWDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adminDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource userInfoBindingSource;
     }
 }
