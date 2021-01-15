@@ -38,5 +38,13 @@ namespace xmlDataManager
             }
             return res;
         }
+        public static bool UserListAdd(List<UserInfo> userinfo)
+        {
+            foreach (var item in userinfo)
+            {
+                UserInfos.Add(item);
+            }
+            return true;
+        }
     }
 }
