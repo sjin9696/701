@@ -44,18 +44,21 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.userInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pWDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adminDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userInfoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userInfoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label11
@@ -209,35 +212,16 @@
             this.Column1,
             this.Column3,
             this.Column4,
-            this.Column5});
+            this.Column5,
+            this.iDDataGridViewTextBoxColumn,
+            this.pWDataGridViewTextBoxColumn,
+            this.adminDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.userInfoBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(18, 329);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(530, 224);
             this.dataGridView1.TabIndex = 35;
-            // 
-            // userInfoBindingSource
-            // 
-            this.userInfoBindingSource.DataSource = typeof(UserInfo);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(417, 173);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(95, 37);
-            this.button3.TabIndex = 34;
-            this.button3.Text = "저장";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(417, 227);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(95, 37);
-            this.button4.TabIndex = 34;
-            this.button4.Text = "검색";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // Column2
             // 
@@ -267,6 +251,46 @@
             this.Column5.HeaderText = "연락처";
             this.Column5.Name = "Column5";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(417, 173);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(95, 37);
+            this.button3.TabIndex = 34;
+            this.button3.Text = "저장";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(417, 227);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(95, 37);
+            this.button4.TabIndex = 34;
+            this.button4.Text = "검색";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            // 
+            // pWDataGridViewTextBoxColumn
+            // 
+            this.pWDataGridViewTextBoxColumn.DataPropertyName = "PW";
+            this.pWDataGridViewTextBoxColumn.HeaderText = "PW";
+            this.pWDataGridViewTextBoxColumn.Name = "pWDataGridViewTextBoxColumn";
+            // 
+            // adminDataGridViewTextBoxColumn
+            // 
+            this.adminDataGridViewTextBoxColumn.DataPropertyName = "Admin";
+            this.adminDataGridViewTextBoxColumn.HeaderText = "Admin";
+            this.adminDataGridViewTextBoxColumn.Name = "adminDataGridViewTextBoxColumn";
+            // 
+            // userInfoBindingSource
+            // 
+            this.userInfoBindingSource.DataSource = typeof(xmlDataManager.UserInfo);
+            // 
             // Form7_newmember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -293,8 +317,8 @@
             this.Name = "Form7_newmember";
             this.Text = "Form7_newmember";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userInfoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userInfoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -326,5 +350,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pWDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adminDataGridViewTextBoxColumn;
     }
 }
