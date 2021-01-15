@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace xmlDataManager
 {
@@ -8,12 +7,12 @@ namespace xmlDataManager
         public Form7_newmember()
         {
             InitializeComponent();
-            userDataManager.Load_User_Data();
-            newmember();
             System.Console.WriteLine("Form7_newmember");
+            newmember();
         }
         private void newmember()
         {
+            userDataManager.Load_User_Data();
             System.Console.WriteLine(userDataManager.UserInfos[0].ID);
             foreach(var item in userDataManager.UserInfos)
             {
@@ -114,6 +113,27 @@ namespace xmlDataManager
 
             dataGridView1.DataSource = "";
             dataGridView1.DataSource = userDataManager.UserInfos;
+        }
+
+        private void button_close_notSave_Click(object sender, System.EventArgs e)
+        {
+            DialogResult res = MessageBox.Show(this, "저장하지 않고 바로 나갈까요?.", "저장하지 않고 닫기", MessageBoxButtons.OKCancel);
+            if (res == DialogResult.OK)
+            {
+                MessageBox.Show("저장하지 않았습니다.");
+                this.Close();
+            }
+        }
+
+        private void button_close_save_Click(object sender, System.EventArgs e)
+        {
+            DialogResult res = MessageBox.Show(this, "저장할까요?.", "저장 후 닫기", MessageBoxButtons.OKCancel);
+            if(res==DialogResult.OK)
+            {
+                MessageBox.Show("저장 되었습니다.");
+                userDataManager.Save_File(userDataManager.Read_Products());
+                this.Close();
+            }
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
