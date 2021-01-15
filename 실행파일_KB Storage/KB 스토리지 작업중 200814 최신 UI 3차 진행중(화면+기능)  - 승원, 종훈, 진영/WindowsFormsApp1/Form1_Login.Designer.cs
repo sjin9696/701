@@ -33,7 +33,7 @@
             this.textBox_login_id = new System.Windows.Forms.TextBox();
             this.button_login = new System.Windows.Forms.Button();
             this.textBox_login_pw = new System.Windows.Forms.TextBox();
-            this.button_admin_login = new System.Windows.Forms.Button();
+            this.button_key_admin_login = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
@@ -75,15 +75,15 @@
             // 
             // button_admin_login
             // 
-            this.button_admin_login.FlatAppearance.BorderSize = 0;
-            this.button_admin_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_admin_login.Image = ((System.Drawing.Image)(resources.GetObject("button_admin_login.Image")));
-            this.button_admin_login.Location = new System.Drawing.Point(436, 12);
-            this.button_admin_login.Name = "button_admin_login";
-            this.button_admin_login.Size = new System.Drawing.Size(57, 57);
-            this.button_admin_login.TabIndex = 4;
-            this.button_admin_login.UseVisualStyleBackColor = true;
-            this.button_admin_login.Click += new System.EventHandler(this.button_admin_login_Click);
+            this.button_key_admin_login.FlatAppearance.BorderSize = 0;
+            this.button_key_admin_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_key_admin_login.Image = ((System.Drawing.Image)(resources.GetObject("button_admin_login.Image")));
+            this.button_key_admin_login.Location = new System.Drawing.Point(436, 12);
+            this.button_key_admin_login.Name = "button_admin_login";
+            this.button_key_admin_login.Size = new System.Drawing.Size(57, 57);
+            this.button_key_admin_login.TabIndex = 4;
+            this.button_key_admin_login.UseVisualStyleBackColor = true;
+            this.button_key_admin_login.Click += new System.EventHandler(this.button_key_admin_login_Click);
             // 
             // button3
             // 
@@ -112,7 +112,7 @@
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(505, 443);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button_admin_login);
+            this.Controls.Add(this.button_key_admin_login);
             this.Controls.Add(this.button_login);
             this.Controls.Add(this.textBox_login_pw);
             this.Controls.Add(this.textBox_login_id);
@@ -129,7 +129,7 @@
         public System.Windows.Forms.TextBox textBox_login_id;
         private System.Windows.Forms.Button button_login;
         public System.Windows.Forms.TextBox textBox_login_pw;
-        private System.Windows.Forms.Button button_admin_login;
+        private System.Windows.Forms.Button button_key_admin_login;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ImageList imageList1;
     }

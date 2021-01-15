@@ -15,13 +15,11 @@ namespace xmlDataManager
             login_check();
         }
 
-        private void button_admin_login_Click(object sender, EventArgs e)
+        private void button_key_admin_login_Click(object sender, EventArgs e)
         {
-            Form7_newmember form7_Newmember = new Form7_newmember();
-            form7_Newmember.ShowDialog();
-            //user_management();
-            Console.WriteLine("button_admin_login_Click : " +((Button)sender).ToString());
-            if((Button)sender == button_admin_login)
+            user_management();
+            Console.WriteLine("button_key_admin_login_Click : " + ((Button)sender).ToString());
+            if((Button)sender == button_key_admin_login)
             {
                 Console.WriteLine("");
             }
