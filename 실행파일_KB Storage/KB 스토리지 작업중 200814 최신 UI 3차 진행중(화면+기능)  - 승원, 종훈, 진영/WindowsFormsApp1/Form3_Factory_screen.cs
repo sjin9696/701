@@ -48,11 +48,10 @@ namespace xmlDataManager
             dataGridView_outProduct.DataSource = productsList;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button_reform_Click(object sender, EventArgs e)
         {
-            //반품수정화면
-            Form6_search_screen form6_Search_Screen = new Form6_search_screen();
-            form6_Search_Screen.ShowDialog();
+            Form8_Reform form8 = new Form8_Reform();
+            form8.ShowDialog();
         }
 
         private void button_all_inventory_Click(object sender, EventArgs e)

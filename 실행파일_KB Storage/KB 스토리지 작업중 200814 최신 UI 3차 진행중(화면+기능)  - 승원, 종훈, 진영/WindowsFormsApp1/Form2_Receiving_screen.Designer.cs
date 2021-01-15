@@ -155,7 +155,7 @@
             this.button2.TabIndex = 42;
             this.button2.Text = "반품/수정";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.button_reform_Click);
             // 
             // textBox10_money_number
             // 

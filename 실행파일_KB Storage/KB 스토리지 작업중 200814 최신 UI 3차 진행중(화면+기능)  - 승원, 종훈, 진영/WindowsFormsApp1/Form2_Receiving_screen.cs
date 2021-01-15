@@ -61,11 +61,10 @@ namespace xmlDataManager
             ViewCustomTime();//시간표시 - 작업자 : 승원형 작업일시 : 200811
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button_reform_Click(object sender, EventArgs e)
         {
-            //반품/수정 화면이 호출되어야 하나 반품 수정 화면은 없음..
-            Form6_search_screen form6_Search_Screen = new Form6_search_screen();
-            form6_Search_Screen.ShowDialog();
+            Form8_Reform form8 = new Form8_Reform();
+            form8.ShowDialog();
         }
         private void button_all_inventory_Click(object sender, EventArgs e)
         {
