@@ -13,8 +13,8 @@ namespace xmlDataManager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1_Login());
-            Application.Run(new Form7_newmember());
+            Application.Run(new Form1_Login());
+           // Application.Run(new Form7_newmember());
         }
     }
 }
