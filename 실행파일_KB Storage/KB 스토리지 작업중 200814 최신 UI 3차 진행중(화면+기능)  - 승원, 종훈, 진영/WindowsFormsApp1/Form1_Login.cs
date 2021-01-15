@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace xmlDataManager
 {
-    public partial class Form3_Login : Form
+    public partial class Form1_Login : Form
     {
-        public Form3_Login()
+        public Form1_Login()
         {
             InitializeComponent();
         }
@@ -41,7 +41,7 @@ namespace xmlDataManager
         {
             xmlDataManager.Load_File();
             string check = userDataManager.Login_Check(textBox_login_id.Text, textBox_login_pw.Text);
-            Form1_Factory_screen Factory_screen = new Form1_Factory_screen();
+            Form3_Factory_screen Factory_screen = new Form3_Factory_screen();
             Form2_Receiving_screen Receiving_screen = new Form2_Receiving_screen();
             Receiving_screen.Enabled = true;
             Console.WriteLine("check : " + check);

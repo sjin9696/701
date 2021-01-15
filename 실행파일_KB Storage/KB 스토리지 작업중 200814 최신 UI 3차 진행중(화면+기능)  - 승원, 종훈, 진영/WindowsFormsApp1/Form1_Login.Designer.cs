@@ -1,6 +1,6 @@
 ﻿namespace xmlDataManager
 {
-    partial class Form3_Login
+    partial class Form1_Login
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3_Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1_Login));
             this.textBox_login_id = new System.Windows.Forms.TextBox();
             this.button_login = new System.Windows.Forms.Button();
             this.textBox_login_pw = new System.Windows.Forms.TextBox();

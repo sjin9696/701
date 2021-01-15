@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace xmlDataManager
 {
-    public partial class Form1_Factory_screen : Form
+    public partial class Form3_Factory_screen : Form
     {
-        public Form1_Factory_screen()//첫실행 한번만
+        public Form3_Factory_screen()//첫실행 한번만
         {
             InitializeComponent();
             label_who_login.Text = userDataManager.UserInfos[0].ID + label_who_login.Text;
