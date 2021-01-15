@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace xmlDataManager
@@ -16,25 +9,11 @@ namespace xmlDataManager
         {
             InitializeComponent();
             dataGridView_all_incentory.DataSource = xmlDataManager.ProductsList;
-            //전체재고 기능 완료. 
         }
 
         private void dataGridView_all_incentory_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             Console.WriteLine(sender.ToString());
-        }
-
-        private void dataGridView_all_incentory_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-        }
-
-        private void dataGridView_all_incentory_ColumnSortModeChanged(object sender, DataGridViewColumnEventArgs e)
-        {
-        }
-
-        private void productBindingSource1_CurrentChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
