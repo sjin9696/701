@@ -315,7 +315,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label11);
             this.Name = "Form7_newmember";
-            this.Text = "Form7_newmember";
+            this.Text = "등록회원관리";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userInfoBindingSource)).EndInit();
