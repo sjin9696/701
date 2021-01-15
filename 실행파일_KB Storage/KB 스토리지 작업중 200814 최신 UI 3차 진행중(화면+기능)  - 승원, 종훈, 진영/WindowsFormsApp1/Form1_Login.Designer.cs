@@ -71,15 +71,14 @@
             this.textBox_login_pw.Text = "비밀번호";
             this.textBox_login_pw.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox_login_pw.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_login_pw_KeyDown);
-           
             // 
-            // button_admin_login
+            // button_key_admin_login
             // 
             this.button_key_admin_login.FlatAppearance.BorderSize = 0;
             this.button_key_admin_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_key_admin_login.Image = ((System.Drawing.Image)(resources.GetObject("button_admin_login.Image")));
+            this.button_key_admin_login.Image = ((System.Drawing.Image)(resources.GetObject("button_key_admin_login.Image")));
             this.button_key_admin_login.Location = new System.Drawing.Point(436, 12);
-            this.button_key_admin_login.Name = "button_admin_login";
+            this.button_key_admin_login.Name = "button_key_admin_login";
             this.button_key_admin_login.Size = new System.Drawing.Size(57, 57);
             this.button_key_admin_login.TabIndex = 4;
             this.button_key_admin_login.UseVisualStyleBackColor = true;
@@ -105,7 +104,7 @@
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "로고회전 작은거v.png");
             // 
-            // Form3_Login
+            // Form1_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -116,9 +115,10 @@
             this.Controls.Add(this.button_login);
             this.Controls.Add(this.textBox_login_pw);
             this.Controls.Add(this.textBox_login_id);
-            this.Name = "Form3_Login";
+            this.Name = "Form1_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "창고관리프로그램";
+            this.Load += new System.EventHandler(this.Form1_Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

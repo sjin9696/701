@@ -78,5 +78,10 @@ namespace xmlDataManager
                 login_check();
             }
         }
+        private void Form1_Login_Load(object sender, EventArgs e)
+        {
+            userDataManager.Load_User_Data();
+            xmlDataManager.Load_File();
+        }
     }
 }
