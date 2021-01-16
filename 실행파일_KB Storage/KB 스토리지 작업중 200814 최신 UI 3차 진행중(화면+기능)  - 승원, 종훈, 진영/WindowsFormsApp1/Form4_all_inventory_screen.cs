@@ -8,7 +8,8 @@ namespace Storagy
         public Form4_all_inventory_screen()
         {
             InitializeComponent();
-            dataGridView_all_incentory.DataSource = xmlDataManager.ProductsList;
+            mssqlDataManager ms = new mssqlDataManager();
+            dataGridView1.DataSource = ms.ConnectDB().Tables[0];
         }
 
         private void dataGridView_all_incentory_CellContentClick(object sender, DataGridViewCellEventArgs e)

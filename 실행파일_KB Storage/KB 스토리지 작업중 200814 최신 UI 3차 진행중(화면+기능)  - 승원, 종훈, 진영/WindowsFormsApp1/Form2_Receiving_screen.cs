@@ -12,6 +12,7 @@ namespace Storagy
             label12.AutoSize = true;
             /* ViewCustomTime();//시간표시 - 작업자 : 승원형 작업일시 : 200811
              * 내용 : 이동, 작업자 : 송진영, 작업일시 : 20200814 timer1_Tick함수로 이동함.*/
+            dataGridView1.DataSource = new mssqlDataManager().ConnectDB().Tables[0];
         }
 
         private void button_search_screen_Click(object sender, EventArgs e)
@@ -49,8 +50,8 @@ namespace Storagy
             productsList.Add(product);
             Console.WriteLine(product.product_name + " product.name");
 
-            dataGridView_outProduct.DataSource = null;
-            dataGridView_outProduct.DataSource = productsList;
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = productsList;
         }
         private void ViewCustomTime()//시간표시 - 작업자 : 승원형 작업일시 : 200811
         {

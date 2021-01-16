@@ -9,7 +9,8 @@ namespace Storagy
         public Form6_search_screen()
         {
             InitializeComponent();
-            dataGridView_all_incentory.DataSource = xmlDataManager.ProductsList;
+            dataGridView1.DataSource = new mssqlDataManager().ConnectDB().Tables[0];
+            //dataGridView_all_incentory.DataSource = xmlDataManager.ProductsList;
             xmlDataManager.Load_File();
         }
 
@@ -22,7 +23,7 @@ namespace Storagy
                 (item.product_name == textBox2.Text) ||
                 (item.customer_name == textBox3.Text));
 
-            dataGridView_all_incentory.DataSource = products_list;
+            //dataGridView_all_incentory.DataSource = products_list;
         }
 
         private void dataGridView_all_incentory_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

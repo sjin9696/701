@@ -7,6 +7,7 @@ namespace Storagy
         public Form8_Reform()
         {
             InitializeComponent();
+            dataGridView1.DataSource = new mssqlDataManager().ConnectDB().Tables[0];
         }
     }
 }

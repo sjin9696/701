@@ -84,11 +84,5 @@ namespace Storagy
             userDataManager.Load_User_Data();
             xmlDataManager.Load_File();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            mssqlDataManager mssqlData = new mssqlDataManager();
-            mssqlData.ConnectDB();
-        }
     }
 }
