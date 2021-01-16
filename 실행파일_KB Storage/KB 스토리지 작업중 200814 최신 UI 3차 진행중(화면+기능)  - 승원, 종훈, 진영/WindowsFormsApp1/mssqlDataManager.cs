@@ -26,5 +26,25 @@ namespace Storagy
 
             return ds;
         }
+        public DataSet SelectDB(string query)
+        {
+            SqlConnection conn = new SqlConnection();
+
+            // DB 접속정보 & 적용
+            conn.ConnectionString = "Server=192.168.0.12; database=wjh; uid=sa; pwd=1234; ";
+            conn.Open();
+
+            SqlCommand sqlcmd = new SqlCommand(query,conn);
+
+            SqlDataAdapter da = new SqlDataAdapter(sqlcmd);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+
+            sqlcmd.Connection.Close();
+            conn.Close();
+
+            return ds;
+        }
+
     }
 }
