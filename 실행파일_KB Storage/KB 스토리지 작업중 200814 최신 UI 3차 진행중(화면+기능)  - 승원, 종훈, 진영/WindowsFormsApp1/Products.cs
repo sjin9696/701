@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace xmlDataManager
+﻿namespace Storagy
 {
     class Product
     {
@@ -28,6 +22,8 @@ namespace xmlDataManager
         public string storage_name { get; set; }
         //재고수량
         public string storage_inventoy_number { get; set; }
+        //판매수량
+        public string sales_company { get; set; }
         //판매수량
         public string sales_money_number { get; set; }
         //판매일자

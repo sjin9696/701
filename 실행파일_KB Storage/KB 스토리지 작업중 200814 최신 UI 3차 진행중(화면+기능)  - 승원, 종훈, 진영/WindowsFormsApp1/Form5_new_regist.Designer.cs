@@ -1,4 +1,4 @@
-﻿namespace xmlDataManager
+﻿namespace Storagy
 {
     partial class Form5_new_regist
     {

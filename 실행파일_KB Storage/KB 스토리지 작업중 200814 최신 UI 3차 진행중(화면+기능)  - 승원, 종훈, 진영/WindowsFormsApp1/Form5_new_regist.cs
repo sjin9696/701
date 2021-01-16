@@ -1,14 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace xmlDataManager
+namespace Storagy
 {
     public partial class Form5_new_regist : Form
     {
@@ -16,8 +10,6 @@ namespace xmlDataManager
         {
             InitializeComponent();
             xmlDataManager.Load_File();
-            //dataGridView_outProduct.DataSource = null;
-            //dataGridView_outProduct.DataSource = xmlDataManager.Products; //grid에 추가.
         }
 
         private void button_input_Click(object sender, EventArgs e)
@@ -38,7 +30,6 @@ namespace xmlDataManager
         {
             Console.WriteLine("button_temp_List_add_list_Click");
             ISaddProductList();
-
         }
         
         List<Product> productslist = new List<Product>();
@@ -57,8 +48,6 @@ namespace xmlDataManager
             product.delivery_dates = textBox8_delivery_day.Text;
             product.sales_money_number = textBox9_sales_number.Text;
       
-           
-
             productslist.Add(product);
 
             dataGridView_outProduct.DataSource = null;

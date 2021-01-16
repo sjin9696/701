@@ -1,4 +1,4 @@
-﻿namespace xmlDataManager
+﻿namespace Storagy
 {
     partial class Form4_all_inventory_screen
     {
@@ -43,8 +43,8 @@
             this.재고수량 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sales_money_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sales_dates = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button6 = new System.Windows.Forms.Button();
             this.productBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_all_incentory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -64,6 +64,7 @@
             // 
             this.dataGridView_all_incentory.AllowDrop = true;
             this.dataGridView_all_incentory.AutoGenerateColumns = false;
+            this.dataGridView_all_incentory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_all_incentory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_all_incentory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.계정코드,
@@ -84,8 +85,6 @@
             this.dataGridView_all_incentory.Size = new System.Drawing.Size(951, 568);
             this.dataGridView_all_incentory.TabIndex = 48;
             this.dataGridView_all_incentory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_all_incentory_CellContentClick);
-            this.dataGridView_all_incentory.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView_all_incentory_ColumnHeaderMouseClick);
-            this.dataGridView_all_incentory.ColumnSortModeChanged += new System.Windows.Forms.DataGridViewColumnEventHandler(this.dataGridView_all_incentory_ColumnSortModeChanged);
             // 
             // 계정코드
             // 
@@ -187,6 +186,10 @@
             this.sales_dates.ReadOnly = true;
             this.sales_dates.Width = 78;
             // 
+            // productBindingSource1
+            // 
+            this.productBindingSource1.DataSource = typeof(xmlDataManager);
+            // 
             // button6
             // 
             this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
@@ -195,11 +198,6 @@
             this.button6.Size = new System.Drawing.Size(49, 47);
             this.button6.TabIndex = 79;
             this.button6.UseVisualStyleBackColor = true;
-            // 
-            // productBindingSource1
-            // 
-            this.productBindingSource1.DataSource = typeof(xmlDataManager);
-            this.productBindingSource1.CurrentChanged += new System.EventHandler(this.productBindingSource1_CurrentChanged);
             // 
             // Form4_all_inventory_screen
             // 
@@ -222,32 +220,8 @@
 
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DataGridView dataGridView_all_incentory;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productcodenumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn categorizenameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn typenameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn barcodenumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn salesnumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn moneynumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn deliverydayDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn customernameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn storagenameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn inventorystocknumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn workernameDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.BindingSource productBindingSource1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn deliverydatesDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn storageinventoynumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn salesmoneynumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn salesdatesDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn 계정코드;
         private System.Windows.Forms.DataGridViewTextBoxColumn 계정명;
         private System.Windows.Forms.DataGridViewTextBoxColumn 관리번호;

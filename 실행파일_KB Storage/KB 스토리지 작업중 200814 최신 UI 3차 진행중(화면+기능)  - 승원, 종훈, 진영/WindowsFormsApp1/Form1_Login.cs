@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace xmlDataManager
+namespace Storagy
 {
-    public partial class Form3_Login : Form
+    public partial class Form1_Login : Form
     {
-        public Form3_Login()
+        public Form1_Login()
         {
             InitializeComponent();
         }
@@ -15,13 +15,11 @@ namespace xmlDataManager
             login_check();
         }
 
-        private void button_admin_login_Click(object sender, EventArgs e)
+        private void button_key_admin_login_Click(object sender, EventArgs e)
         {
-            Form7_newmember form7_Newmember = new Form7_newmember();
-            form7_Newmember.ShowDialog();
-            //user_management();
-            Console.WriteLine("button_admin_login_Click : " +((Button)sender).ToString());
-            if((Button)sender == button_admin_login)
+            user_management();
+            Console.WriteLine("button_key_admin_login_Click : " + ((Button)sender).ToString());
+            if((Button)sender == button_key_admin_login)
             {
                 Console.WriteLine("");
             }
@@ -41,7 +39,7 @@ namespace xmlDataManager
         {
             xmlDataManager.Load_File();
             string check = userDataManager.Login_Check(textBox_login_id.Text, textBox_login_pw.Text);
-            Form1_Factory_screen Factory_screen = new Form1_Factory_screen();
+            Form3_Factory_screen Factory_screen = new Form3_Factory_screen();
             Form2_Receiving_screen Receiving_screen = new Form2_Receiving_screen();
             Receiving_screen.Enabled = true;
             Console.WriteLine("check : " + check);
@@ -79,6 +77,11 @@ namespace xmlDataManager
             {
                 login_check();
             }
+        }
+        private void Form1_Login_Load(object sender, EventArgs e)
+        {
+            userDataManager.Load_User_Data();
+            xmlDataManager.Load_File();
         }
     }
 }

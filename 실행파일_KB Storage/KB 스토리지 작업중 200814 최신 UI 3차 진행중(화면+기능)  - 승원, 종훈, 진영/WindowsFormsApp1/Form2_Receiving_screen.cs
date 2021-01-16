@@ -1,42 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using xmlDataManager;
 
-namespace xmlDataManager
+namespace Storagy
 {
     public partial class Form2_Receiving_screen : Form
     {
         public Form2_Receiving_screen()
         {
             InitializeComponent();
-            //dataGridView_outProduct.DataSource = xmlDataManager.Products;
             label12.AutoSize = true;
             /* ViewCustomTime();//시간표시 - 작업자 : 승원형 작업일시 : 200811
              * 내용 : 이동, 작업자 : 송진영, 작업일시 : 20200814 timer1_Tick함수로 이동함.*/
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void button_search_screen_Click(object sender, EventArgs e)
         {
             Form6_search_screen form6_Search_Screen = new Form6_search_screen();
             form6_Search_Screen.ShowDialog();
         }
-        private void button3_Click(object sender, EventArgs e)
+        private void button_new_regist_Click(object sender, EventArgs e)
         {
             Form5_new_regist form5_New_Regist = new Form5_new_regist();
             form5_New_Regist.ShowDialog();
         }
-
         private void button_input_Click_1(object sender, EventArgs e)
         {
-                IScustomData();
+            IScustomData();
         }
+
         private void IScustomData() //그리드뷰 데이터 입력표시 함수
         {
             Console.WriteLine(textBox2_product_name.Text + " textBox2_product_name.Text");
@@ -69,21 +61,15 @@ namespace xmlDataManager
             ViewCustomTime();//시간표시 - 작업자 : 승원형 작업일시 : 200811
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button_reform_Click(object sender, EventArgs e)
         {
-            Form6_search_screen form6_Search_Screen = new Form6_search_screen();
-            form6_Search_Screen.ShowDialog();
+            Form8_Reform form8 = new Form8_Reform();
+            form8.ShowDialog();
         }
-
-        private void button4_Click(object sender, EventArgs e)
+        private void button_all_inventory_Click(object sender, EventArgs e)
         {
             Form4_all_inventory_screen form4 = new Form4_all_inventory_screen();
             form4.ShowDialog();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

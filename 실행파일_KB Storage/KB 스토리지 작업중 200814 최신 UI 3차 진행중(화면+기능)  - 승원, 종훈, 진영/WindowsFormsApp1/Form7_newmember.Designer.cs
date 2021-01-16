@@ -1,4 +1,4 @@
-﻿namespace xmlDataManager
+﻿namespace Storagy
 {
     partial class Form7_newmember
     {
@@ -28,13 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox5_storage_name = new System.Windows.Forms.TextBox();
-            this.textBox4_type_name = new System.Windows.Forms.TextBox();
-            this.textBox3_categorize_name = new System.Windows.Forms.TextBox();
-            this.textBox2_product_name = new System.Windows.Forms.TextBox();
-            this.textBox1_product_code_number = new System.Windows.Forms.TextBox();
+            this.textBox5_phone_number = new System.Windows.Forms.TextBox();
+            this.textBox3_name = new System.Windows.Forms.TextBox();
+            this.textBox2_pw = new System.Windows.Forms.TextBox();
+            this.textBox1_id = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -43,14 +46,18 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button_delete = new System.Windows.Forms.Button();
+            this.comboBox4_group = new System.Windows.Forms.ComboBox();
+            this.userInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userInfoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label11
@@ -72,60 +79,45 @@
             this.label1.TabIndex = 23;
             this.label1.Text = "관리자님이 로그인";
             // 
-            // textBox5_storage_name
+            // textBox5_phone_number
             // 
-            this.textBox5_storage_name.AllowDrop = true;
-            this.textBox5_storage_name.Enabled = false;
-            this.textBox5_storage_name.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5_storage_name.Location = new System.Drawing.Point(135, 282);
-            this.textBox5_storage_name.Multiline = true;
-            this.textBox5_storage_name.Name = "textBox5_storage_name";
-            this.textBox5_storage_name.Size = new System.Drawing.Size(122, 29);
-            this.textBox5_storage_name.TabIndex = 29;
+            this.textBox5_phone_number.AllowDrop = true;
+            this.textBox5_phone_number.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5_phone_number.Location = new System.Drawing.Point(134, 282);
+            this.textBox5_phone_number.Multiline = true;
+            this.textBox5_phone_number.Name = "textBox5_phone_number";
+            this.textBox5_phone_number.Size = new System.Drawing.Size(122, 29);
+            this.textBox5_phone_number.TabIndex = 5;
             // 
-            // textBox4_type_name
+            // textBox3_name
             // 
-            this.textBox4_type_name.AllowDrop = true;
-            this.textBox4_type_name.Enabled = false;
-            this.textBox4_type_name.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4_type_name.Location = new System.Drawing.Point(135, 247);
-            this.textBox4_type_name.Multiline = true;
-            this.textBox4_type_name.Name = "textBox4_type_name";
-            this.textBox4_type_name.Size = new System.Drawing.Size(122, 29);
-            this.textBox4_type_name.TabIndex = 30;
+            this.textBox3_name.AllowDrop = true;
+            this.textBox3_name.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3_name.Location = new System.Drawing.Point(134, 214);
+            this.textBox3_name.Multiline = true;
+            this.textBox3_name.Name = "textBox3_name";
+            this.textBox3_name.Size = new System.Drawing.Size(122, 29);
+            this.textBox3_name.TabIndex = 3;
             // 
-            // textBox3_categorize_name
+            // textBox2_pw
             // 
-            this.textBox3_categorize_name.AllowDrop = true;
-            this.textBox3_categorize_name.Enabled = false;
-            this.textBox3_categorize_name.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3_categorize_name.Location = new System.Drawing.Point(134, 216);
-            this.textBox3_categorize_name.Multiline = true;
-            this.textBox3_categorize_name.Name = "textBox3_categorize_name";
-            this.textBox3_categorize_name.Size = new System.Drawing.Size(122, 29);
-            this.textBox3_categorize_name.TabIndex = 31;
+            this.textBox2_pw.AllowDrop = true;
+            this.textBox2_pw.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2_pw.Location = new System.Drawing.Point(134, 180);
+            this.textBox2_pw.Multiline = true;
+            this.textBox2_pw.Name = "textBox2_pw";
+            this.textBox2_pw.Size = new System.Drawing.Size(122, 29);
+            this.textBox2_pw.TabIndex = 2;
             // 
-            // textBox2_product_name
+            // textBox1_id
             // 
-            this.textBox2_product_name.AllowDrop = true;
-            this.textBox2_product_name.Enabled = false;
-            this.textBox2_product_name.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2_product_name.Location = new System.Drawing.Point(134, 181);
-            this.textBox2_product_name.Multiline = true;
-            this.textBox2_product_name.Name = "textBox2_product_name";
-            this.textBox2_product_name.Size = new System.Drawing.Size(122, 29);
-            this.textBox2_product_name.TabIndex = 32;
-            // 
-            // textBox1_product_code_number
-            // 
-            this.textBox1_product_code_number.AllowDrop = true;
-            this.textBox1_product_code_number.Enabled = false;
-            this.textBox1_product_code_number.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1_product_code_number.Location = new System.Drawing.Point(134, 146);
-            this.textBox1_product_code_number.Multiline = true;
-            this.textBox1_product_code_number.Name = "textBox1_product_code_number";
-            this.textBox1_product_code_number.Size = new System.Drawing.Size(122, 29);
-            this.textBox1_product_code_number.TabIndex = 33;
+            this.textBox1_id.AllowDrop = true;
+            this.textBox1_id.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1_id.Location = new System.Drawing.Point(134, 146);
+            this.textBox1_id.Multiline = true;
+            this.textBox1_id.Name = "textBox1_id";
+            this.textBox1_id.Size = new System.Drawing.Size(122, 29);
+            this.textBox1_id.TabIndex = 1;
             // 
             // label6
             // 
@@ -179,24 +171,37 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(326, 634);
+            this.button1.Location = new System.Drawing.Point(336, 570);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 37);
             this.button1.TabIndex = 34;
-            this.button1.Text = "수정";
+            this.button1.Text = "저장취소";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button_close_notSave_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(443, 634);
+            this.button2.Location = new System.Drawing.Point(437, 570);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 37);
+            this.button2.Size = new System.Drawing.Size(111, 37);
             this.button2.TabIndex = 34;
-            this.button2.Text = "삭제";
+            this.button2.Text = "저장하고 나가기";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button_close_save_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column2,
@@ -204,54 +209,114 @@
             this.Column3,
             this.Column4,
             this.Column5});
+            this.dataGridView1.DataSource = this.userInfoBindingSource;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(18, 329);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(530, 224);
             this.dataGridView1.TabIndex = 35;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "ID";
-            this.Column2.Name = "Column2";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "P/W";
-            this.Column1.Name = "Column1";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "성명";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "소속";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "연락처";
-            this.Column5.Name = "Column5";
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(417, 173);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(95, 37);
-            this.button3.TabIndex = 34;
-            this.button3.Text = "저장";
+            this.button3.TabIndex = 6;
+            this.button3.Text = "신규 추가";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button_xml_insert_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(417, 227);
+            this.button4.Location = new System.Drawing.Point(417, 223);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(95, 37);
             this.button4.TabIndex = 34;
-            this.button4.Text = "검색";
+            this.button4.Text = "수정하기";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button_info_update_Click);
+            // 
+            // button_delete
+            // 
+            this.button_delete.Location = new System.Drawing.Point(417, 273);
+            this.button_delete.Name = "button_delete";
+            this.button_delete.Size = new System.Drawing.Size(95, 37);
+            this.button_delete.TabIndex = 34;
+            this.button_delete.Text = "삭제하기";
+            this.button_delete.UseVisualStyleBackColor = true;
+            this.button_delete.Click += new System.EventHandler(this.button_info_delete_Click);
+            // 
+            // comboBox4_group
+            // 
+            this.comboBox4_group.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox4_group.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.comboBox4_group.FormattingEnabled = true;
+            this.comboBox4_group.Items.AddRange(new object[] {
+            "관리자",
+            "입고담당자",
+            "출고담당자"});
+            this.comboBox4_group.Location = new System.Drawing.Point(134, 248);
+            this.comboBox4_group.Name = "comboBox4_group";
+            this.comboBox4_group.Size = new System.Drawing.Size(121, 28);
+            this.comboBox4_group.TabIndex = 4;
+            // 
+            // userInfoBindingSource
+            // 
+            this.userInfoBindingSource.DataSource = typeof(Storagy.UserInfo);
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "ID";
+            this.Column2.HeaderText = "ID";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "PW";
+            this.Column1.HeaderText = "P/W";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Name";
+            this.Column3.HeaderText = "성명";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Group";
+            this.Column4.HeaderText = "소속";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "PhoneNumber";
+            this.Column5.HeaderText = "연락처";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // Form7_newmember
             // 
@@ -259,16 +324,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(566, 683);
+            this.Controls.Add(this.comboBox4_group);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.button_delete);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5_storage_name);
-            this.Controls.Add(this.textBox4_type_name);
-            this.Controls.Add(this.textBox3_categorize_name);
-            this.Controls.Add(this.textBox2_product_name);
-            this.Controls.Add(this.textBox1_product_code_number);
+            this.Controls.Add(this.textBox5_phone_number);
+            this.Controls.Add(this.textBox3_name);
+            this.Controls.Add(this.textBox2_pw);
+            this.Controls.Add(this.textBox1_id);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -277,8 +343,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label11);
             this.Name = "Form7_newmember";
-            this.Text = "Form7_newmember";
+            this.Text = "등록회원관리";
+            this.Activated += new System.EventHandler(this.Form7_newmember_Activated);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userInfoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,11 +356,10 @@
 
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox5_storage_name;
-        private System.Windows.Forms.TextBox textBox4_type_name;
-        private System.Windows.Forms.TextBox textBox3_categorize_name;
-        private System.Windows.Forms.TextBox textBox2_product_name;
-        public System.Windows.Forms.TextBox textBox1_product_code_number;
+        private System.Windows.Forms.TextBox textBox5_phone_number;
+        private System.Windows.Forms.TextBox textBox3_name;
+        private System.Windows.Forms.TextBox textBox2_pw;
+        public System.Windows.Forms.TextBox textBox1_id;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -301,12 +368,15 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button_delete;
+        private System.Windows.Forms.ComboBox comboBox4_group;
+        private System.Windows.Forms.BindingSource userInfoBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace xmlDataManager
+﻿namespace Storagy
 {
     partial class Form2_Receiving_screen
     {
@@ -91,7 +91,7 @@
             this.button7.Size = new System.Drawing.Size(35, 29);
             this.button7.TabIndex = 50;
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.Click += new System.EventHandler(this.button_search_screen_Click);
             // 
             // label12
             // 
@@ -123,7 +123,6 @@
             this.button6.Size = new System.Drawing.Size(49, 47);
             this.button6.TabIndex = 40;
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button4
             // 
@@ -134,7 +133,7 @@
             this.button4.TabIndex = 41;
             this.button4.Text = "전체 재고";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.button_all_inventory_Click);
             // 
             // button3
             // 
@@ -145,7 +144,7 @@
             this.button3.TabIndex = 44;
             this.button3.Text = "신규등록";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.button_new_regist_Click);
             // 
             // button2
             // 
@@ -156,7 +155,7 @@
             this.button2.TabIndex = 42;
             this.button2.Text = "반품/수정";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.button_reform_Click);
             // 
             // textBox10_money_number
             // 
@@ -602,18 +601,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productcodenumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn categorizenameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn typenameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn barcodenumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn salesnumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn moneynumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn deliverydayDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn customernameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn storagenameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn inventorystocknumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn workernameDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource productsBindingSource;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.DataGridView dataGridView_outProduct;

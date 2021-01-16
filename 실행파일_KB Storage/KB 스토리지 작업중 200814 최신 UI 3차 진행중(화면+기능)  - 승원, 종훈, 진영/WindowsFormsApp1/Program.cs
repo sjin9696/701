@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace xmlDataManager
+namespace Storagy
 {
     static class Program
     {
@@ -16,8 +13,8 @@ namespace xmlDataManager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form3_Login());
-            //Application.Run(new Form6_search_or_modify_screen());
+            Application.Run(new Form1_Login());
+           // Application.Run(new Form7_newmember());
         }
     }
 }

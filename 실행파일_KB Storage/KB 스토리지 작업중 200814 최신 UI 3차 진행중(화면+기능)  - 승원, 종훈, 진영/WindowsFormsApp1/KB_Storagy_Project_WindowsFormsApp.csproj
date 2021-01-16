@@ -6,12 +6,13 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{347B864B-C9D4-412C-8D21-8F04CFD55A93}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>xmlDataManager</RootNamespace>
+    <RootNamespace>Storagy</RootNamespace>
     <AssemblyName>xmlDataManager</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>게시\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -68,11 +68,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1_Factory_screen.cs">
+    <Compile Include="Form3_Factory_screen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1_Factory_screen.Designer.cs">
-      <DependentUpon>Form1_Factory_screen.cs</DependentUpon>
+    <Compile Include="Form3_Factory_screen.Designer.cs">
+      <DependentUpon>Form3_Factory_screen.cs</DependentUpon>
     </Compile>
     <Compile Include="Form2_Receiving_screen.cs">
       <SubType>Form</SubType>
@@ -80,11 +80,11 @@
     <Compile Include="Form2_Receiving_screen.Designer.cs">
       <DependentUpon>Form2_Receiving_screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3_Login.cs">
+    <Compile Include="Form1_Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3_Login.Designer.cs">
-      <DependentUpon>Form3_Login.cs</DependentUpon>
+    <Compile Include="Form1_Login.Designer.cs">
+      <DependentUpon>Form1_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Form4_all_inventory_screen.cs">
       <SubType>Form</SubType>
@@ -122,14 +122,14 @@
     <Compile Include="userDataManager.cs" />
     <Compile Include="UserInfo.cs" />
     <Compile Include="xmlDataManager.cs" />
-    <EmbeddedResource Include="Form1_Factory_screen.resx">
-      <DependentUpon>Form1_Factory_screen.cs</DependentUpon>
+    <EmbeddedResource Include="Form3_Factory_screen.resx">
+      <DependentUpon>Form3_Factory_screen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2_Receiving_screen.resx">
       <DependentUpon>Form2_Receiving_screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3_Login.resx">
-      <DependentUpon>Form3_Login.cs</DependentUpon>
+    <EmbeddedResource Include="Form1_Login.resx">
+      <DependentUpon>Form1_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form4_all_inventory_screen.resx">
       <DependentUpon>Form4_all_inventory_screen.cs</DependentUpon>
@@ -158,7 +158,11 @@
     </Compile>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\DataSources\Product.datasource" />
+    <None Include="Properties\DataSources\Product1.datasource" />
     <None Include="Properties\DataSources\Products.datasource" />
+    <None Include="Properties\DataSources\userDataManager.datasource" />
+    <None Include="Properties\DataSources\UserInfo.datasource" />
+    <None Include="Properties\DataSources\UserInfo1.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
