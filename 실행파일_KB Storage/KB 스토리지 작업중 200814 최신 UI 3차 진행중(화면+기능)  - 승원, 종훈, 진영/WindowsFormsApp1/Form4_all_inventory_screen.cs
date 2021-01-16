@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace xmlDataManager
+namespace Storagy
 {
     public partial class Form4_all_inventory_screen : Form
     {

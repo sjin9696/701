@@ -1,4 +1,4 @@
-﻿namespace xmlDataManager
+﻿namespace Storagy
 {
     partial class Form3_Factory_screen
     {
@@ -54,7 +54,6 @@
             this.button_input = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.label_nowTime = new System.Windows.Forms.Label();
-            this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.button7 = new System.Windows.Forms.Button();
             this.textBox11_inventory_stock_number = new System.Windows.Forms.TextBox();
@@ -63,6 +62,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView_outProduct = new System.Windows.Forms.DataGridView();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.코드 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.품명 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.분류 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,10 +74,8 @@
             this.재고수량 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sales_money_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sales_dates = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_outProduct)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -429,12 +427,16 @@
             this.재고수량,
             this.sales_money_number,
             this.sales_dates});
-            this.dataGridView_outProduct.DataSource = this.productBindingSource;
+            this.dataGridView_outProduct.DataSource = this.bindingSource1;
             this.dataGridView_outProduct.Location = new System.Drawing.Point(50, 521);
             this.dataGridView_outProduct.Name = "dataGridView_outProduct";
             this.dataGridView_outProduct.RowTemplate.Height = 23;
             this.dataGridView_outProduct.Size = new System.Drawing.Size(951, 385);
             this.dataGridView_outProduct.TabIndex = 49;
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(Storagy.Product);
             // 
             // 코드
             // 
@@ -528,10 +530,6 @@
             this.sales_dates.ReadOnly = true;
             this.sales_dates.Width = 78;
             // 
-            // productBindingSource
-            // 
-            this.productBindingSource.DataSource = typeof(xmlDataManager);
-            // 
             // Form3_Factory_screen
             // 
             this.AllowDrop = true;
@@ -577,9 +575,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "창고관리프로그램";
             this.Activated += new System.EventHandler(this.Form1_Factory_screen_Activated);
-            ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_outProduct)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -618,8 +615,8 @@
         private System.Windows.Forms.Label label_who_login;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.BindingSource productsBindingSource;
         private System.Windows.Forms.DataGridView dataGridView_outProduct;
+        private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.DataGridViewTextBoxColumn 코드;
         private System.Windows.Forms.DataGridViewTextBoxColumn 품명;
         private System.Windows.Forms.DataGridViewTextBoxColumn 분류;
@@ -631,7 +628,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn 재고수량;
         private System.Windows.Forms.DataGridViewTextBoxColumn sales_money_number;
         private System.Windows.Forms.DataGridViewTextBoxColumn sales_dates;
-        private System.Windows.Forms.BindingSource productBindingSource;
     }
 }
 

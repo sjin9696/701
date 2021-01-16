@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace xmlDataManager
+namespace Storagy
 {
     public partial class Form7_newmember : Form
     {
@@ -10,6 +10,7 @@ namespace xmlDataManager
             InitializeComponent();
             System.Console.WriteLine("Form7_newmember");
             newmember();
+
         }
         private void newmember()
         {
@@ -19,19 +20,20 @@ namespace xmlDataManager
             {
                 System.Console.WriteLine(item.ID);
                 System.Console.WriteLine(item.PW);
+                System.Console.WriteLine(item.Name);
+                System.Console.WriteLine(item.Group);
+                System.Console.WriteLine(item.PhoneNumber);
             }
+            dataGridView1.DataSource = "";
             dataGridView1.DataSource = userDataManager.UserInfos;
+
         }
 
         private void button_xml_insert_Click(object sender, System.EventArgs e)
         {
             //추가 후 저장.
-            UserInfo userInfo = new UserInfo()
-            {
-                ID = textBox1_id.Text,
-                PW = textBox2_pw.Text,
-                Admin = textBox3_name.Text
-            };
+            UserInfo userInfo = getByElement();
+
             //기존 리스트 ID 중복검사.
             foreach (var item in userDataManager.UserInfos)
             {
@@ -46,8 +48,19 @@ namespace xmlDataManager
             //없으면 리스트,그리드뷰에 추가.
             userDataManager.UserInfos.Add(userInfo);
             MessageBox.Show("신규 추가 되었습니다.");
-            dataGridView1.DataSource = "";
-            dataGridView1.DataSource = userDataManager.UserInfos;
+           
+        }
+
+        private UserInfo getByElement()
+        {
+            return new UserInfo()
+            {
+                ID = textBox1_id.Text,
+                PW = textBox2_pw.Text,
+                Name = textBox3_name.Text,
+                Group = comboBox4_group.Text,
+                PhoneNumber = textBox5_phone_number.Text
+            };
         }
 
         private void button_info_update_Click(object sender, System.EventArgs e)
@@ -55,12 +68,8 @@ namespace xmlDataManager
             //수정하기
             int update_row_index = 0;
 
-            UserInfo userInfo = new UserInfo()
-            {
-                ID = textBox1_id.Text,
-                PW = textBox2_pw.Text,
-                Admin = textBox3_name.Text
-            };
+            UserInfo userInfo = getByElement();
+            
             //기존 리스트 ID 중복검사.
             foreach (var item in userDataManager.UserInfos)
             {
@@ -78,22 +87,14 @@ namespace xmlDataManager
             else
                 MessageBox.Show("수정하려는 ID가 없습니다.\n" +
                     "신규 추가를 하시려면 신규추가를 눌러주세요.");
-
-            dataGridView1.DataSource = "";
-            dataGridView1.DataSource = userDataManager.UserInfos;
         }
-
         private void button_info_delete_Click(object sender, System.EventArgs e)
         {
             //삭제하기
             int update_row_index = 0;
 
-            UserInfo userInfo = new UserInfo()
-            {
-                ID = textBox1_id.Text,
-                PW = textBox2_pw.Text,
-                Admin = textBox3_name.Text
-            };
+            UserInfo userInfo = getByElement();
+
             //기존 리스트 ID 중복검사.
             foreach (var item in userDataManager.UserInfos)
             {
@@ -112,10 +113,8 @@ namespace xmlDataManager
                     "삭제하려면 ID를 정확히 맞춰주세요.\n" +
                     "신규 추가를 하시려면 신규추가를 눌러주세요.");
 
-            dataGridView1.DataSource = "";
-            dataGridView1.DataSource = userDataManager.UserInfos;
+            
         }
-
         private void button_close_notSave_Click(object sender, System.EventArgs e)
         {
             DialogResult res = MessageBox.Show(this, "저장하지 않고 바로 나갈까요?.", "저장하지 않고 닫기", MessageBoxButtons.OKCancel);
@@ -139,18 +138,30 @@ namespace xmlDataManager
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    //Console.WriteLine(dataGridView1.Rows[e.RowIndex].Cells[i].Value.ToString());
+            //}
             try
             {
                 textBox1_id.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
                 textBox2_pw.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
                 textBox3_name.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                comboBox4_group.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+                textBox5_phone_number.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
             }
             catch(Exception exception)
             {
-                if (e.RowIndex is -1) return; //컬럼범위를 선택하였을때 처리.
                 Console.WriteLine(exception.Message);
                 System.Console.WriteLine(e.RowIndex);
+                if (e.RowIndex is -1) return; //컬럼범위를 선택하였을때 처리.
             }
         }
+        private void Form7_newmember_Activated(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = "";
+            dataGridView1.DataSource = userDataManager.UserInfos;
+        }
+
     }
 }

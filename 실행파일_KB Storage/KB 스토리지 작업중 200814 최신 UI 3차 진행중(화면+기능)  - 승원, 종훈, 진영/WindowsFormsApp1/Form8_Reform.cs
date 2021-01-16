@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace xmlDataManager
+namespace Storagy
 {
     public partial class Form8_Reform : Form
     {

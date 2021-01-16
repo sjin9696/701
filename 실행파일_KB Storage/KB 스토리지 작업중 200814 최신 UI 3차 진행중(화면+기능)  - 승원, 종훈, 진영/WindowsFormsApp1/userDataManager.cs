@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Xml.Linq;
 
-namespace xmlDataManager
+namespace Storagy
 {
     class userDataManager
     {
@@ -17,9 +17,11 @@ namespace xmlDataManager
             {
                 UserInfo userInfo = new UserInfo()
                 {
-                    ID = item.Element("id_name").Value,
+                    ID = item.Element("id").Value,
                     PW = item.Element("pw").Value,
-                    Admin = item.Element("admin").Value
+                    Name = item.Element("name").Value,
+                    Group = item.Element("group").Value,
+                    PhoneNumber = item.Element("phonenumber").Value
                 };
                 UserInfos.Add(userInfo);
             }
@@ -33,7 +35,7 @@ namespace xmlDataManager
                 if (textbox_id == item.ID && textbox_pw == item.PW)
                 {
                     Console.WriteLine("아이디 비밀번호가 맞습니다." + item.ID);
-                    res = item.Admin;
+                    res = item.Group;
                 }
             }
             return res;
@@ -66,10 +68,12 @@ namespace xmlDataManager
 
             foreach (var item in UserInfos)
             {
-                string element = "";
-                element += XML("id_name", item.ID);
+                string element = " ";
+                element += XML("id", item.ID);
                 element += XML("pw", item.PW);
-                element += XML("admin", item.Admin);
+                element += XML("name", item.Name);
+                element += XML("group", item.Group);
+                element += XML("phonenumber", item.PhoneNumber);
 
                 productOutput += XML("item", element);
             }

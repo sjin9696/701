@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Xml.Linq;
 
-namespace xmlDataManager
+namespace Storagy
 {
     class xmlDataManager
     {
@@ -83,6 +83,10 @@ namespace xmlDataManager
             Console.WriteLine("public static string Read_Products()" + productOutput);
             Console.WriteLine("Products.Count" + ProductsList.Count);
             return productOutput;
+        }
+
+        internal class UserInfo
+        {
         }
     }
 }
