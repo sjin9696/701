@@ -13,6 +13,7 @@ namespace Storagy
             label_who_login.AutoSize = true;
 
             label_nowTime.Text = DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
+            dataGridView1.DataSource = new mssqlDataManager().ConnectDB().Tables[0];
         }
 
         private void button_search_Click(object sender, EventArgs e)
@@ -44,8 +45,8 @@ namespace Storagy
             productsList.Add(product);
             Console.WriteLine(product.product_name + " product.name");
 
-            dataGridView_outProduct.DataSource = null;
-            dataGridView_outProduct.DataSource = productsList;
+            //dataGridView_outProduct.DataSource = null;
+            //dataGridView_outProduct.DataSource = productsList;
         }
 
         private void button_reform_Click(object sender, EventArgs e)
