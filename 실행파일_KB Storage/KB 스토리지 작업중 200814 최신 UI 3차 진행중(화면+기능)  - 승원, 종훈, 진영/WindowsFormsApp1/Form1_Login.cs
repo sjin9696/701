@@ -8,6 +8,7 @@ namespace Storagy
         public Form1_Login()
         {
             InitializeComponent();
+
         }
 
         private void button_login_Click(object sender, EventArgs e)
@@ -82,6 +83,12 @@ namespace Storagy
         {
             userDataManager.Load_User_Data();
             xmlDataManager.Load_File();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            mssqlDataManager mssqlData = new mssqlDataManager();
+            mssqlData.ConnectDB();
         }
     }
 }

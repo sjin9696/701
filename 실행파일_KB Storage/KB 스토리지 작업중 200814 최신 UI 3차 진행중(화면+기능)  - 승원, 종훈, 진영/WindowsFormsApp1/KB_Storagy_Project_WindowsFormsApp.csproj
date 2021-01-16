@@ -116,6 +116,7 @@
     <Compile Include="Form8_Reform.Designer.cs">
       <DependentUpon>Form8_Reform.cs</DependentUpon>
     </Compile>
+    <Compile Include="mssqlDataManager.cs" />
     <Compile Include="Products.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
