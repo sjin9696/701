@@ -36,6 +36,7 @@ namespace Storagy
                 {
                     Console.WriteLine("아이디 비밀번호가 맞습니다." + item.ID);
                     res = item.Group;
+                    UserInfo.nowName = item.Name;
                 }
             }
             return res;

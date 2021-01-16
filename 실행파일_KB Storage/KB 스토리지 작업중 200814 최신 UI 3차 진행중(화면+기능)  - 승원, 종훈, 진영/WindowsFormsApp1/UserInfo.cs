@@ -2,6 +2,8 @@
 {
     class UserInfo
     {
+        public static string nowName ="";
+
         public string ID { get; set; }
         public string PW { get; set; }
         public string Name { get; set; }
