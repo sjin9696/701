@@ -1,8 +1,27 @@
-﻿namespace Storagy
+﻿using System.Collections.Generic;
+
+namespace Storagy
 {
     class Product
     {
         public static Product temporary_Product = new Product();
+        public static List<Product> productsList = new List<Product>();
+        public bool Equal(Product p)
+        {
+            System.Console.WriteLine(code+p.code);
+            return code == (p.code) &&
+                    name == (p.name) &&
+                    categorize == (p.categorize) &&
+                    type == (p.type) &&
+                    buy_company == (p.buy_company) &&
+                    buy_date == (p.buy_date) &&
+                    buy_money == (p.buy_money) &&
+                    storage_location == (p.storage_location) &&
+                    storage_quantity == (p.storage_quantity) &&
+                    sales_money == (p.sales_money) &&
+                    sales_dates == (p.sales_dates) &&
+                    sales_company == (p.sales_company);
+        }
         //코드
         public string code { get; set; }
         //품명

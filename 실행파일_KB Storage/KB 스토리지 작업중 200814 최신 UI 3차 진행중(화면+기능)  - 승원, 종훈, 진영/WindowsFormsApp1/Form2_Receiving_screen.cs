@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace Storagy
@@ -37,25 +38,30 @@ namespace Storagy
 
         private void IScustomData() //그리드뷰 데이터 입력표시 함수
         {
-            Console.WriteLine(textBox2_name.Text + " textBox2_product_name.Text");
             Product product = new Product();
-            List<Product> productsList = new List<Product>();
-
+            List<Product> list = new List<Product>();
+            bool flag = true;
             product.code = textBox1_code.Text;
             product.name = textBox2_name.Text;
             product.categorize = textBox3_categorize.Text;
-            product.type = textBox4_type.Text;
-            product.storage_quantity = textBox5_buy_company.Text;
+            product.buy_company = textBox5_buy_company.Text;
             product.buy_date = textBox6_buy_date.Text;
-         
+            product.type = textBox4_type.Text;
             product.buy_money = textBox7_buy_money.Text;
-            product.sales_dates = textBox8_storage_location.Text;
-            product.sales_company = textBox9_storage_quantity.Text;
-            productsList.Add(product);
-            Console.WriteLine(product.name + " product.name");
+
+            list.Add(product);
+
+            Console.WriteLine("product.code : "+product.code);
+            Console.WriteLine("foreach : ");
+
+            Console.WriteLine(Product.productsLis
+            Console.WriteLine((false&&false));
+            if(flag)
+                Product.productsList.Add(product);
+
 
             dataGridView1.DataSource = null;
-            dataGridView1.DataSource = productsList;
+            dataGridView1.DataSource = Product.productsList;
         }
         private void ViewCustomTime()//시간표시 - 작업자 : 승원형 작업일시 : 200811
         {
