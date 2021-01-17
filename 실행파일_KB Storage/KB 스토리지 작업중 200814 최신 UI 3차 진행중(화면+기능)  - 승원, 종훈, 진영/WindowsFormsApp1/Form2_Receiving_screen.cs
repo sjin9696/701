@@ -29,7 +29,7 @@ namespace Storagy
             Form5_new_regist form5_New_Regist = new Form5_new_regist();
             form5_New_Regist.ShowDialog();
         }
-        private void button_input_Click_1(object sender, EventArgs e)
+        private void button_input_Click(object sender, EventArgs e)
         {
             IScustomData();
         }
@@ -50,7 +50,6 @@ namespace Storagy
             product.buy_money = textBox7_buy_money.Text;
             product.sales_dates = textBox8_storage_location.Text;
             product.sales_company = textBox9_storage_quantity.Text;
-            product.sales_money = textBox11_inventory_stock_number.Text;
             productsList.Add(product);
             Console.WriteLine(product.name + " product.name");
 

@@ -174,6 +174,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form6_search_screen";
             this.Text = "창고관리프로그램";
+            this.Load += new System.EventHandler(this.Form6_search_screen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

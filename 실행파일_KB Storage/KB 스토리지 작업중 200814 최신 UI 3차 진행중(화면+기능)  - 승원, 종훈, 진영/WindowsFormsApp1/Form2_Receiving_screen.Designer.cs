@@ -100,7 +100,7 @@
             this.button_input.TabIndex = 45;
             this.button_input.Text = "입력";
             this.button_input.UseVisualStyleBackColor = true;
-            this.button_input.Click += new System.EventHandler(this.button_input_Click_1);
+            this.button_input.Click += new System.EventHandler(this.button_input_Click);
             // 
             // button6
             // 
