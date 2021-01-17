@@ -10,21 +10,21 @@
         public string categorize { get; set; }
         //규격
         public string type { get; set; }
-        //작업자
+        //입고업체
         public string buy_company { get; set; }
-        //납품처
+        //입고일자
         public string buy_date { get; set; }
-        //납품일자
+        //입고가격
         public string buy_money { get; set; }
-        //금액
-        public string storage_location { get; set; }
         //보관위치
+        public string storage_location { get; set; }
+        //보관수량
         public string storage_quantity { get; set; }
-        //재고수량
+        //출고가격
         public string sales_money { get; set; }
-        //판매수량
+        //출고일자
         public string sales_dates { get; set; }
-        //판매수량
+        //출고납품업체
         public string sales_company { get; set; }
     }
 }
