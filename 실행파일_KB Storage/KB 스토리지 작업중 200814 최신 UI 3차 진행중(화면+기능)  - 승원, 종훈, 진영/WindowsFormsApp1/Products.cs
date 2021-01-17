@@ -8,7 +8,6 @@ namespace Storagy
         public static List<Product> productsList = new List<Product>();
         public bool Equal(Product p)
         {
-            System.Console.WriteLine(code+p.code);
             return code == (p.code) &&
                     name == (p.name) &&
                     categorize == (p.categorize) &&

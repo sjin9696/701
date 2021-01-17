@@ -6,24 +6,40 @@ namespace Storagy
 {
     public partial class Form6_search_screen : Form
     {
-        public Form6_search_screen()
+        public Form6_search_screen(string q)
         {
             InitializeComponent();
+            dataGridView.DataSource = "";
+            dataGridView.DataSource = new mssqlDataManager().SelectDB("select " +
+                q +
+                " from dbo.storage_db;").Tables[0];
         }
         
         private void Form6_search_screen_Load(object sender, EventArgs e)
         {
-            dataGridView.DataSource = "";
-            dataGridView.DataSource = new mssqlDataManager().SelectDB("select " +
-                "code, [name], categorize, type from dbo.storage_db;").Tables[0];
+            
         }
 
         private void dataGridView_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
-            Product.temporary_Product.code = dataGridView.Rows[e.RowIndex].Cells[0].Value.ToString();
-            Product.temporary_Product.name = dataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
-            Product.temporary_Product.categorize = dataGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
-            Product.temporary_Product.type = dataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
+            string s = dataGridView.Columns[e.ColumnIndex].Name;
+            DataGridViewRow d = dataGridView.Rows[e.RowIndex];
+
+            if (("code,name,categorize,type").Contains(s))
+            {
+                Product.temporary_Product.code       = d.Cells[0].Value.ToString();
+                Product.temporary_Product.name       = d.Cells[1].Value.ToString();
+                Product.temporary_Product.categorize = d.Cells[2].Value.ToString();
+                Product.temporary_Product.type       = d.Cells[3].Value.ToString();
+            }
+            else if(("buy_company").Contains(s))
+            {
+                Product.temporary_Product.buy_company = d.Cells[s].Value.ToString();
+            }
+            else if (("storage_location").Contains(s))
+            {
+                Product.temporary_Product.storage_location = d.Cells[s].Value.ToString();
+            }
         }
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -53,6 +69,5 @@ namespace Storagy
             MessageBox.Show("데이터가 불러들여졌습니다.");
             Close();
         }
-        
     }
 }

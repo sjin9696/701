@@ -18,7 +18,7 @@ namespace Storagy
 
         private void button_search_Click(object sender, EventArgs e)
         {
-            Form6_search_screen form6_Search_Screen = new Form6_search_screen();
+            Form6_search_screen form6_Search_Screen = new Form6_search_screen("code, [name], categorize, type");
             form6_Search_Screen.ShowDialog();
         }
 

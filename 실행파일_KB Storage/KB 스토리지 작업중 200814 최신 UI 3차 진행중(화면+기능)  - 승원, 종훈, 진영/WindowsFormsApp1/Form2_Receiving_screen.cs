@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace Storagy
@@ -14,18 +15,13 @@ namespace Storagy
             /* ViewCustomTime();//시간표시 - 작업자 : 승원형 작업일시 : 200811
              * 내용 : 이동, 작업자 : 송진영, 작업일시 : 20200814 timer1_Tick함수로 이동함.*/
 
-            dataGridView1.DataSource = new mssqlDataManager().SelectDB("" +
+           /* dataGridView1.DataSource = new mssqlDataManager().SelectDB("" +
                 "select code, [name], categorize, type, buy_company, buy_date, buy_money, storage_location, storage_quantity " +
-                "from dbo.storage_db;").Tables[0];
+                "from dbo.storage_db;").Tables[0];*/
             label15.Text = UserInfo.nowName + label15.Text;
             label15.AutoSize = true;
         }
 
-        private void button_search_screen_Click(object sender, EventArgs e)
-        {
-            Form6_search_screen form6_Search_Screen = new Form6_search_screen();
-            form6_Search_Screen.ShowDialog();
-        }
         private void button_new_regist_Click(object sender, EventArgs e)
         {
             Form5_new_regist form5_New_Regist = new Form5_new_regist();
@@ -33,36 +29,47 @@ namespace Storagy
         }
         private void button_input_Click(object sender, EventArgs e)
         {
-            IScustomData();
+                IScustomData();
         }
-
+        private Product getByElement()
+        {
+            return new Product()
+            {
+                code = textBox1_code.Text,
+                name = textBox2_name.Text,
+                categorize = textBox3_categorize.Text,
+                type = textBox4_type.Text,
+                buy_company = textBox5_buy_company.Text,
+                buy_date = dateTimePick6_buy_date.Text,
+                buy_money = textBox7_buy_money.Text,
+                storage_location = textBox8_storage_location.Text,
+                storage_quantity = textBox9_storage_quantity.Text
+            };
+        }
         private void IScustomData() //그리드뷰 데이터 입력표시 함수
         {
-            Product product = new Product();
-            List<Product> list = new List<Product>();
-            bool flag = true;
-            product.code = textBox1_code.Text;
-            product.name = textBox2_name.Text;
-            product.categorize = textBox3_categorize.Text;
-            product.buy_company = textBox5_buy_company.Text;
-            product.buy_date = textBox6_buy_date.Text;
-            product.type = textBox4_type.Text;
-            product.buy_money = textBox7_buy_money.Text;
+            Product product = getByElement();
+                        
+            if(textBox1_code.Text == "")
+            {
+                MessageBox.Show("값을 입력하세요.");
+                return;
+            }
 
-            list.Add(product);
+            foreach (Product p in Product.productsList)
+            {
+                if (product.Equal(p) && Product.productsList.Count != 0)
+                {
+                    MessageBox.Show("중복 입력입니다.");
+                    return;
+                }
+            }
 
-            Console.WriteLine("product.code : "+product.code);
-            Console.WriteLine("foreach : ");
-
-            Console.WriteLine(Product.productsLis
-            Console.WriteLine((false&&false));
-            if(flag)
-                Product.productsList.Add(product);
-
-
+            Product.productsList.Add(product);
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = Product.productsList;
         }
+
         private void ViewCustomTime()//시간표시 - 작업자 : 승원형 작업일시 : 200811
         {
             label12.Text = DateTime.Now.ToString("yyyy년 MM월 dd일 HH:mm:ss");
@@ -86,63 +93,122 @@ namespace Storagy
         private void Form2_Receiving_screen_Activated(object sender, EventArgs e)
         {
             Console.WriteLine("Form1_Factory_screen_Activated 활성화 하였습니다.");
-            if (Product.temporary_Product.code != null)
+            Console.WriteLine(Product.temporary_Product.buy_company);
+            textBox1_code.Text          = Product.temporary_Product.code;
+            textBox2_name.Text          = Product.temporary_Product.name;
+            textBox3_categorize.Text    = Product.temporary_Product.categorize;
+            textBox4_type.Text          = Product.temporary_Product.type;
+            textBox5_buy_company.Text   = Product.temporary_Product.buy_company;
+            //dateTimePick6_buy_date.Text   = Product.temporary_Product.buy_date;
+            //textBox7_buy_money.Text   = Product.temporary_Product.buy_money;
+            textBox8_storage_location.Text   = Product.temporary_Product.storage_location;
+            //textBox9_storage_quantity.Text   = Product.temporary_Product.storage_quantity;
+            
+        }
+
+        #region 검색 버튼 이벤트 code, buy,storage
+        private void button1_search_code_Click(object sender, EventArgs e)
+        {
+            Form6_search_screen form6_Search_Screen = new Form6_search_screen("code, [name], categorize, type");
+            form6_Search_Screen.ShowDialog();
+        }
+
+        private void button2_search_buy_com_Click(object sender, EventArgs e)
+        {
+            Form6_search_screen form6_Search_Screen = new Form6_search_screen("buy_company");
+            form6_Search_Screen.ShowDialog();
+        }
+
+        private void button3_search_storage_Click(object sender, EventArgs e)
+        {
+            Form6_search_screen form6_Search_Screen = new Form6_search_screen("storage_location");
+            form6_Search_Screen.ShowDialog();
+        }
+        #endregion
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            Console.WriteLine(dateTimePick6_buy_date.Value.ToString("yyyy-MM-d"));
+        }
+
+        private void textBox7_buy_money_TextChanged(object sender, EventArgs e)
+        { 
+            if(Regex.IsMatch(textBox7_buy_money.Text,"[^0-9.,]"))
             {
-                textBox1_code.Text          = Product.temporary_Product.code;
-                textBox2_name.Text          = Product.temporary_Product.name;
-                textBox3_categorize.Text    = Product.temporary_Product.categorize;
-                textBox4_type.Text          = Product.temporary_Product.type;
+                MessageBox.Show("숫자[0-9].,만입력가능합니다.");
             }
         }
 
-        private void Form2_Receiving_screen_Load(object sender, EventArgs e)
+        private void dataGridView1_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
+            Product p = Product.productsList[e.RowIndex];
 
+            textBox1_code.Text = p.code;
+            textBox2_name.Text = p.name;
+            textBox3_categorize.Text = p.categorize;
+            textBox4_type.Text = p.type;
+            textBox5_buy_company.Text = p.buy_company;
+            dateTimePick6_buy_date.Text = p.buy_date;
+            textBox7_buy_money.Text = p.buy_money;
+            textBox8_storage_location.Text = p.storage_location;
+            textBox9_storage_quantity.Text = p.storage_quantity;
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void button_delete_all_Click(object sender, EventArgs e)
         {
-
+            if (dataGridView1.SelectedCells.Count == 0)
+                return;
+            DialogResult res = MessageBox.Show(this, "정말 모두 삭제할까요?.", "모두 삭제", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+            if (res == DialogResult.OK)
+            {
+                MessageBox.Show("모두 삭제 되었습니다.");
+                Product.productsList.Clear();
+                dataGridView1.DataSource = null;
+                dataGridView1.DataSource = Product.productsList;
+            }
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void button_delete_Click(object sender, EventArgs e)
         {
-
+            if (dataGridView1.SelectedCells.Count == 0)
+                return;
+            DialogResult res = MessageBox.Show(this, "정말 삭제할까요?.", "선택 삭제", MessageBoxButtons.OKCancel,MessageBoxIcon.Error);
+            if (res == DialogResult.OK)
+            {
+                MessageBox.Show("선택 삭제 되었습니다.");
+                Product.productsList.RemoveAt(dataGridView1.SelectedCells[0].RowIndex);
+                dataGridView1.DataSource = null;
+                dataGridView1.DataSource = Product.productsList;
+            }
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void button_modified_Click(object sender, EventArgs e)
         {
+            if (dataGridView1.SelectedCells.Count == 0)
+                return;
 
-        }
+            //수정하기
+            int ri = dataGridView1.SelectedCells[0].RowIndex;
 
-        private void label6_Click(object sender, EventArgs e)
-        {
+            Product product = getByElement();
 
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
+            foreach (Product p in Product.productsList)
+            {
+                if (product.Equal(p) && Product.productsList.Count != 0)
+                {
+                    MessageBox.Show("기존 입력 값 중에서 중복되는 값이 있습니다.");
+                    return;
+                }
+            }
+            if (ri < Product.productsList.Count)
+            {
+                Product.productsList.RemoveAt(ri);
+                Product.productsList.Insert(ri, product);
+                MessageBox.Show(product.code + "가 수정되었습니다.");
+                dataGridView1.DataSource = null;
+                dataGridView1.DataSource = Product.productsList;
+            }
+               
         }
     }
 }

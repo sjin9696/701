@@ -158,6 +158,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="Properties\DataSources\Product.datasource" />
     <None Include="Properties\DataSources\Product1.datasource" />
     <None Include="Properties\DataSources\Products.datasource" />

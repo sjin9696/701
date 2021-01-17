@@ -117,7 +117,7 @@ namespace Storagy
         }
         private void button_close_notSave_Click(object sender, System.EventArgs e)
         {
-            DialogResult res = MessageBox.Show(this, "저장하지 않고 바로 나갈까요?.", "저장하지 않고 닫기", MessageBoxButtons.OKCancel);
+            DialogResult res = MessageBox.Show(this, "저장하지 않고 바로 나갈까요?.", "저장하지 않고 닫기", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
             if (res == DialogResult.OK)
             {
                 MessageBox.Show("저장하지 않았습니다.");
@@ -127,7 +127,7 @@ namespace Storagy
 
         private void button_close_save_Click(object sender, System.EventArgs e)
         {
-            DialogResult res = MessageBox.Show(this, "저장할까요?.", "저장 후 닫기", MessageBoxButtons.OKCancel);
+            DialogResult res = MessageBox.Show(this, "저장할까요?.", "저장 후 닫기", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
             if(res==DialogResult.OK)
             {
                 MessageBox.Show("저장 되었습니다.");

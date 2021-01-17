@@ -16,4 +16,10 @@
 <group>출고담당자</group>
 <phonenumber>010-1111-1112</phonenumber>
 </item>
+<item> <id>출고담당자2</id>
+<pw>1111</pw>
+<name>서주형</name>
+<group>출고담당자</group>
+<phonenumber>010-1111-1112</phonenumber>
+</item>
 </userinfo>

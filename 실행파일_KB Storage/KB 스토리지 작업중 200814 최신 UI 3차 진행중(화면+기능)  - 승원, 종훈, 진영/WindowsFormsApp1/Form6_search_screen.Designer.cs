@@ -147,9 +147,12 @@
             // 
             // dataGridView
             // 
+            this.dataGridView.AllowUserToAddRows = false;
+            this.dataGridView.AllowUserToDeleteRows = false;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Location = new System.Drawing.Point(55, 171);
             this.dataGridView.Name = "dataGridView";
+            this.dataGridView.ReadOnly = true;
             this.dataGridView.RowTemplate.Height = 23;
             this.dataGridView.Size = new System.Drawing.Size(951, 524);
             this.dataGridView.TabIndex = 85;
@@ -199,6 +202,7 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.dataGridView);
             this.Name = "Form6_search_screen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "창고관리프로그램";
             this.Load += new System.EventHandler(this.Form6_search_screen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
