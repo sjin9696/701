@@ -45,7 +45,7 @@
             this.textBox_login_id.Name = "textBox_login_id";
             this.textBox_login_id.Size = new System.Drawing.Size(308, 26);
             this.textBox_login_id.TabIndex = 1;
-            this.textBox_login_id.Text = "아이디";
+            this.textBox_login_id.Text = "입고담당자";
             this.textBox_login_id.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox_login_id.Click += new System.EventHandler(this.textBox_login_id_Click);
             // 
@@ -68,7 +68,7 @@
             this.textBox_login_pw.PasswordChar = '*';
             this.textBox_login_pw.Size = new System.Drawing.Size(308, 26);
             this.textBox_login_pw.TabIndex = 2;
-            this.textBox_login_pw.Text = "비밀번호";
+            this.textBox_login_pw.Text = "1234";
             this.textBox_login_pw.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox_login_pw.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_login_pw_KeyDown);
             // 

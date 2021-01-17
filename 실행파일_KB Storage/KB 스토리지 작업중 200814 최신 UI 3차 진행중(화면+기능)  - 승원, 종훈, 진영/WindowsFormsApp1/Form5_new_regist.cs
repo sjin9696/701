@@ -38,15 +38,15 @@ namespace Storagy
             Console.WriteLine("IS_Add_Grid");
             Product product = new Product();
 
-            product.product_code_number = textBox1_product_code_number.Text;
-            product.product_name = textBox2_product_name.Text;
-            product.categorize_name = textBox3_categorize_name.Text;
-            product.type_name = textBox4_type_name.Text;
-            product.storage_name = textBox5_storage_name.Text;
-            product.customer_name = textBox6_customer_name.Text;
+            product.code = textBox1_product_code_number.Text;
+            product.name = textBox2_product_name.Text;
+            product.categorize = textBox3_categorize_name.Text;
+            product.type = textBox4_type_name.Text;
+            product.storage_quantity = textBox5_storage_name.Text;
+            product.buy_date = textBox6_customer_name.Text;
             
-            product.delivery_dates = textBox8_delivery_day.Text;
-            product.sales_money_number = textBox9_sales_number.Text;
+            product.buy_money = textBox8_delivery_day.Text;
+            product.sales_company = textBox9_sales_number.Text;
       
             productslist.Add(product);
 

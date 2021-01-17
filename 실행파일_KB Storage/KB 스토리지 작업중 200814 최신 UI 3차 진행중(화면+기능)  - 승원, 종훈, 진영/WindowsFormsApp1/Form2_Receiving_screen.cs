@@ -12,7 +12,11 @@ namespace Storagy
             label12.AutoSize = true;
             /* ViewCustomTime();//시간표시 - 작업자 : 승원형 작업일시 : 200811
              * 내용 : 이동, 작업자 : 송진영, 작업일시 : 20200814 timer1_Tick함수로 이동함.*/
-            dataGridView1.DataSource = new mssqlDataManager().ConnectDB().Tables[0];
+            dataGridView1.DataSource = new mssqlDataManager().SelectDB("" +
+                "select code, [name], categorize, type, buy_company, buy_date, buy_money, storage_location, storage_quantity " +
+                "from dbo.storage_db;").Tables[0];
+            label15.Text = UserInfo.nowName + label15.Text;
+            label15.AutoSize = true;
         }
 
         private void button_search_screen_Click(object sender, EventArgs e)
@@ -32,23 +36,23 @@ namespace Storagy
 
         private void IScustomData() //그리드뷰 데이터 입력표시 함수
         {
-            Console.WriteLine(textBox2_product_name.Text + " textBox2_product_name.Text");
+            Console.WriteLine(textBox2_name.Text + " textBox2_product_name.Text");
             Product product = new Product();
             List<Product> productsList = new List<Product>();
 
-            product.product_code_number = textBox1_product_code_number.Text;
-            product.product_name = textBox2_product_name.Text;
-            product.categorize_name = textBox3_categorize_name.Text;
-            product.type_name = textBox4_type_name.Text;
-            product.storage_name = textBox5_storage_name.Text;
-            product.customer_name = textBox6_customer_name.Text;
+            product.code = textBox1_code.Text;
+            product.name = textBox2_name.Text;
+            product.categorize = textBox3_categorize.Text;
+            product.type = textBox4_type.Text;
+            product.storage_quantity = textBox5_buy_company.Text;
+            product.buy_date = textBox6_buy_date.Text;
          
-            product.delivery_dates = textBox8_delivery_day.Text;
-            product.sales_dates = textBox9_sales_number.Text;
-            product.sales_money_number = textBox10_money_number.Text;
-            product.storage_inventoy_number = textBox11_inventory_stock_number.Text;
+            product.buy_money = textBox7_buy_money.Text;
+            product.sales_dates = textBox8_storage_location.Text;
+            product.sales_company = textBox9_storage_quantity.Text;
+            product.sales_money = textBox11_inventory_stock_number.Text;
             productsList.Add(product);
-            Console.WriteLine(product.product_name + " product.name");
+            Console.WriteLine(product.name + " product.name");
 
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = productsList;
@@ -71,6 +75,72 @@ namespace Storagy
         {
             Form4_all_inventory_screen form4 = new Form4_all_inventory_screen();
             form4.ShowDialog();
+        }
+
+        private void Form2_Receiving_screen_Activated(object sender, EventArgs e)
+        {
+            Console.WriteLine("Form1_Factory_screen_Activated 활성화 하였습니다.");
+            if (xmlDataManager.temp_Product != null)
+            {
+                textBox1_code.Text = xmlDataManager.temp_Product.code;
+                textBox2_name.Text = xmlDataManager.temp_Product.name;
+                textBox3_categorize.Text = xmlDataManager.temp_Product.categorize;
+                textBox4_type.Text = xmlDataManager.temp_Product.type;
+                textBox5_buy_company.Text = xmlDataManager.temp_Product.storage_quantity;
+                textBox6_buy_date.Text = xmlDataManager.temp_Product.buy_date;
+                textBox11_inventory_stock_number.Text = xmlDataManager.temp_Product.sales_money;
+                textBox7_buy_money.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm");
+            }
+        }
+
+        private void Form2_Receiving_screen_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

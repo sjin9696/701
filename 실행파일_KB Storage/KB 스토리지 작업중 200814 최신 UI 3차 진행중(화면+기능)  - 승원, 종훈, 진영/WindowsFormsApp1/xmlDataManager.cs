@@ -22,18 +22,17 @@ namespace Storagy
                 {
                     Product product = new Product()
                     {
-                        product_code_number = item.Element("code").Value,
-                        product_name = item.Element("name").Value,
-                        categorize_name = item.Element("categorize").Value,
-                        type_name = item.Element("type").Value,
-                        customer_name = item.Element("buy_company").Value,//구매처
-                        delivery_dates = item.Element("buy_date").Value, //구매일자 
-                        money_number = item.Element("buy_money").Value, //구매금액
-                        storage_name = item.Element("storage_location").Value,//위치
-                        storage_inventoy_number = item.Element("storage_quantity").Value,//재고수량
-                        sales_money_number = item.Element("sales_money").Value,//판매금액
+                        code = item.Element("code").Value,
+                        name = item.Element("name").Value,
+                        categorize = item.Element("categorize").Value,
+                        type = item.Element("type").Value,
+                        buy_date = item.Element("buy_company").Value,//구매처
+                        buy_money = item.Element("buy_date").Value, //구매일자 
+                        storage_location = item.Element("buy_money").Value, //구매금액
+                        storage_quantity = item.Element("storage_location").Value,//위치
+                        sales_money = item.Element("storage_quantity").Value,//재고수량
+                        sales_company = item.Element("sales_money").Value,//판매금액
                         sales_dates = item.Element("sales_dates").Value,//판매일자
-                        sales_company = item.Element("sales_company").Value //판매처
                     };
                     ProductsList.Add(product);
                 }
@@ -64,16 +63,16 @@ namespace Storagy
             foreach (var item in ProductsList)
             {
                 string element = "";
-                element += XML("code", item.product_code_number);
-                element += XML("name", item.product_name);
-                element += XML("categorize", item.categorize_name);
-                element += XML("type", item.type_name);
-                element += XML("customer", item.customer_name);
-                element += XML("delivery", item.delivery_dates);
-                element += XML("money", item.money_number);
-                element += XML("storage", item.storage_name);
-                element += XML("storage_inventoy", item.storage_inventoy_number);
-                element += XML("sales_money", item.sales_money_number);
+                element += XML("code", item.code);
+                element += XML("name", item.name);
+                element += XML("categorize", item.categorize);
+                element += XML("type", item.type);
+                element += XML("customer", item.buy_date);
+                element += XML("delivery", item.buy_money);
+                element += XML("money", item.storage_location);
+                element += XML("storage", item.storage_quantity);
+                element += XML("storage_inventoy", item.sales_money);
+                element += XML("sales_money", item.sales_company);
                 element += XML("sales_dates", item.sales_dates);
                 
                 productOutput += XML("item", element);

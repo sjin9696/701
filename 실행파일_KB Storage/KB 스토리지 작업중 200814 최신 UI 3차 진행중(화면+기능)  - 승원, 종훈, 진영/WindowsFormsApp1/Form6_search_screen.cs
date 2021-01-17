@@ -19,18 +19,19 @@ namespace Storagy
             xmlDataManager.Load_File();
             List<Product> products_list = new List<Product>();
             products_list = xmlDataManager.ProductsList.FindAll(item =>
-                (item.product_code_number == textBox1.Text) ||
-                (item.product_name == textBox2.Text) ||
-                (item.customer_name == textBox3.Text));
+                (item.code == textBox1.Text) ||
+                (item.name == textBox2.Text) ||
+                (item.buy_date == textBox3.Text));
 
             //dataGridView_all_incentory.DataSource = products_list;
         }
 
-        private void dataGridView_all_incentory_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            xmlDataManager.temp_Product = xmlDataManager.ProductsList[e.RowIndex];
-            MessageBox.Show("데이터가 불러들여졌습니다.");
-            Close();
+            //xmlDataManager.temp_Product = xmlDataManager.ProductsList[e.RowIndex];
+            Console.WriteLine(e.RowIndex);
+            //MessageBox.Show("데이터가 불러들여졌습니다.");
+            //Close();
         }
     }
 }
