@@ -34,12 +34,15 @@ namespace Storagy
 
         private void button_search_Click(object sender, EventArgs e)
         {
-            string select = "SELECT code, [name], categorize, type FROM dbo.storage_db ";
+            string select =
+            #region MS-SQL 쿼리문  /// IF NOT EXISTS 사용 조회시 NULL값이라면 전체값 표시
+             "SELECT code, [name], categorize, type FROM dbo.storage_db ";
             string where =  "WHERE name ='"         + textBox2_name.Text +
                             "' OR categorize = '"   + textBox3_categorize.Text +
                             "' OR type = '"         + textBox4_type.Text + "' ";
-            string query = "IF NOT EXISTS(" + select + where + ")BEGIN " + select +
-                "END " + "ELSE BEGIN " + select + where + "END ";
+            string query = "IF NOT EXISTS(" + select + where + ")BEGIN " + select +"END " 
+                + "ELSE BEGIN " + select + where + "END ";
+            #endregion
 
             dataGridView.DataSource = "";
             dataGridView.DataSource = new mssqlDataManager().SelectDB(query).Tables[0];
