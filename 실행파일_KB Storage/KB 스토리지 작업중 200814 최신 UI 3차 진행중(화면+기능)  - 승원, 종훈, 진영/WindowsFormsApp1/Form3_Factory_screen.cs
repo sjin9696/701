@@ -32,15 +32,15 @@ namespace Storagy
             List<Product> productsList = new List<Product>();
             Product product = new Product();
 
-            product.code = textBox1_product_code_number.Text;
-            product.name = textBox2_product_name.Text;
-            product.categorize = textBox3_categorize_name.Text;
-            product.type = textBox4_type_name.Text;
-            product.storage_quantity = textBox5_storage_name.Text;
-            product.buy_date = textBox6_customer_name.Text;
-            product.buy_money = textBox8_delivery_day.Text;
-            product.sales_dates = textBox9_sales_number.Text;
-            product.storage_location = textBox10_money_number.Text;
+            product.code = textBox1_code.Text;
+            product.name = textBox2_name.Text;
+            product.categorize = textBox3_categorize.Text;
+            product.type = textBox4_type.Text;
+            product.storage_quantity = textBox5_storage_location.Text;
+            product.buy_date = textBox6_storage_quantity.Text;
+            product.buy_money = textBox8_sales_company.Text;
+            product.sales_dates = textBox9_sales_dates.Text;
+            product.storage_location = textBox10_sales_company.Text;
             product.sales_money = textBox11_inventory_stock_number.Text;
             productsList.Add(product);
             Console.WriteLine(product.name + " product.name");
@@ -65,14 +65,14 @@ namespace Storagy
             Console.WriteLine("Form1_Factory_screen_Activated 활성화 하였습니다.");
             if(xmlDataManager.temp_Product != null)
             {
-                textBox1_product_code_number.Text = xmlDataManager.temp_Product.code;
-                textBox2_product_name.Text = xmlDataManager.temp_Product.name;
-                textBox3_categorize_name.Text = xmlDataManager.temp_Product.categorize;
-                textBox4_type_name.Text = xmlDataManager.temp_Product.type;
-                textBox5_storage_name.Text = xmlDataManager.temp_Product.storage_quantity;
-                textBox6_customer_name.Text = xmlDataManager.temp_Product.buy_date;
+                textBox1_code.Text = xmlDataManager.temp_Product.code;
+                textBox2_name.Text = xmlDataManager.temp_Product.name;
+                textBox3_categorize.Text = xmlDataManager.temp_Product.categorize;
+                textBox4_type.Text = xmlDataManager.temp_Product.type;
+                textBox5_storage_location.Text = xmlDataManager.temp_Product.storage_quantity;
+                textBox6_storage_quantity.Text = xmlDataManager.temp_Product.buy_date;
                 textBox11_inventory_stock_number.Text = xmlDataManager.temp_Product.sales_money;
-                textBox8_delivery_day.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm");
+                textBox8_sales_company.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm");
             }
         }
     }
