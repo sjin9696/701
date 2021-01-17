@@ -2,6 +2,7 @@
 {
     class Product
     {
+        public static Product temporary_Product = new Product();
         //코드
         public string code { get; set; }
         //품명

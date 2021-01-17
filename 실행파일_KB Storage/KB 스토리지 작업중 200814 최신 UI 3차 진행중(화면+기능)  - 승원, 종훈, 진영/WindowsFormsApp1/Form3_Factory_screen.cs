@@ -41,7 +41,6 @@ namespace Storagy
             product.buy_money = textBox8_sales_company.Text;
             product.sales_dates = textBox9_sales_dates.Text;
             product.storage_location = textBox10_sales_company.Text;
-            product.sales_money = textBox11_inventory_stock_number.Text;
             productsList.Add(product);
             Console.WriteLine(product.name + " product.name");
 
@@ -71,7 +70,6 @@ namespace Storagy
                 textBox4_type.Text = xmlDataManager.temp_Product.type;
                 textBox5_storage_location.Text = xmlDataManager.temp_Product.storage_quantity;
                 textBox6_storage_quantity.Text = xmlDataManager.temp_Product.buy_date;
-                textBox11_inventory_stock_number.Text = xmlDataManager.temp_Product.sales_money;
                 textBox8_sales_company.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm");
             }
         }

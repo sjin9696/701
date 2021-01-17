@@ -16,16 +16,19 @@ namespace Storagy
         
         private void Form6_search_screen_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = "";
-            dataGridView1.DataSource = new mssqlDataManager().SelectDB("select " +
+            dataGridView.DataSource = "";
+            dataGridView.DataSource = new mssqlDataManager().SelectDB("select " +
                 "code, [name], categorize, type from dbo.storage_db;").Tables[0];
         }
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            //xmlDataManager.temp_Product = xmlDataManager.ProductsList[e.RowIndex];
-            Console.WriteLine(e.RowIndex);
-            //MessageBox.Show("데이터가 불러들여졌습니다.");
-            //Close();
+            Product.temporary_Product.code          = dataGridView.Rows[e.RowIndex].Cells[0].Value.ToString();
+            Product.temporary_Product.name          = dataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
+            Product.temporary_Product.categorize    = dataGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
+            Product.temporary_Product.type          = dataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
+
+            MessageBox.Show("데이터가 불러들여졌습니다.");
+            Close();
         }
 
         private void button_search_Click(object sender, EventArgs e)

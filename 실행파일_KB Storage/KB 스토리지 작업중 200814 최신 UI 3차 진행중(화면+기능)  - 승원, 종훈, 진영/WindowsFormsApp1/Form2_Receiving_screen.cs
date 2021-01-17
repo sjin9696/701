@@ -12,6 +12,7 @@ namespace Storagy
             label12.AutoSize = true;
             /* ViewCustomTime();//시간표시 - 작업자 : 승원형 작업일시 : 200811
              * 내용 : 이동, 작업자 : 송진영, 작업일시 : 20200814 timer1_Tick함수로 이동함.*/
+
             dataGridView1.DataSource = new mssqlDataManager().SelectDB("" +
                 "select code, [name], categorize, type, buy_company, buy_date, buy_money, storage_location, storage_quantity " +
                 "from dbo.storage_db;").Tables[0];
@@ -79,16 +80,12 @@ namespace Storagy
         private void Form2_Receiving_screen_Activated(object sender, EventArgs e)
         {
             Console.WriteLine("Form1_Factory_screen_Activated 활성화 하였습니다.");
-            if (xmlDataManager.temp_Product != null)
+            if (Product.temporary_Product.code != null)
             {
-                textBox1_code.Text = xmlDataManager.temp_Product.code;
-                textBox2_name.Text = xmlDataManager.temp_Product.name;
-                textBox3_categorize.Text = xmlDataManager.temp_Product.categorize;
-                textBox4_type.Text = xmlDataManager.temp_Product.type;
-                textBox5_buy_company.Text = xmlDataManager.temp_Product.storage_quantity;
-                textBox6_buy_date.Text = xmlDataManager.temp_Product.buy_date;
-                textBox11_inventory_stock_number.Text = xmlDataManager.temp_Product.sales_money;
-                textBox7_buy_money.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm");
+                textBox1_code.Text          = Product.temporary_Product.code;
+                textBox2_name.Text          = Product.temporary_Product.name;
+                textBox3_categorize.Text    = Product.temporary_Product.categorize;
+                textBox4_type.Text          = Product.temporary_Product.type;
             }
         }
 
