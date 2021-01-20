@@ -1,25 +1,23 @@
-<userinfo><item> <id>입고담당자</id>
-<pw>1234</pw>
-<name>송진영</name>
-<group>입고담당자</group>
-<phonenumber>010-0000-0000</phonenumber>
-</item>
-<item> <id>관리자</id>
-<pw>1123</pw>
-<name>우종훈</name>
-<group>관리자</group>
-<phonenumber>010-0000-0000</phonenumber>
-</item>
-<item> <id>출고담당자</id>
-<pw>1111</pw>
-<name>서주형</name>
-<group>출고담당자</group>
-<phonenumber>010-1111-1112</phonenumber>
-</item>
-<item> <id>출고담당자2</id>
-<pw>1111</pw>
-<name>서주형</name>
-<group>출고담당자</group>
-<phonenumber>010-1111-1112</phonenumber>
-</item>
+<userinfo>
+  <item>
+    <id>입고담당자</id>
+    <pw>1234</pw>
+    <name>송진영</name>
+    <group>입고담당자</group>
+    <phonenumber>010-0000-0000</phonenumber>
+  </item>
+  <item>
+    <id>관리자</id>
+    <pw>1123</pw>
+    <name>우종훈</name>
+    <group>관리자</group>
+    <phonenumber>010-0000-0000</phonenumber>
+  </item>
+  <item>
+    <id>입고담당자2</id>
+    <pw>1234</pw>
+    <name>서주형</name>
+    <group>입고담당자</group>
+    <phonenumber>111-1111-1111</phonenumber>
+  </item>
 </userinfo>

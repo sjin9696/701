@@ -9,7 +9,7 @@ namespace Storagy
         public Form5_new_regist()
         {
             InitializeComponent();
-            xmlDataManager.Load_File();
+            //xmlDataManager.Load_File();
         }
 
         private void button_input_Click(object sender, EventArgs e)
@@ -32,7 +32,7 @@ namespace Storagy
             ISaddProductList();
         }
         
-        List<Product> productslist = new List<Product>();
+        private readonly List<Product> productslist = new List<Product>();
         private void IS_Add_Grid()
         {
             Console.WriteLine("IS_Add_Grid");

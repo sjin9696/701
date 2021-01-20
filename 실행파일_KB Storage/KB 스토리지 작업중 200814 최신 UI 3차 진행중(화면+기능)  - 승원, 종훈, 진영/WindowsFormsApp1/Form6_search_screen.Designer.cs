@@ -204,10 +204,6 @@
             this.Name = "Form6_search_screen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "창고관리프로그램";
-            this.Load += new System.EventHandler(this.Form6_search_screen_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

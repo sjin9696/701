@@ -8,47 +8,30 @@ namespace Storagy
         public Form7_newmember()
         {
             InitializeComponent();
-            System.Console.WriteLine("Form7_newmember");
             newmember();
 
         }
         private void newmember()
         {
             userDataManager.Load_User_Data();
-            System.Console.WriteLine(userDataManager.UserInfos[0].ID);
-            foreach(var item in userDataManager.UserInfos)
-            {
-                System.Console.WriteLine(item.ID);
-                System.Console.WriteLine(item.PW);
-                System.Console.WriteLine(item.Name);
-                System.Console.WriteLine(item.Group);
-                System.Console.WriteLine(item.PhoneNumber);
-            }
             dataGridView1.DataSource = "";
             dataGridView1.DataSource = userDataManager.UserInfos;
-
         }
 
         private void button_xml_insert_Click(object sender, System.EventArgs e)
         {
-            //추가 후 저장.
             UserInfo userInfo = getByElement();
 
-            //기존 리스트 ID 중복검사.
             foreach (var item in userDataManager.UserInfos)
             {
                 if (item.ID.Contains(userInfo.ID))
                 {
-                    MessageBox.Show("입력 값이 부족합니다.\n" +
-                        "중복된 아이디가 있습니다. \n" +
-                        "다른 아이디로 등록해주세요."); 
+                    MessageBox.Show("입력 값이 부족합니다.\n중복된 아이디가 있습니다. \n다른 아이디로 등록해주세요."); 
                     return;
                 }
             }
-            //없으면 리스트,그리드뷰에 추가.
             userDataManager.UserInfos.Add(userInfo);
             MessageBox.Show("신규 추가 되었습니다.");
-           
         }
 
         private UserInfo getByElement()
@@ -138,10 +121,6 @@ namespace Storagy
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            //for (int i = 0; i < 5; i++)
-            //{
-            //    //Console.WriteLine(dataGridView1.Rows[e.RowIndex].Cells[i].Value.ToString());
-            //}
             try
             {
                 textBox1_id.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
@@ -162,6 +141,5 @@ namespace Storagy
             dataGridView1.DataSource = "";
             dataGridView1.DataSource = userDataManager.UserInfos;
         }
-
     }
 }

@@ -38,7 +38,7 @@ namespace Storagy
         
         private void login_check()
         {
-            xmlDataManager.Load_File();
+            //xmlDataManager.Load_File();
             string check = userDataManager.Login_Check(textBox_login_id.Text, textBox_login_pw.Text);
             Form3_Factory_screen Factory_screen = new Form3_Factory_screen();
             Form2_Receiving_screen Receiving_screen = new Form2_Receiving_screen();
@@ -82,7 +82,7 @@ namespace Storagy
         private void Form1_Login_Load(object sender, EventArgs e)
         {
             userDataManager.Load_User_Data();
-            xmlDataManager.Load_File();
+            //xmlDataManager.Load_File();
         }
     }
 }

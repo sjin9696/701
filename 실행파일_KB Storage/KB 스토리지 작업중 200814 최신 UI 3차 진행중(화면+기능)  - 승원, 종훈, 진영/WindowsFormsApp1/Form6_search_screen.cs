@@ -10,14 +10,9 @@ namespace Storagy
         {
             InitializeComponent();
             dataGridView.DataSource = "";
-            dataGridView.DataSource = new mssqlDataManager().SelectDB("select " +
+            dataGridView.DataSource = new mssqlDataManager().SelectDB("select DISTINCT " +
                 q +
                 " from dbo.storage_db;").Tables[0];
-        }
-        
-        private void Form6_search_screen_Load(object sender, EventArgs e)
-        {
-            
         }
 
         private void dataGridView_CellEnter(object sender, DataGridViewCellEventArgs e)
@@ -52,7 +47,7 @@ namespace Storagy
         {
             string select =
             #region MS-SQL 쿼리문  /// IF NOT EXISTS 사용 조회시 NULL값이라면 전체값 표시
-             "SELECT code, [name], categorize, type FROM dbo.storage_db ";
+             "SELECT DISTICNT code, [name], categorize, type FROM dbo.storage_db ";
             string where =  "WHERE name ='"         + textBox2_name.Text +
                             "' OR categorize = '"   + textBox3_categorize.Text +
                             "' OR type = '"         + textBox4_type.Text + "' ";

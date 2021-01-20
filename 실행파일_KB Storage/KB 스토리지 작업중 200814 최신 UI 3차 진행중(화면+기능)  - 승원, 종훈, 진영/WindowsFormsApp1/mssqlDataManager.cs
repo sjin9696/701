@@ -45,6 +45,28 @@ namespace Storagy
 
             return ds;
         }
+        public void InsertDB(string query)
+        {
+            //MS-SQL 연결시 필수 클래스
+            SqlConnection conn = new SqlConnection();
+            SqlCommand sqlcmd = new SqlCommand();
 
+            string connStr = "Server=192.168.0.12;" + //; (세미콜론)필수!
+                             "database = wjh;" + //데이터베이스 이름
+                             "uid = sa;" + //접속 ID
+                             "pwd = 1234;"; //접속 패스워드
+            conn.ConnectionString = connStr;
+            conn.Open(); //DB 접속
+
+            string cmdText = string.Format(query);
+
+            sqlcmd.Connection = conn;
+            sqlcmd.CommandText = cmdText; // 쿼리문 날리기
+
+            sqlcmd.ExecuteNonQuery(); //쿼리문 실행
+
+            sqlcmd.Connection.Close();
+            conn.Close();
+        }
     }
 }

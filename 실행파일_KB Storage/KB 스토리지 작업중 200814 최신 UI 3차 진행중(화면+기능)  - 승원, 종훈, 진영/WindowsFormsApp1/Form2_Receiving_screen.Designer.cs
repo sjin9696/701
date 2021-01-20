@@ -67,6 +67,7 @@
             this.button_delete_all = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.button_modified = new System.Windows.Forms.Button();
+            this.button_insert_db = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -460,6 +461,17 @@
             this.button_modified.UseVisualStyleBackColor = true;
             this.button_modified.Click += new System.EventHandler(this.button_modified_Click);
             // 
+            // button_insert_db
+            // 
+            this.button_insert_db.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_insert_db.Location = new System.Drawing.Point(761, 472);
+            this.button_insert_db.Name = "button_insert_db";
+            this.button_insert_db.Size = new System.Drawing.Size(145, 53);
+            this.button_insert_db.TabIndex = 44;
+            this.button_insert_db.Text = "입고처리하기";
+            this.button_insert_db.UseVisualStyleBackColor = true;
+            this.button_insert_db.Click += new System.EventHandler(this.button_insert_db_Click);
+            // 
             // Form2_Receiving_screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -480,6 +492,7 @@
             this.Controls.Add(this.button_input);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button4);
+            this.Controls.Add(this.button_insert_db);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox9_storage_quantity);
             this.Controls.Add(this.textBox8_storage_location);
@@ -552,5 +565,6 @@
         private System.Windows.Forms.Button button_delete_all;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button_modified;
+        private System.Windows.Forms.Button button_insert_db;
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
@@ -103,7 +104,6 @@ namespace Storagy
             //textBox7_buy_money.Text   = Product.temporary_Product.buy_money;
             textBox8_storage_location.Text   = Product.temporary_Product.storage_location;
             //textBox9_storage_quantity.Text   = Product.temporary_Product.storage_quantity;
-            
         }
 
         #region 검색 버튼 이벤트 code, buy,storage
@@ -209,6 +209,44 @@ namespace Storagy
                 dataGridView1.DataSource = Product.productsList;
             }
                
+        }
+
+        private void button_insert_db_Click(object sender, EventArgs e)
+        {
+            mssqlDataManager ms = new mssqlDataManager();
+            string cmdText = "insert into dbo.storage_db ";
+            string c = "(";
+            string a = "";
+            string r = "\n VALUES \n";
+            
+            foreach (DataGridViewTextBoxColumn item in dataGridView1.Columns)
+                c += $"[{item.Name}],";
+
+            c = c.Remove(c.Length - 1);
+            c += ")";
+            
+            foreach (DataGridViewRow jtem in dataGridView1.Rows)
+            {
+                a += string.Format("({0},'{1}','{2}','{3}'" + ",'{4}','{5}',{6}," + "'{7}',{8}," + "{9},'{10}','{11}'),\n"
+                    , jtem.Cells["code"].Value.ToString() , jtem.Cells["name"].Value.ToString() , jtem.Cells["categorize"].Value.ToString()
+                    , jtem.Cells["type"].Value.ToString() , jtem.Cells["buy_company"].Value.ToString()
+                    , "2021-01-18 09:17:00"
+                    //, jtem.Cells["buy_date"].Value.ToString()
+                    , jtem.Cells["buy_money"].Value.ToString()
+                    , jtem.Cells["storage_location"].Value.ToString()
+                    , jtem.Cells["storage_quantity"].Value.ToString()
+                    ,"0"
+                    ,"2021-01-18 09:17:00"
+                    ,"a"
+                    //Console.WriteLine( jtem.Cells["sales_money"].Value.ToString());
+                    //Console.WriteLine( jtem.Cells["sales_dates"].Value.ToString());
+                    //Console.WriteLine( jtem.Cells["sales_company"].Value.ToString());
+                    );
+            }
+            a = a.Remove(a.Length-2);
+            Console.WriteLine(cmdText+c+r+a);
+            string q = cmdText + c + r + a;
+            ms.InsertDB(q);
         }
     }
 }
